@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+section {
+    padding: 0px 8px;
+    background-color: #3B3A36;
+    color: #808080;
+    font-size: 16px;
+}
+section .container {
+    padding: 12px 6px 6px;
+    background-color: #EFEBE7;
+    color: #333;
+}
