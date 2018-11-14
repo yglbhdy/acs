@@ -7,13 +7,6 @@ section {
     transform: translateX(-50%) translateY(-50%);
     color: #808080;
 }
-section .container {
-    position: absolute;
-    top: 25px;
-    bottom: 8px;
-    left: 8px;
-    right: 8px;
-}
 section .container .selG,
 section .container .formG {
     float: left;

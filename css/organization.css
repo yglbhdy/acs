@@ -1,0 +1,73 @@
+section p {
+    font-size: 12px;
+}
+section .container {
+    padding: 4px;
+    top: 18px;
+}
+
+section .container header {
+    height: 8%;
+}
+section .container header div {
+    height: 100%;
+    border: 1px solid #D6D2CE;
+}
+
+section .sec {
+    margin-top: 4px;
+    width: 100%;
+    height: calc(92% - 32px);
+    font-size: 14px;
+}
+
+section .sec nav,
+section .sec .sec-container {
+    border: 1px solid #D6D2CE;
+    height: 100%;
+    float: left;
+}
+section .sec nav {
+    width: 15%;
+    min-width: 200px;
+    overflow-y: scroll;
+}
+section nav .fir-menu {
+    padding: 4px;
+}
+section nav .fir-slide {
+    padding-left: 30px;
+    color: #333;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+}
+section nav .sec-slide {
+    padding: 1px;
+    margin: 4px 0;
+    border: 1px solid #D6D2CE;
+    height: 50px;
+}
+section nav .sec-slide a {
+    height: 100%;
+    border: 1px solid #D6D2CE;
+    width: calc(100% - 50px);
+    float: right;
+    text-align: center;
+    line-height: 42px;
+    color: #333;
+}
+
+section .sec .sec-container {
+    padding: 5px;
+    width: 85%;
+}
+section .sec-container .op-face {
+    height: 100%;
+    background-color: #000;
+}
+
+section .container footer {
+    height: 28px;
+    border: 1px solid #D6D2CE;
+}

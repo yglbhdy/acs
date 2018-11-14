@@ -15,4 +15,9 @@ section .container {
     padding: 12px 6px 6px;
     background-color: #EFEBE7;
     color: #333;
+    position: absolute;
+    top: 25px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
 }
