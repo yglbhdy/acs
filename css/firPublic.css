@@ -68,9 +68,10 @@ section .sec-container .op-face {
     height: calc(100% - 16px);
     background-color: #efebe7;
     padding: 3px;
-    /* border-radius: 4px; */
+    height: calc(100% - 16px);
+    background-color: #EFEBE7;
 }
-section .sec .sec-container p{
+section .sec-container p {
     color: #fff;
    
 }
