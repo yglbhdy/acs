@@ -1,36 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="../css/pulic.css" />
-    <link rel="stylesheet" href="../css/firPublic.css" />
-    <link rel="stylesheet" href="../css/organization.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <section>
-      <p>智能门禁</p>
-      <div class="container">
-        <header><div></div></header>
 
-        <div class="sec">
-          <nav>
-            <ul>
-            </ul>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../css/pulic.css" />
+  <link rel="stylesheet" href="../css/firPublic.css" />
+  <link rel="stylesheet" href="../css/organization.css" />
+  <title>组织机构管理</title>
+</head>
 
-          <div class="sec-container"><div class="op-face"></div></div>
+<body>
+  <section>
+    <p>智能门禁</p>
+    <div class="container">
+      <header>
+        <div></div>
+      </header>
+
+      <div class="sec">
+        <nav>
+          <ul>
+          </ul>
+        </nav>
+
+        <div class="sec-container">
+          <p>组织机构管理</p>
+          <div class="op-face">
+            <!-- 左边  选择组织机构 -->
+            <div class="sec-selG">
+              <p>选择组织机构</p>
+              <div class="sec-selG-container">
+                <ul>
+                  <li><a href="javascript:;">成都京东方电科技有限公司</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 右边 添加或查看组织机构 -->
+            <div class="sec-addG">
+              <div class="tabs">
+                <span class="active" data-sign="add">组织机构资料</span>
+                <span data-sign="query">组织机构通讯节点资料</span>
+              </div>
+
+              <div class="content">
+                <div class="sign add-content active" data-sign="add">
+                  <form action="">
+                    <div class="inp-box">
+                      <label for="organizationName">组织机构名称</label>
+                      <input name="newOrganizationalInformation" type="checkbox" value="新增组织机构信息" />新增组织机构信息
+                      <input type="text" name="organizationName" id="organizationName">
+                    </div>
+
+                    <div class="inp-box">
+                      <label for="addressOfOrganization">组织机构地址</label>
+                      <input type="text" name="addressOfOrganization" id="addressOfOrganization">
+                    </div>
+
+                    <div class="inp-box">
+                      <label for="organizationTelephoneNumber">组织机构电话号码</label>
+                      <input type="text" name="organizationTelephoneNumber" id="organizationTelephoneNumber">
+                    </div>
+
+                    <div class="inp-box">
+                      <label for="organizationFaxNumber">组织机构传真号码</label>
+                      <input type="text" name="organizationFaxNumber" id="organizationFaxNumber">
+                    </div>
+
+                    <div class="inp-box">
+                      <label for="descriptionOfOrganization">组织机构描述</label>
+                      <textarea name="descriptionOfOrganization" id="descriptionOfOrganization" rows="15"></textarea>
+                    </div>
+
+                    <div class="subBtn">
+                      <button type="submit" id="save">保存</button>
+                      <button type="submit" id="delete">删除</button>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="sign query-content" data-sign="query">
+                  <div class="query-box">
+                    <label for="">组织机构</label>
+                    <input type="text" name="organization" id="organization">
+                  </div>
+                  <div class="table">
+                    <table border="1" cellspacing="0" rules="all">
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="subBtn">
+                    <button type="button">添加</button>
+                    <button type="button">删除</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mask">
+            <div class="mask-container">
+              <p>增加通讯节点</p>
+              <form class="content">
+                <div class="inp-box">
+                  <label for="addIPAddress1">通讯节点IP地址</label>
+                  <input type="number" name="addIPAddress1" id="addIPAddress1">.
+                  <input type="number" name="addIPAddress2" id="addIPAddress2">.
+                  <input type="number" name="addIPAddress3" id="addIPAddress3">.
+                  <input type="number" name="addIPAddress4" id="addIPAddress4">
+                </div>
+
+                <div class="inp-box">
+                  <label for="nameOfCommunicationNode">通讯节点名称</label>
+                  <input type="text" name="nameOfCommunicationNode" id="nameOfCommunicationNode">
+                </div>
+
+                <div class="subBtn">
+                  <button type="submit">确定</button>
+                  <button type="button">退出</button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
         </div>
-
-        <footer></footer>
       </div>
-    </section>
 
-    <script src="../js/jquery.min.js"></script>
-    <script src="../data/navList.js"></script>
-    <script src="../js/public.js"></script>
-      <script src="../js/organization.js"></script>
-  </body>
+      <footer></footer>
+    </div>
+  </section>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../data/navList.js"></script>
+  <script src="../js/public.js"></script>
+  <script src="../data/organizationTable.js"></script>
+  <script src="../js/organization.js"></script>
+</body>
+
 </html>
