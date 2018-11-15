@@ -1,3 +1,4 @@
+// 导航列表
 var navList = [
     {
         name: '系统管理',
