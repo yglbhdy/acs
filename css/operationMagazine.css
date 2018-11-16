@@ -1,0 +1,52 @@
+.exhibite {
+    height: 100%;
+}
+.exhibite .showR {
+    width: 85%;
+    height: calc(100% - 35px);
+    float: left;
+}
+.exhibite .showL {
+    margin-left: 0.5%;
+    width: 14.5%;
+    height: calc(100% - 35px);
+    float: left;
+    border: 1px solid #D6D2CE;
+}
+.exhibite .showR .table {
+    padding: 2px;
+    border: 1px solid #D6D2CE;
+    height: 70%;
+    overflow-y: scroll;
+}
+.exhibite .showR table {
+    width: 100%;
+    border-color: #D6D2CE;
+    font-size: 16px;
+    background-color: #fff;
+}
+.exhibite .showR table td {
+    padding-left: 5px;
+}
+.exhibite .showR table tr {
+    background-color: transparent;
+    transition: .35s;
+}
+.exhibite .showR table tr:hover {
+    background-color: #d9ecff;
+}
+.exhibite .showR table tr:first-child:hover {
+    background-color: transparent;
+}
+.exhibite .showR .overview {
+    border: 1px solid #D6D2CE;
+    margin: 2px 0;
+    padding: 2px;
+}
+.exhibite .showR .overview .over-inp {
+    float: right;
+}
+.exhibite .showR .enterView {
+    border: 1px solid #D6D2CE;
+    overflow-y: scroll;
+}
