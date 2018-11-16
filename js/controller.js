@@ -24,7 +24,7 @@ e.forEach(function(ele,index){
 })
 ul +=`<ul>${btn}</ul>`
 })
-$('.tableDiv-right').html(ul);
+$('.tableDiv-right-box').html(ul);
 
 
 
