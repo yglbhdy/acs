@@ -60,12 +60,15 @@ box-shadow: 1px 1px 1px #696969;
 .doorParameter .doorParameter-right .doorParameter-right-tab{
     margin-bottom: 10px;
 }
+.doorParameter .doorParameter-right .doorParameter-right-tab ul{
+    margin-bottom: 10px;
+}
 .doorParameter .doorParameter-right .doorParameter-right-tab ul li{
 display: inline-block;
 /* border: 1px solid #fff; */
 }
 .doorParameter .doorParameter-right .doorParameter-right-one{
-    border: 1px solid #C2C4C8;
+
     width: 90%;
     margin: 0 auto;
     padding: 5px;
@@ -76,10 +79,13 @@ display: inline-block;
     width: 100%;
     text-align: left;
     padding: 10px 2px;
+    border: 1px solid #C2C4C8;
+    margin-bottom: 20px;
 }
 .doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box p{
     position: absolute;
-    top: -15px;
+    top: -10px;
+    left: 5px;;
     color: black;
     background: #EFEBE7;
 }
@@ -90,10 +96,10 @@ display: inline-block;
     width: 60%;
 }
 .doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .A div:first-child{
-    margin-left: 20px;
+    margin-left: 32px;
 }
 .doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .A div:nth-child(2){
-    margin-left: 20px;
+    margin-left: 32px;
 }
 .doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .A div:nth-child(2) select{
     width: 18%;
@@ -105,8 +111,51 @@ display: inline-block;
     display: inline-block;
     width: 49%;
 }
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .B div input{
+    width: 25%;
+}
+
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .B div:nth-child(3){
+    margin-left: 30px;
+} 
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .B div:nth-child(4){
+    margin-left: 26px;
+} 
 .doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .C{
     display: inline-block;
     width: 49%;
     vertical-align: top;
+    border: 1px solid #A4A4A4;
+    padding: 10px 10px;
+    margin-bottom:10px; 
+}
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .C select{
+    margin-bottom: 5px;
+}
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .C input{
+    width: 30%;
+    margin-bottom: 5px;
+}
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .D select{
+    width: 20%;
+    margin-right: 30px;
+}
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .D input{
+    width: 20%;
+}
+
+
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-pox{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    padding: 10px 2px;
+    border: 1px solid #C2C4C8;
+}
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-pox p{
+    position: absolute;
+    top: -10px;
+    left: 5px;;
+    color: black;
+    background: #EFEBE7;
 }
