@@ -3,7 +3,7 @@ var navList = [
     {
         name: '系统管理',
         navArr: ['组织机构(G)', '系统参数(S)', '操作杂志(L)', '事件备份(B)', '事件恢复(R)', '数据库管理(D)', '切换数据库', '修改密码(P)'],
-        navSlideImg: ['organization', 'systemParameter', '0perationMagazine', 'eventBackup', 'eventRecovery', 'databaseManagement', 'switchDatabase', 'changePassword']
+        navSlideImg: ['organization', 'systemParameter', 'operationMagazine', 'eventBackup', 'eventRecovery', 'databaseManagement', 'switchDatabase', 'changePassword']
     },
     {
         name: '控制器管理',
