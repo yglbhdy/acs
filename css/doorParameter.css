@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.doorParameter{
+    width: 100%;
+}
+.doorParameter .doorParameter-left{
+    display: inline-block;
+    width: 40%;
+    overflow-y: scroll;
+}
+.doorParameter .doorParameter-left>div{
+display: inline-block;
+line-height: 10px;
+border: 1px solid #868686;
+padding: 0 2px; 
+box-shadow: 1px 1px 1px #696969;
+}
+.doorParameter .doorParameter-left>div:hover{
+    cursor: pointer;
+}
+.doorParameter .doorParameter-left>img{
+    display: inline-block;
+}
+.doorParameter .doorParameter-left>p{
+    display: inline-block;
+    color: black;
+   
+}
+.doorParameter .doorParameter-left ul{
+    /* background: red; */
+    margin-left: 24px;
+}
+.doorParameter .doorParameter-left ul li>div{
+    display: inline-block;
+    line-height: 10px;
+    border: 1px solid #868686;
+    padding: 0 2px; 
+    box-shadow: 1px 1px 1px #696969;
+}
+.doorParameter .doorParameter-left ul li>img{
+    display: inline-block;
+}
+.doorParameter .doorParameter-left ul li>p{
+    display: inline-block;
+    color: black;
+}
+.doorParameter .doorParameter-left ul li>div:hover{
+    cursor: pointer;
+}
+
+/*  */
+.doorParameter .doorParameter-right{
+    display: inline-block;
+    width: 58%;
+    vertical-align: top;
+}
+.doorParameter .doorParameter-right .doorParameter-right-tab{
+    margin-bottom: 10px;
+}
+.doorParameter .doorParameter-right .doorParameter-right-tab ul li{
+display: inline-block;
+/* border: 1px solid #fff; */
+}
+.doorParameter .doorParameter-right .doorParameter-right-one{
+    border: 1px solid #C2C4C8;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 10px;
+} 
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    padding: 10px 2px;
+}
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box p{
+    position: absolute;
+    top: -15px;
+    color: black;
+    background: #EFEBE7;
+}
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box div input{
+    margin-left:5px; 
+}
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .A input:first-child{
+    width: 60%;
+}
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .A div:first-child{
+    margin-left: 20px;
+}
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .A div:nth-child(2){
+    margin-left: 20px;
+}
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .A div:nth-child(2) select{
+    width: 18%;
+}
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box div>div{
+    margin:3px 0 7px 0px;; 
+}
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .B{
+    display: inline-block;
+    width: 49%;
+}
+.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .C{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}

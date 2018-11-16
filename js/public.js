@@ -15,7 +15,7 @@
                 secTmp += `
                 <li class="sec-slide">
                     <img src="${navList[i].navSlideImg[j]}.png">
-                    <a href="./organization.html">${navList[i].navArr[j]}</a>
+                    <a href="./${navList[i].navSlideImg[j]}.html">${navList[i].navArr[j]}</a>
                 </li>
                 `;
             }

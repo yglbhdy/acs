@@ -55,6 +55,16 @@
     margin-bottom:3px;
     padding: 2px 0;
 }
+.tableDiv .tableDiv-right .tableDiv-right-pox{
+    width: 100%;
+}
+.tableDiv .tableDiv-right .tableDiv-right-pox p {
+    color: #333;
+}
+.tableDiv .tableDiv-right .tableDiv-right-pox input:last-child{
+    width: 22%;
+}
+
 .tableDiv .tableDiv-bottom{
     width: 100%;
 }
