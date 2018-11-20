@@ -34,12 +34,8 @@ section .sec .sec-addG {
 }
 section .sec-addG .tabs {
     width: 100%;
-    border: 1px solid #D6D2CE;
-    border-bottom: none;
     display: inline-block;
     background-color: #D6D2CE;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
 }
 section .sec-addG .tabs span  {
     padding: 0 3px;
@@ -52,11 +48,8 @@ section .sec-addG .tabs span.active {
 }
 section .sec-addG .content {
     width: 100%;
-    height: calc(100% - 20px);
-    border: 1px solid #D6D2CE;
+    height: calc(100% - 28px);
     border-top: none;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
 }
 section .sec-addG .content > .sign {
     display: none;
@@ -68,9 +61,7 @@ section .sec-addG .content > .sign.active {
 section .sign .inp-box {
     margin: 1% 12px;
 }
-section .sign input[type="text"],
-section .sign textarea,
-section .sec-container .subBtn button {
+section .sign textarea {
     border: 1px solid #D6D2CE;
     outline: none;
 }
@@ -91,18 +82,6 @@ section .sign textarea {
     width: 100%;
     resize:none;
 }
-section .sec-container .subBtn {
-    padding-right: 12px;
-    margin-top: 12px;
-    text-align: right;
-}
-section .sec-container .subBtn button {
-    padding: 3px 3px 5px 32px;
-    margin-right: 10px;
-    font-size: 14px;
-    color: #333;
-    background-color: #fff;
-}
 section .sign.query-content {
     padding: 4px;
 }
@@ -112,74 +91,15 @@ section .sign .query-box {
 }
 section .sign .query-box input {
     padding: 2px;
-    display: block;
-    border: 1px solid #D6D2CE;
 }
 section .sign .table {
-    padding: 2px;
     margin-top: 2px;
-    border: 1px solid #D6D2CE;
     height: calc(100% - 120px);
-    overflow-y: scroll;
-}
-section .sign table {
-    width: 100%;
-    border-color: #D6D2CE;
-    font-size: 16px;
-    background-color: #fff;
-}
-section .sign table td {
-    padding-left: 5px;
-}
-section .sign table tr {
-    background-color: transparent;
-    transition: .35s;
-}
-section .sign table tr:hover {
-    background-color: #d9ecff;
-}
-section .sign table tr:first-child:hover {
-    background-color: transparent;
 }
 
-section .sec-container {
-    position: relative;
-}
-section .sec-container .mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, .3);
-    display: none;
-}
 section .mask .mask-container {
-    padding: 5px;
     width: 35%;
     height: 25%;
     min-width: 500px;
     min-height: 120px;
-    background-color: #000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-section .mask .content {
-    padding: 5px;
-    height: calc(100% - 18px);
-    width: 100%;
-    background-color: #efebe7;
-}
-section .mask .content input {
-    width: 50px;
-    height: 22px;
-    border: 1px solid #D6D2CE;
-}
-section .mask .content input[type="text"]{
-    width: 50%;
-}
-section .mask .inp-box {
-    margin: 20px 0;
 }

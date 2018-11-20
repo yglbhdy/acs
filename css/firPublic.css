@@ -80,3 +80,88 @@ section .container footer {
     height: 28px;
     border: 1px solid #D6D2CE;
 }
+
+section .sec-container .subBtn {
+    padding-right: 12px;
+    margin-top: 12px;
+    text-align: right;
+}
+section .sec-container .subBtn button {
+    padding: 3px 3px 5px 32px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #D6D2CE;
+}
+input {
+    outline: none;
+    border: 1px solid #D6D2CE;
+    background-color: #fff;
+}
+.table {
+    padding: 2px;
+    border: 1px solid #D6D2CE;
+    overflow-y: scroll;
+}
+table {
+    width: 100%;
+    border-color: #D6D2CE;
+    font-size: 16px;
+    background-color: #fff;
+}
+table th {
+    padding: 2px;
+}
+table td {
+    padding: 5px 2px;
+    font-size: 14px;
+}
+table tr {
+    background-color: transparent;
+    transition: .35s;
+}
+table tr:hover {
+    background-color: #d9ecff;
+}
+table tr:first-child:hover {
+    background-color: transparent;
+}
+
+section .sec-container {
+    position: relative;
+}
+section .sec-container .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .3);
+    display: none;
+}
+section .mask .mask-container {
+    padding: 5px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+section .mask .content {
+    padding: 5px;
+    height: calc(100% - 18px);
+    width: 100%;
+    background-color: #efebe7;
+}
+section .mask .content input {
+    width: 50px;
+    height: 22px;
+}
+section .mask .content input[type="text"]{
+    width: 50%;
+}
+section .mask .inp-box {
+    margin: 20px 0;
+}
