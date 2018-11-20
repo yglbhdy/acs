@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/pulic.css" />
+    <link rel="stylesheet" href="../css/firPublic.css" />
+    <link rel="stylesheet" href="../css/systemParameter.css" />
+    <title>系统参数</title>
+</head>
+
+<body>
+
+    <section>
+        <p>智能门禁</p>
+        <div class="container">
+            <header>
+                <div></div>
+            </header>
+
+            <div class="sec">
+                <nav>
+                    <ul>
+                    </ul>
+                </nav>
+
+                <div class="sec-container">
+                    <p>系统参数设置</p>
+                    <div class="op-face">
+                        <form action="">
+                            <div class="inp-box">
+                                <p>输入应用程序服务器名/IP</p>
+                                <label for="severName">服务器名称/IP</label>
+                                <input type="text" name="severName" id="severName">
+                            </div>
+                            <div class="inp-box">
+                                <p>临时卡/访客卡处理策略</p>
+                                <input type="checkbox" name="cancellationOfContact" id="cancellationOfContact">
+                                <label for="cancellationOfContact">取消临时卡权限时保留卡与用户之间的联系</label>
+                                <br>
+                                <input type="checkbox" name="enableTime" id="enableTime">
+                                <label for="enableTime">临时卡有启用时间</label>
+                            </div>
+                            <div class="inp-box">
+                                <p>系统组织架构管理模式</p>
+                                <label for="organizationalStructureManagementMode">请组织架构管理模式</label>
+                                <select name="organizationalStructureManagementMode" id="organizationalStructureManagementMode">
+                                    <option value="independentCommunicationNodeMode">独立通讯节点模式</option>
+                                </select>
+                            </div>
+                            <div class="subBtn">
+                                <button type="submit">设置</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <footer></footer>
+        </div>
+    </section>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../data/navList.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/systemParameter.js"></script>
+</body>
+
+</html>

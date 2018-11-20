@@ -1,0 +1,26 @@
+section .sec .sec-container {
+    max-width: 400px;
+    max-height: 365px;
+}
+section .sec-container .op-face {
+    padding: 1px 22px;
+    color: #333;
+}
+section .sec-container .inp-box {
+    padding: 5px 15px;
+    margin: 24px 0;
+    border: 1px solid #D6D2CE;
+    border-radius: 6px;
+    position: relative;
+}
+section .inp-box p {
+    color: #333;
+    position: absolute;
+    top: -8px;
+    background-color: #efebe7;
+}
+section .inp-box input,
+section .inp-box select {
+    display: inline-block;
+    margin: 10px 0;
+}
