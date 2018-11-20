@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pointParameter{
+    width: 100;
+    height: 100%;
+}
+.pointParameter .pointParameter_left{
+    height: 100%;
+    width: 40%;
+}
+.pointParameter .pointParameter_left .pointParameter_left_content{
+    height: 85%;
+    overflow-y: scroll;
+}
+.pointParameter .pointParameter_left .pointParameter_left_content>div{
+    width: 15px;
+    height: 15px;
+    line-height: 12px;
+    text-align: center;
+    border: 1px solid #868686;
+    display: inline-block;
+}
+.pointParameter .pointParameter_left .pointParameter_left_content p{
+    display: inline-block;
+    color: black;
+}
+.pointParameter .pointParameter_left .pointParameter_left_content ul li>div{
+    width: 15px;
+    height: 15px;
+    line-height: 12px;
+    text-align: center;
+    border: 1px solid #868686;
+    display: inline-block;
+}
+.pointParameter .pointParameter_left .pointParameter_left_content ul{
+    margin-left: 15px;
+}
+.pointParameter .pointParameter_left .pointParameter_left_content ul li>p{
+    display: inline-block;
+    color: black;
+}
+
