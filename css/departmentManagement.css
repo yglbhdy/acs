@@ -1,0 +1,29 @@
+.table {
+    height: calc(100% - 46px);
+}
+section .mask .mask-container  {
+    width: 50%;
+}
+section .mask .inp-box {
+    padding: 10px;
+    border: 1px solid #D6D2CE;
+}
+section .mask .inp-box p {
+    position: absolute;
+    color: #333;
+    top: 38px;
+    left: 20px;
+    background-color: #efebe7;
+}
+section .mask .content label {
+    vertical-align: top;
+}
+section .mask .content input[type="text"] {
+    margin-bottom: 10px;
+    height: 23px;   
+}
+section .mask .content textarea {
+    width: 80%;
+    resize: none;
+    border: 1px solid #D6D2CE;
+}

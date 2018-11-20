@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/pulic.css" />
+    <link rel="stylesheet" href="../css/firPublic.css" />
+    <link rel="stylesheet" href="../css/departmentManagement.css">
+    <title>部门资料管理</title>
+</head>
+
+<body>
+    <section>
+        <p>智能门禁</p>
+        <div class="container">
+            <header>
+                <div></div>
+            </header>
+
+            <div class="sec">
+                <nav>
+                    <ul>
+                    </ul>
+                </nav>
+
+                <div class="sec-container">
+                    <p>部门资料管理</p>
+                    <div class="op-face">
+                        <div class="table">
+                            <table border="1" cellspacing="0" rules="all">
+                                <tr>
+                                    <th>部门编号</th>
+                                    <th>部门名称</th>
+                                    <th>部门经理</th>
+                                    <th>电话</th>
+                                    <th>传真</th>
+                                    <th>备注</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="subBtn">
+                            <button name="managementDerive" id="managementDerive">导出</button>
+                            <button name="managementAdd" id="managementAdd">增加</button>
+                            <button name="managementModify" id="managementModify">修改</button>
+                            <button name="managementDelete" id="managementDelete">删除</button>
+                            <button name="managementInquire" id="managementInquire">查询</button>
+                        </div>
+                        <div class="mask">
+                            <div class="mask-container">
+                                <p>添加部门资料</p>
+                                <form class="content">
+                                    <div class="inp-box">
+                                        <p>部门资料</p>
+                                        <label for="deparenmentNumber">部门编号</label>
+                                        <input type="text" name="deparenmentNumber" id="deparenmentNumber">
+                                        <br>
+                                        <label for="deparenmentName">部门名称</label>
+                                        <input type="text" name="deparenmentName" id="deparenmentName">
+                                        <br>
+                                        <label for="deparenmentManager">部门经理</label>
+                                        <input type="text" name="deparenmentManager" id="deparenmentManager">
+                                        <br>
+                                        <label for="deparenmentTelephone">部门电话</label>
+                                        <input type="text" name="deparenmentTelephone" id="deparenmentTelephone">
+                                        <br>
+                                        <label for="deparenmentFax">部门真传</label>
+                                        <input type="text" name="deparenmentFax" id="deparenmentFax">
+                                        <br>
+                                        <label for="deparenmentAddress">部门地址</label>
+                                        <input type="text" name="deparenmentAddress" id="deparenmentAddress">
+                                        <br>
+                                        <label for="deparenmentDescription">部门描述</label>
+                                        <textarea name="deparenmentDescription" id="deparenmentDescription" cols="30" rows="10"></textarea>
+                                    </div>
+
+                                    <div class="subBtn">
+                                        <button type="submit">保存</button>
+                                        <button type="button">退出</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer></footer>
+        </div>
+    </section>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../data/navList.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../data/departmentManagementData.js"></script>
+    <script src="../js/departmentManagement.js"></script>
+</body>
+
+</html>
