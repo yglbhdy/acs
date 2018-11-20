@@ -1,0 +1,32 @@
+.op-face {
+    overflow-x: scroll;
+}
+.info-ex {
+    height: 120px;
+    min-width: 1500px;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid #000;
+}
+.info-ex table {
+    padding: 0px 15px;
+    width: auto;
+    background-color: transparent;
+}
+.info-ex table tr:hover {
+    background-color: transparent;
+}
+.info-ex table td {
+    padding-right: 12px;
+}
+.info-ex table td:hover {
+    background-color: #fff;
+}
+.table {
+    margin-top: 2px;
+    min-width: 1500px;
+    height: calc(100% - 160px)
+}
+section .sec-container .subBtn {
+    margin-left: 15px;
+    text-align: left;
+}
