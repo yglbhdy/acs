@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/pulic.css" />
+  <link rel="stylesheet" href="../css/firPublic.css" />
+  <link rel="stylesheet" href="../css/pointParameter.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <section>
+    <p>智能门禁</p>
+    <div class="container">
+      <header>
+        <div></div>
+      </header>
+
+      <div class="sec">
+        <nav>
+          <ul>
+          </ul>
+        </nav>
+
+        <div class="sec-container">
+          <p>输入输出点配置</p>
+          <div class="op-face">
+            <!--  -->
+            <div class="pointParameter">
+              <div class="pointParameter_left">
+                <div class="pointParameter_left_content">
+                  <div>-</div>
+                  <p> 门禁控制主机</p> <span> </span>
+                  <ul>
+
+                  </ul>
+                </div>
+                <div class="pointParameter_left_table">
+                  <table>
+                    <tr>
+                      <td>当前控制器名称</td>
+                      <td>1F南侧大厅<span> </span> </td>
+                    </tr>
+                    <tr>
+                      <td>当前选择点名称</td>
+                      <td>【1-1】号门门磁</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="pointParameter_right">
+                <div class="parameterConfiguration">
+                  <p>输入点参数配置</p>
+                  <div>
+                    <label for="nameOfInputPoint">输入点名称</label>
+                    <input type="text" name="nameOfInputPoint" id="nameOfInputPoint" value="xxx">
+                  </div>
+                  <div class="inputPointNormality">
+                    <label for="inputPointNormality">输入点常态</label>
+                    <select name="inputPointNormality" id="inputPointNormality" class="inputPointNormality_one">
+                    
+                    </select>
+                    <label for="isTheInputPointValid">输入点是否有效</label>
+                    <select name="isTheInputPointValid" id="isTheInputPointValid" class="inputPointNormality_two">
+                   
+                    </select>
+                  </div>
+                  <div>
+                    <label for="messageType">消息类型</label>
+                    <select name="messageType" id="messageType" class="messageType">
+                     
+                    </select>
+                  </div>
+                  <div>
+                    <label for="pointDetectionMode">点检测模式</label>
+                    <select name="pointDetectionMode" id="pointDetectionMode" class="pointDetectionMode">
+                      <!-- <option value="">无检测模式</option> -->
+                    </select>
+                  </div>
+                  <div>
+                    <label for="">扫描间隔</label>
+                    <input type="number" value="0"> 秒
+                  </div>
+                </div>
+
+                <div class="inputPointLinkageConfiguration">
+                  <p>输入点联动配置</p>
+                  <div>
+                    <label for="linkageTriggerCondition">联动触发条件</label>
+                    <select name="linkageTriggerCondition" id="linkageTriggerCondition" class="linkageTriggerCondition">
+                      <!-- <option value="">不触发</option>
+                      <option value="">不触发</option> -->
+                    </select>
+                    <br>
+                    <label for="networkExternalLinkageGroup">网络外联动组</label>
+                    <select name="networkExternalLinkageGroup" id="networkExternalLinkageGroup" class="networkExternalLinkageGroup">
+                      <!-- <option value="">无联动组</option>
+                      <option value="">无联动组</option> -->
+                    </select>
+                  </div>
+                  <div class="inlineDynamicPointAssignment">
+                    <p>内联动点设置</p>
+                    <div class="linkageObject">
+                      <p>联动对象</p>
+                      <select name="linkageObject" id="linkageObject" class="linkageObject_one">
+                        
+                      </select>
+                      <select name="linkageObject" id="linkageObject" class="linkageObject_two">
+                       
+                      </select>
+                      <select name="linkageObject" id="linkageObject" class="linkageObject_three">
+                       
+                      </select>
+                      <select name="linkageObject" id="linkageObject" class="linkageObject_four">
+                        
+                      </select>
+                    </div>
+                    <div class="actionMode">
+                      <p>动作模式</p>
+                      <select name="" id="">
+                        <option value="">无联动动作</option>
+                        <option value="">无联动动作</option>
+                      </select>
+                      <select name="" id="">
+                        <option value="">无联动动作</option>
+                        <option value="">无联动动作</option>
+                      </select>
+                      <select name="" id="">
+                        <option value="">无联动动作</option>
+                        <option value="">无联动动作</option>
+                      </select>
+                      <select name="" id="">
+                          <option value="">无联动动作</option>
+                          <option value="">无联动动作</option>
+                        </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pointParameter_bottom">
+                  <div class="subBtn">
+                  <button type="button" name="" id="">查找(F)</button>
+                  <button type="button" name="" id="" >复制(C)</button>
+                  <button type="button" name="" id="" >设置(O)</button>
+                  <button type="button" name="" id="">退出(C)</button>
+                  </div>
+                </div>
+
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../data/navList.js"></script>
+  <script src="../data/pointParameterList.js"></script>
+  <script src="../js/public.js"></script>
+  <script src="../js/pointParameter.js"></script>
+</body>
+
+</html>
