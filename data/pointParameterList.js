@@ -46,14 +46,29 @@ var networkExternalLinkageGroup = [
 
 
 var  linkageObject_one = [
-    {content:['有联动对象','无联动对象','有联动对象',]}
+    {content:['有联动对象','无联动对象','有联动对象']}
 ]
 var  linkageObject_two = [
-    {content:['有联动对象','无联动对象','有联动对象',]}
+    {content:['有联动对象','无联动对象','有联动对象']}
 ]
 var  linkageObject_three = [
-    {content:['有联动对象','无联动对象','有联动对象',]}
+    {content:['有联动对象','无联动对象','有联动对象']}
 ]
 var  linkageObject_four = [
-    {content:['有联动对象','无联动对象','有联动对象',]}
+    {content:['有联动对象','无联动对象','有联动对象']}
+]
+
+
+
+var actionMode_one = [
+    {content:['有联动数组','无联动数组','有联动数组']}
+]
+var actionMode_two = [
+    {content:['有联动数组','无联动数组','有联动数组']}
+]
+var actionMode_three = [
+    {content:['有联动数组','无联动数组','有联动数组']}
+]
+var actionMode_four = [
+    {content:['有联动数组','无联动数组','有联动数组']}
 ]
