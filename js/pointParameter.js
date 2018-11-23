@@ -139,7 +139,7 @@ for(var i =0;i<networkExternalLinkageGroup.length;i++){
 
 
 
-
+//四个联动对象
 for(var i =0;i<linkageObject_one.length;i++){
     var linkageObject_oneData = '';
     for(var j = 0;j<linkageObject_one[i].content.length;j++){
@@ -173,5 +173,40 @@ for(var i =0;i<linkageObject_four.length;i++){
     $('.linkageObject_four').html(linkageObject_fourData)
 }
 
+
+
+//四个动作模式
+
+for(var i =0;i<actionMode_one.length;i++){
+    var actionMode_oneData = '';
+    for(var j = 0;j<actionMode_one[i].content.length;j++){
+        actionMode_oneData+=`<option value="${actionMode_one[i].content[j]}">${actionMode_one[i].content[j]}</option>`
+    }
+    $('.actionMode_one').html(actionMode_oneData)
+}
+
+for(var i =0;i<actionMode_two.length;i++){
+    var actionMode_twoData = '';
+    for(var j = 0;j<actionMode_two[i].content.length;j++){
+        actionMode_twoData+=`<option value="${actionMode_two[i].content[j]}">${actionMode_two[i].content[j]}</option>`
+    }
+    $('.actionMode_two').html(actionMode_twoData)
+}
+
+for(var i =0;i<actionMode_three.length;i++){
+    var actionMode_threeData = '';
+    for(var j = 0;j<actionMode_three[i].content.length;j++){
+        actionMode_threeData+=`<option value="${actionMode_three[i].content[j]}">${actionMode_three[i].content[j]}</option>`
+    }
+    $('.actionMode_three').html(actionMode_threeData)
+}
+
+for(var i =0;i<actionMode_four.length;i++){
+    var actionMode_fourData = '';
+    for(var j = 0;j<actionMode_four[i].content.length;j++){
+        actionMode_fourData+=`<option value="${actionMode_four[i].content[j]}">${actionMode_four[i].content[j]}</option>`
+    }
+    $('.actionMode_four').html(actionMode_fourData)
+}
 
 })
