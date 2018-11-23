@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.none{
+    display: none;
+}
+.definedLinkageGroup_all{
+    width: 35%;
+    height: 95%;
+    display: inline-block;
+}
+.definedLinkageGroup_all .definedLinkageGroup{
+    width: 100%;
+    line-height: 25px;
+    text-indent: 15px;
+    border-bottom: 2px solid #868686;
+    border-left: 1px solid #868686;
+    border-top: 1px solid #868686;
+    margin: -3px 0 0 -3px;
+}
+.definedLinkageGroup_all .definedLinkageGroup_content{
+    /* margin-left: 35px; */
+    padding-left:25px; 
+    width: 100%;
+    height: 91%;
+    background: white;
+} 
+.definedLinkageGroup_all .definedLinkageGroup_content ul li{
+    margin: 3px 0;
+    width: 30%;
+    text-align: center;
+}
+.definedLinkageGroup_all .definedLinkageGroup_bottom table{
+    background: #EFEBE7;
+}
+
+.controllerRelevantPointInformation_all{
+    width: 64.5%;
+    height: 95%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 3px 0;
+}
+.controllerRelevantPointInformation_all .controllerRelevantPointInformation{
+    line-height: 20px;
+    text-indent: 10px;
+}
+.controllerRelevantPointInformation_all .controllerRelevantPointInformation_content{
+    width: 99%;
+    height: 40%;
+    margin: 0 auto;
+    background: white;
+    overflow-y: scroll;
+    border: 1px solid #868686;
+    padding: 0 0 0 40px;
+}
+.controllerRelevantPointInformation_all .controllerRelevantPointInformation_content>ul>li p{
+    color: black;
+    display: inline-block;
+}
+.controllerRelevantPointInformation_all .controllerRelevantPointInformation_content>ul>li div{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: 1px solid #868686;
+    text-align: center;
+    line-height: 10px;
+    padding: 0 2px;
+    cursor: pointer;
+}
+.controllerRelevantPointInformation_all .controllerRelevantPointInformation_content>ul>li img{
+    display: inline-block;
+}
+.controllerRelevantPointInformation_all .controllerRelevantPointInformation_content>ul>li ul{
+    margin-left: 35px;
+}
+.controllerRelevantPointInformation_all .controllerRelevantPointInformation_content>ul>li ul li{
+    margin: 2px 0;
+}
+
+.controllerRelevantPointInformation_all .controllerRelevantPointInformation_Btn{
+    margin: 0 auto;
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+
+}
+
+.controllerRelevantPointInformation_all .controllerRelevantPointInformation_Btn select{
+  width: 20%;
+  padding: 3px 0;
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined{
+    width: 100%;
+    padding: 20px 0;
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined p{
+    color: black;
+    text-indent: 10px;
+    margin-bottom: 10px;
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content{
+    width: 99%;
+    background: white;
+    border: 1px solid #868686;
+    /* padding-left: 10px; */
+    padding: 20px 10px;
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content>div{
+    display: inline-block;
+    border: 1px solid #868686;
+    text-align: center;
+    line-height: 10px;
+    padding: 0 2px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content>img{
+    vertical-align: middle;
+    display: inline-block;
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content>p{
+    display: inline-block;
+    color: black;
+    text-indent: 0;
+    margin: 0;
+    vertical-align: top;
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content>ul{
+    margin-left: 20px;
+}
+
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content>ul>li div{
+    display: inline-block;
+    border: 1px solid #868686;
+    text-align: center;
+    line-height: 10px;
+    padding: 0 2px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    vertical-align: top;
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content>ul>li p{
+    color: black;
+    text-indent: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content>ul>li img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content>ul>li ul{
+    margin-left: 20px;
+    
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content>ul>li ul li div{
+    display: inline-block;
+    border: 1px solid #868686;
+    text-align: center;
+    line-height: 10px;
+    padding: 0 2px;
+   
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content>ul>li ul li{
+    display: inline-block;
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content>ul>li ul li p{
+    display: inline-block;
+    color: black;
+    margin: 0;
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content>ul>li ul li img{
+    display: inline-block;
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content>ul>li ul li span,b,img,p{
+    vertical-align: top;
+}
+.controllerRelevantPointInformation_all  .linkagePointsHaveBeenDefined .linkagePointsHaveBeenDefined_content>ul>li ul li{
+    margin-right: 80px;
+}
+.Btn_all{
+    width: 100%;
+    text-align: right;
+    border: 2px solid #868686;
+    margin-top: -5px;
+    
+}
+.subBtn{
+    margin: 0 !important;
+    padding: 6px 0;
+    text-align: center ;
+}
+.Btn_all button{
+    line-height: 20px;
+  
+}
