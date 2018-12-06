@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.none{
+    display: none;
+}
+.aaaa{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.doorStatusControl{
+    width: 100%;
+    height: 100%;
+}
+/* 左部分 */
+.doorStatusControl .doorStatusControl_left{
+    width: 70%;
+    height: 95%;
+    display: inline-block;
+    padding: 0 20px;
+}
+.doorStatusControl .doorStatusControl_left .doorStatusControl_left_top{
+    width: 100%;
+    margin-bottom: 1px solid #868686;
+    text-align: left;
+   
+}
+.doorStatusControl .doorStatusControl_left .doorStatusControl_left_top p{
+    margin-bottom: 8px;
+
+}
+.doorStatusControl .doorStatusControl_left .doorStatusControl_left_content{
+    width: 100%;
+    height: 90%;
+    overflow-y: scroll;
+}
+.doorStatusControl .doorStatusControl_left .doorStatusControl_left_content>div{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #868686;
+    text-align: center;
+    display: inline-block;
+    line-height: 15px;
+}
+.doorStatusControl .doorStatusControl_left .doorStatusControl_left_content>img{
+    display: inline-block;
+    margin:  0 4px;
+}
+.doorStatusControl .doorStatusControl_left .doorStatusControl_left_content>p{
+    display: inline-block;
+    margin: 0 5px;
+    color: black;
+}
+.doorStatusControl .doorStatusControl_left .doorStatusControl_left_content ul{
+    margin-left: 15px;
+}
+.doorStatusControl .doorStatusControl_left .doorStatusControl_left_content>ul li div{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #868686;
+    text-align: center;
+    display: inline-block;
+    line-height: 15px;
+}
+.doorStatusControl .doorStatusControl_left .doorStatusControl_left_content>ul li img{
+    display: inline-block;
+    margin:  0 4px;
+}
+.doorStatusControl .doorStatusControl_left .doorStatusControl_left_content>ul li p{
+    display: inline-block;
+    margin: 0 5px;
+    color: black;
+}
+.doorStatusControl .doorStatusControl_left .doorStatusControl_left_content>ul li ul li p{
+    display: inline-block;
+    color: black;
+}
+
+
+/* 右边的div*/
+.doorStatusControl .doorStatusControl_right{
+    width: 29%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #868686;
+    border-radius: 5px;
+    text-align: left;
+}
+.doorStatusControl .doorStatusControl_right>p{
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    color: black;
+    background: #efebe7;
+}
+.doorStatusControl .doorStatusControl_right input{
+    margin-bottom: 20px;
+    padding:5px 0;
+}
+.doorStatusControl .doorStatusControl_right label{
+    margin-right: 15px;
+}
+.doorStatusControl .doorStatusControl_right label:nth-of-type(4){
+    margin-right: 0px;
+}
+.doorStatusControl .doorStatusControl_right label:nth-of-type(5){
+    margin-right: 30px;
+}
+.doorStatusControl .doorStatusControl_right label:nth-of-type(6){
+    margin-right: 28px;
+}
+.doorStatusControl .doorStatusControl_right select{
+    width: 65%;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}

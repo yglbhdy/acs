@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.none{
+    display: none;
+}
+section .sec-container .op-face{
+    padding: 0;
+}
+
+.eventMonitoring{
+    width: 100%;
+    height: 100%;
+}
+
+table tr td span{
+    margin-right: 10px;
+}
+.eventMonitoring .eventMonitoring_tab{
+    width: 100%;
+    height: 91%;
+}
+.eventMonitoring .effectiveCreditCardIncident{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.effectiveCreditCardIncident_table{
+    height: 80%;
+    overflow-y: scroll;
+}
+.effectiveCreditCardIncident_table table{
+    width: 100%;
+    text-align: left;
+}
+.effectiveCreditCardIncident_table table tr th{
+    width: 10%;
+    text-align: center;
+}
+.effectiveCreditCardIncident_table table td{
+    padding: 0;
+    margin: 0;
+    width: 10%;
+}
+.effectiveCreditCardIncident_table table td:first-child{
+    width: 15%;
+}
+.effectiveCreditCardIncident_table table tr td:nth-child(5){
+    text-align: right;
+}
+.effectiveCreditCardIncident_table table tr td:nth-child(6){
+    text-align: right;
+}
+
+.commonData {
+    width: 100%;
+    border: 1px solid #868686;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+}
+.commonData > p{
+    color: black !important;
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+}
+
+/* 无效刷卡板块css */
+.invalidCreditCardIncident{
+    width: 100%;
+    height: 100%;;
+    position: relative;
+}
+.invalidCreditCardIncident .invalidCreditCardIncident_table{
+    width: 100%;
+    height:80%;
+    overflow-y: scroll;
+}
+.invalidCreditCardIncident .invalidCreditCardIncident_table table{
+    width: 100%;
+}
+.invalidCreditCardIncident .invalidCreditCardIncident_table table tr th,td{
+    width: 10%;
+}
+.invalidCreditCardIncident .invalidCreditCardIncident_table table tr td{
+    width: 10%;
+}
+.invalidCreditCardIncident .invalidCreditCardIncident_table table tr td:first-child{
+    width: 15%;
+}
+.invalidCreditCardIncident .invalidCreditCardIncident_table table tr td:nth-child(5){
+    text-align: right;
+}
+.invalidCreditCardIncident .invalidCreditCardIncident_table table tr td:nth-child(6){
+    text-align: right;
+}
+.invalidCreditCardIncident .invalidCreditCardIncident_table table tr td{
+    padding: 0;
+}
+.invalidCreditCardIncident .invalidCreditCardIncident_table table tr td:nth-child(10){
+    background: red;
+}
+.invalidCreditCardIncident .invalidCreditCardIncident_bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.invalidCreditCardIncident .invalidCreditCardIncident_bottom .invalidCreditCardIncident_bottom_number{
+    width: 100%;
+    padding: 5px 0;
+}
+.invalidCreditCardIncident .invalidCreditCardIncident_bottom .invalidCreditCardIncident_bottom_number p{
+    display: inline-block;
+    color: black;
+    margin-right: 20%;
+}
+.invalidCreditCardIncident .invalidCreditCardIncident_bottom .invalidCreditCardIncident_bottom_input{
+    padding: 5px 0;
+}
+.invalidCreditCardIncident .invalidCreditCardIncident_bottom .invalidCreditCardIncident_bottom_number{
+    border: 1px solid #868686;
+}
+/* 门状态改变 */
+.doorStatusChange{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.doorStatusChange .doorStatusChange_table{
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+}
+.doorStatusChange .doorStatusChange_table table{
+    width: 100%;
+}
+.doorStatusChange .doorStatusChange_table table th,td{
+width: 16.6%;
+}
+.doorStatusChange .doorStatusChange_bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.doorStatusChange .doorStatusChange_bottom p{
+    display: inline;
+    margin-right: 15%;
+    color: black;
+}
+.doorStatusChange .doorStatusChange_bottom .doorStatusChange_bottom_number{
+    border: 1px solid #868686;
+}
+/* 报警事件板块 */
+.alarmEvent{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.alarmEvent .alarmEvent_table{
+    width: 100%;
+    height: 80%;
+    overflow-y:scroll; 
+}
+.alarmEvent .alarmEvent_table table{
+    width: 100%;
+}
+.alarmEvent .alarmEvent_table table th,td{
+width: 16.6%;
+}
+.alarmEvent .alarmEvent_table table td:nth-child(6){
+    color: red;
+    font-weight: 600;
+}
+.alarmEvent .alarmEvent_bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.alarmEvent .alarmEvent_bottom p{
+    display: inline;
+    margin-right: 15%;
+    color: black;
+}
+.alarmEvent .alarmEvent_bottom .alarmEvent_bottom_number{
+    border: 1px solid #868686;
+}
+.alarmEvent .alarmEvent_bottom .alarmEvent_bottom_input{
+    margin: 5px 0;
+}
+
+/* 实时进出人员板块 */
+.realTimeEntryAndExitPersonnel{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.realTimeEntryAndExitPersonnel .realTimeEntryAndExitPersonnel_content{
+    width: 90%;
+    height: 80%;
+    overflow-y: scroll;
+    padding:15px;
+    margin-left: 40px;
+}
+.realTimeEntryAndExitPersonnel .realTimeEntryAndExitPersonnel_content ul{
+    height: 80%;
+}
+.realTimeEntryAndExitPersonnel .realTimeEntryAndExitPersonnel_content ul li{
+    display: inline-block;
+    width: 15%;
+    height: 100%;
+}
+.realTimeEntryAndExitPersonnel .realTimeEntryAndExitPersonnel_content ul li div{
+    border: 1px solid #868686;
+}
+.realTimeEntryAndExitPersonnel .realTimeEntryAndExitPersonnel_content ul li  .realTimeEntryAndExitPersonnel_content_img{
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+.realTimeEntryAndExitPersonnel .realTimeEntryAndExitPersonnel_content .realTimeEntryAndExitPersonnel_content_img p{
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    color: black;
+    background: #efebe7;
+}
+/* 最后一人 */
+.theLastGuy{
+    width: 50%;
+    height: 100%;;
+}
+.theLastGuy .theLastGuy_content{
+    width: 100%;
+    height: 80%;
+}
+.theLastGuy .theLastGuy_content .theLastGuy_content_number{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    padding: 5px;
+}
+.theLastGuy .theLastGuy_content .theLastGuy_content_number input{
+    margin-bottom: 20px;
+}
+.theLastGuy .theLastGuy_content .theLastGuy_content_number label:nth-of-type(3){
+    margin-right: 26px;
+}
+.theLastGuy .theLastGuy_content .theLastGuy_content_number label:nth-of-type(4){
+    margin-right: 25px;
+}
+.theLastGuy .theLastGuy_content .theLastGuy_content_number label:nth-of-type(5){
+    margin-right: 25px;
+}
+.theLastGuy .theLastGuy_content .theLastGuy_content_number label:nth-of-type(6){
+    margin-right: 10px;
+}
+.theLastGuy .theLastGuy_content .theLastGuy_content_right{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+
+}
+.theLastGuy .theLastGuy_content .theLastGuy_content_right .theLastGuy_content_img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.theLastGuy .theLastGuy_content .theLastGuy_content_right .theLastGuy_content_img img{
+    width: 100%;
+}
+.theLastGuy .theLastGuy_content .theLastGuy_content_right .normal{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+.theLastGuy .theLastGuy_content .theLastGuy_content_right .normal div{
+    background: #00ff00;
+}
+.theLastGuy .theLastGuy_content .theLastGuy_content_right .abnormal{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+.theLastGuy .theLastGuy_content .theLastGuy_content_right .abnormal div{
+    background: red;
+}
+.theLastGuy .theLastGuy_content .theLastGuy_content_right>div>div{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+/* 下方的事件切换栏板块  */
+.eventSwitchingPanel{
+    width: 100%;
+}
+.eventSwitchingPanel .eventSwitchingPanel_tab{
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #868686;
+}
+.eventSwitchingPanel .eventSwitchingPanel_tab ul li{
+    display: inline-block;
+    border: 1px solid #868686;
+    margin: 0 -2px;
+}
+.eventSwitchingPanel .eventSwitchingPanel_content{
+    width: 100%;
+}
+.eventSwitchingPanel .eventSwitchingPanel_content>div{
+    display: inline-block;
+    /* width: 20%; */
+}
+.eventSwitchingPanel .eventSwitchingPanel_content>div:nth-child(2){
+    width: 10%;
+}
+.eventSwitchingPanel .eventSwitchingPanel_content>div:nth-child(3){
+    width: 10%;
+}
+
+.eventSwitchingPanel .eventSwitchingPanel_content>div input{
+    width: 30%;
+}

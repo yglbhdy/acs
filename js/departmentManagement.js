@@ -19,7 +19,7 @@
                 td += `<td>${e}</td>`;
             }
         });
-            console.log(td);
+          
         tr += `<tr>${td}</tr>`;
     });
     $('section .sec-container .table table').html(tr);

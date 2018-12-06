@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.none{
+    display: none;
+}
+li{
+    list-style: none;
+}
+section .sec-container .op-face{
+    padding: 3px 0;
+}
+
+.regionalSetting{
+    width: 100%;
+    height: 100%;
+}
+
+/* 左板块 */
+.regionalSetting_left{
+    width: 69%;
+    height: 95%;
+    display: inline-block;
+    vertical-align: top;
+}
+.regionalSetting_left .selectionDepartment{
+    width: 100%;
+    text-align: left;
+    margin: 10px 0 10px 15px;
+}
+.regionalSetting_left .selectionDepartment select{
+    width: 20%;
+    padding: 3px 0;
+}
+.regionalSetting_left .regionalSetting_left_content{
+    width: 100%;
+    height: 90%;
+    overflow-y:scroll; 
+}
+/* .regionalSetting_left .regionalSetting_left_content table{
+    height: 100%;
+} */
+.regionalSetting_left .regionalSetting_left_content table tr th{
+    text-align: center;
+    width: 16%;
+}
+.regionalSetting_left .regionalSetting_left_content table tr td{
+    text-align: left;
+    width: 16%;
+}
+.regionalSetting_left .regionalSetting_left_content table tr td:nth-child(5){
+    text-align: right;
+}
+.regionalSetting_left .regionalSetting_left_content table td:nth-of-type(6){
+    text-align: right;
+}
+
+
+/* 右板块 */
+.regionalSetting_right{
+    display: inline-block;
+    width: 30%;
+    padding: 0 15px; 
+}
+.regionalSetting_right .img{
+    width: 90%;
+    margin: 0 auto;
+}
+.regionalSetting_right .img img{
+    width: 195px;
+    height: 195px;
+}
+.regionalSetting_right .content{
+    width: 100%;
+}
+.regionalSetting_right .content div{
+    width: 100%;
+}
+.regionalSetting_right .content div label{
+    margin-right: 10px;
+}
+.regionalSetting_right .content div label:nth-of-type(3){
+    margin-left: -12px;
+}
+.regionalSetting_right .content div input{
+    margin-bottom: 15px;
+    padding: 5px 0;
+    width: 50%;
+}
+
+/* 下方板块 */
+.regionalSetting_bottom{
+    width: 100%;
+    border: 1px solid #868686;
+}
