@@ -1,0 +1,138 @@
+.content {
+    padding: 2px;
+    height: calc(100% - 42px);
+    border: 1px solid #D6D2CE;
+}
+table {
+    border-color: #D6D2CE;
+}
+
+.content .left-content,
+.content .right-content {
+    padding: 2px;
+    border: 1px solid #D6D2CE;
+    height: 100%;
+    float: left;
+}
+.content .left-content {
+    width: 360px;
+}
+.content .right-content {
+    margin-left: 2px;
+    width: calc(100% - 362px);
+}
+.content .left-content .table-container {
+    padding: 2px;
+    border: 1px solid #D6D2CE;
+    height: calc(100% - 167px);
+    overflow-y: scroll;
+}
+.content .left-content .input-box {
+    margin-top: 2px;
+    height: 165px;
+    border: 1px solid #D6D2CE;
+}
+.content .left-content .input-box .inp-top,
+.content .left-content .input-box .inp-bottom {
+    height: 50%;
+    border: 1px solid #D6D2CE;
+}
+.content .left-content .input-box button {
+    margin: 7px auto;
+    border: 1px solid #D6D2CE;
+    height: 30px;
+    width: 80%;
+    display: block;
+    background-color: #fff;
+}
+
+.content .right-content .top-content,
+.content .right-content .center-content,
+.content .right-content .bottom-content {
+    border: 1px solid #D6D2CE;
+}
+.content .right-content .top-content {
+    padding-left: 8px;
+    height: 40px;
+    line-height: 40px;
+}
+.content .right-content .center-content {
+    margin-top: 2px;
+    padding: 2px;
+    height: calc(100% - 94px);
+}
+.content .right-content .center-content .tabs {
+    background-color: #D6D2CE;
+    border: 1px solid #D6D2CE;
+    border-bottom: none;
+}
+.content .right-content .center-content .tabs span {
+    display: inline-block;
+    padding: 0 3px;
+    cursor: pointer;
+}
+.content .right-content .center-content .tabs span.active {
+    background-color: #EFEBE7;
+}
+.content .right-content .center-content .tabs-content {
+    padding: 2px;
+    border: 1px solid #D6D2CE;
+    height: calc(100% - 21px);
+    border-top: none;
+    display: none;
+    position: relative;
+}
+.content .right-content .center-content .tabs-content.active {
+    display: block;
+}
+.content .right-content .center-content .tabs-content .table-container {
+    height: calc(100% - 33px);
+    overflow-y: scroll;
+}
+.content .right-content .center-content .tabs-content .fixed-bottom {
+    table-layout:fixed;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.content .right-content .center-content .tabs-content .left,
+.content .right-content .center-content .tabs-content .right {
+    width: calc(50% - 1px);
+    float: left;
+}
+.content .right-content .center-content .tabs-content .right {
+    margin-left: 2px;
+}
+
+.content .right-content .bottom-content {
+    margin-top: 2px;
+    height: 50px;
+}
+.content .right-content .bottom-content .select {
+    padding-right: 10px;
+    text-align: right;
+    height: 100%;
+    line-height: 50px;
+    display: none;
+}
+.content .right-content .bottom-content .select.active {
+    display: block;
+}
+.content .right-content .bottom-content .select select,
+.content .right-content .bottom-content .select button {
+    width: 200px;
+    height: 25px;
+    background-color: #fff;
+    border: 1px solid #D6D2CE;
+}
+.content .right-content .bottom-content .select button {
+    width: 50px;
+}
+
+.subBtn .select {
+    display: none;
+}
+.subBtn .select.active {
+    display: block;
+}
