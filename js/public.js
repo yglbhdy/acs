@@ -31,3 +31,14 @@
     });
 
 })(window, document, jQuery);
+
+
+
+    //封装的select遍历方法
+    function mua(data,all){
+        var dataAll = '';
+        for(var i = 0;i<data.length;i++){
+            dataAll +=`<option>${data[i]}</option>`;
+        }
+        $(all).html(dataAll);
+    }
