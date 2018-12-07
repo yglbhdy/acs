@@ -36,6 +36,8 @@ section .sec-addG .tabs {
     width: 100%;
     display: inline-block;
     background-color: #D6D2CE;
+    border: 1px solid #D6D2CE;
+    border-bottom: none;
 }
 section .sec-addG .tabs span  {
     padding: 0 3px;
@@ -48,8 +50,9 @@ section .sec-addG .tabs span.active {
 }
 section .sec-addG .content {
     width: 100%;
-    height: calc(100% - 28px);
-    border-top: none;
+    border: 1px solid #D6D2CE;
+    height: calc(100% - 21px);
+    border-top: 1px solid transparent;
 }
 section .sec-addG .content > .sign {
     display: none;
