@@ -27,8 +27,8 @@
                             <div class="alarmParameters">
                                 <!-- 左部分 -->
                                 <div class="alarmParameters_left">
-                                    <table>
-                                        <tr>
+                                    <table border="1" cellspacing="0">
+                                        <!-- <tr>
                                             <th>通讯节点</th>
                                             <th>控制器名称</th>
                                             <th>地址</th>
@@ -52,7 +52,7 @@
                                             <td>门禁控制主机</td>
                                             <td>1F南侧大厅</td>
                                             <td>1</td>
-                                        </tr>
+                                        </tr> -->
                                     </table>
                                 </div>
                                 <!-- 右部分 -->
@@ -66,20 +66,20 @@
                                         <div class="alarmParameters_right_box_one">
                                             <p>允许的布防类型</p>
                                             <form action="">
-                                                <label for="">快速布防</label>
-                                                <select name="" id="">
-                                                    <option value="">无效</option>
-                                                    <option value="">有效</option>
+                                                <label for="rapidDeployment">快速布防</label>
+                                                <select name="rapidDeployment" id="rapidDeployment" class="rapidDeployment">
+                                                    <!-- <option value="">无效</option>
+                                                    <option value="">有效</option> -->
                                                 </select>
                                             </form>
                                         </div>
                                         <div class="alarmParameters_right_box_two">
                                             <p>允许的撤防类型</p>
                                             <form action="">
-                                                <label for="">有效卡开门</label>
-                                                <select name="" id="">
-                                                    <option value="">无效</option>
-                                                    <option value="">有效</option>
+                                                <label for="effectiveCardOpeningDoor">有效卡开门</label>
+                                                <select name="effectiveCardOpeningDoor" id="effectiveCardOpeningDoor" class="effectiveCardOpeningDoor">
+                                                    <!-- <option value="">无效</option>
+                                                    <option value="">有效</option> -->
                                                 </select>
                                             </form>
                                         </div>
@@ -95,85 +95,85 @@
                                                         <input type="number" value="0">秒
                                                     </div>
                                                     <div>
-                                                        <label for="">布撤防控制点</label>
-                                                        <select name="" id="">
+                                                        <label for="clothWithdrawalControlPoint">布撤防控制点</label>
+                                                        <select name="clothWithdrawalControlPoint" id="clothWithdrawalControlPoint" class="clothWithdrawalControlPoint">
+                                                            <!-- <option value="">【1-1】号门门磁</option>
                                                             <option value="">【1-1】号门门磁</option>
-                                                            <option value="">【1-1】号门门磁</option>
-                                                            <option value="">【1-1】号门门磁</option>
+                                                            <option value="">【1-1】号门门磁</option> -->
                                                         </select>
                                                     </div>
                                                     <div>
-                                                        <label for="">布撤防指示点</label>
-                                                        <select name="" id="">
+                                                        <label for="clothWithdrawalPoint">布撤防指示点</label>
+                                                        <select name="clothWithdrawalPoint" id="clothWithdrawalPoint" class="clothWithdrawalPoint">
+                                                            <!-- <option value="">【1-1】号门门磁</option>
                                                             <option value="">【1-1】号门门磁</option>
-                                                            <option value="">【1-1】号门门磁</option>
-                                                            <option value="">【1-1】号门门磁</option>
+                                                            <option value="">【1-1】号门门磁</option> -->
                                                         </select>
                                                     </div>
                                                     <div>
-                                                        <label for="">报警输出点</label>
-                                                        <select name="" id="">
+                                                        <label for="alarmOutputPoint">报警输出点</label>
+                                                        <select name="alarmOutputPoint" id="alarmOutputPoint" class="alarmOutputPoint">
+                                                            <!-- <option value="">【1-1】号门门磁</option>
                                                             <option value="">【1-1】号门门磁</option>
-                                                            <option value="">【1-1】号门门磁</option>
-                                                            <option value="">【1-1】号门门磁</option>
+                                                            <option value="">【1-1】号门门磁</option> -->
                                                         </select>
                                                     </div>
                                                     <div>
-                                                            <label for="">报警类型模式</label>
-                                                            <select name="" id="">
+                                                            <label for="alarmTypeMode">报警类型模式</label>
+                                                            <select name="alarmTypeMode" id="alarmTypeMode" class="alarmTypeMode">
+                                                                <!-- <option value="">【1-1】号门门磁</option>
                                                                 <option value="">【1-1】号门门磁</option>
-                                                                <option value="">【1-1】号门门磁</option>
-                                                                <option value="">【1-1】号门门磁</option>
+                                                                <option value="">【1-1】号门门磁</option> -->
                                                             </select>
                                                         </div>
                                                 </form>
                                             </div>
                                     </div>
                                     <!-- pox -->
-                                    <div class="alarmParameters_right_pox">
+                                    <div class="alarmParameters_right_pox none">
                                         <div class="alarmParameters_right_pox_one">
                                             <p>报警状态标志</p>
                                             <form action="">
                                                 <div>
-                                                    <label for="">报警模块</label>
-                                                    <select name="" id="">
-                                                        <option value="">无效</option>
-                                                        <option value="">有效</option>
+                                                    <label for="alarmModule">报警模块</label>
+                                                    <select name="alarmModule" id="alarmModule" class="alarmModule">
+                                                        <!-- <option value="">无效</option>
+                                                        <option value="">有效</option> -->
                                                     </select>
                                                 </div>
                                                  <div>
-                                                    <label for="">布撤防输入点</label>
-                                                    <select name="" id="">
-                                                        <option value="">无效</option>
-                                                        <option value="">有效</option>
+                                                    <label for="clothWithdrawalPoint_two">布撤防输入点</label>
+                                                    <select name="clothWithdrawalPoint_two" id="clothWithdrawalPoint_two" class="clothWithdrawalPoint_two">
+                                                        <!-- <option value="">无效</option>
+                                                        <option value="">有效</option> -->
                                                     </select>
                                                 </div>
                                                 <div>
-                                                    <label for="">布撤防输出点</label>
-                                                    <select name="" id="">
-                                                        <option value="">无效</option>
-                                                        <option value="">有效</option>
+                                                    <label for="clothWithdrawalPoint_three">布撤防输出点</label>
+                                                    <select name="clothWithdrawalPoint_three" id="clothWithdrawalPoint_three" class="clothWithdrawalPoint_three">
+                                                        <!-- <option value="">无效</option>
+                                                        <option value="">有效</option> -->
                                                     </select>
                                                 </div>
                                                 <div>
-                                                    <label for="">旁路防区</label>
-                                                    <select name="" id="">
-                                                        <option value="">无效</option>
-                                                        <option value="">有效</option>
+                                                    <label for="bypassDefenseArea">旁路防区</label>
+                                                    <select name="bypassDefenseArea" id="bypassDefenseArea" class="bypassDefenseArea">
+                                                        <!-- <option value="">无效</option>
+                                                        <option value="">有效</option> -->
                                                     </select>
                                                 </div>
                                                 <div>
-                                                    <label for="">布防时红灯闪</label>
-                                                    <select name="" id="">
-                                                        <option value="">无效</option>
-                                                        <option value="">有效</option>
+                                                    <label for="redLightFlashesDuringDeployment">布防时红灯闪</label>
+                                                    <select name="redLightFlashesDuringDeployment" id="redLightFlashesDuringDeployment" class="redLightFlashesDuringDeployment">
+                                                        <!-- <option value="">无效</option>
+                                                        <option value="">有效</option> -->
                                                     </select>
                                                 </div>
                                                 <div>
-                                                    <label for="">布防延迟时绿灯闪</label>
-                                                    <select name="" id="">
-                                                        <option value="">无效</option>
-                                                        <option value="">有效</option>
+                                                    <label for="greenLightFlashesWhenClothingDelayOccurs">布防延迟时绿灯闪</label>
+                                                    <select name="greenLightFlashesWhenClothingDelayOccurs" id="greenLightFlashesWhenClothingDelayOccurs" class="greenLightFlashesWhenClothingDelayOccurs">
+                                                        <!-- <option value="">无效</option>
+                                                        <option value="">有效</option> -->
                                                     </select>
                                                 </div>
                                                 <div>
@@ -232,10 +232,11 @@
                                     <div class="btn">
                                         <button name="" id="">查询控制器</button>
                                     </div>
-                                    <div class="suBtn">
+                                    <div class="subBtn">
                                         <button name="" id="">设置(S)</button>
                                         <button name="" id="">退出(c)</button>
                                     </div>
+                                    <div class="clear"></div>
                                 </div>
                             </div>
                             <!--  -->

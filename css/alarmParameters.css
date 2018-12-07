@@ -7,10 +7,242 @@
 .none{
     display: none;
 }
+.clear{
+    clear: both;
+}
 .alarmParameters{
     width: 100%;
     height: 100%;
 }
-.alarmParameters_left,{
+.alarmParameters_left{
     display: inline-block;
+    width: 45%;
+    height: 95%;
+    vertical-align: top;
+    overflow-y: scroll;
+    border: 1px solid #868686;
+}
+.alarmParameters_left table{
+width: 100%;
+}
+.alarmParameters_left table tr{
+width: 100%
+}
+.alarmParameters_left table tr th:nth-of-type(1){
+    width: 25%;
+    text-align: left;
+}
+.alarmParameters_left table tr th:nth-of-type(2){
+    width: 60%;
+    text-align: left;
+}
+.alarmParameters_left table tr th:nth-of-type(3){
+    width: 15%;
+    text-align: right;
+}
+.alarmParameters_left table tr td:nth-of-type(1){
+    text-align: left;
+}
+.alarmParameters_left table tr td:nth-of-type(2){
+    text-align: left;
+}
+.alarmParameters_left table tr td:nth-of-type(3){
+    text-align: right;
+}
+
+
+
+.alarmParameters_right{
+    display: inline-block;
+    width: 54%;
+    height: 95%;
+}
+.alarmParameters_right>ul{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.alarmParameters_right>ul li{
+    display: inline-block;
+    border: 1px solid #868686;
+    margin: 0 -2px 0 -2px;
+}
+
+/* box */
+.alarmParameters_right .alarmParameters_right_box{
+    width: 100%;
+    height: 95%;
+    padding: 20px;
+    border: 1px solid #868686;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_one{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #868686;
+    position: relative;
+    margin-bottom: 30px;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_one>p{
+    position: absolute;
+    color: black;
+    background: #efebe7;
+    top: -8px;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_one select{
+    width: 20%;
+    padding: 2px 0;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_one label{
+    margin-right: 15px;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_two{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #868686;
+    position: relative;
+    margin-bottom: 30px;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_two>p{
+    position: absolute;
+    color: black;
+    background: #efebe7;
+    top: -8px;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_two input{
+    padding: 2px 0;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_two select{
+    width: 20%;
+    padding: 2px 0;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_two label{
+    margin-right: 15px;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_three{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #868686;
+    position: relative;
+    margin-bottom: 10px;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_three>p{
+    position: absolute;
+    color: black;
+    background: #efebe7;
+    top: -8px;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_three select{
+    width: 40%;
+    margin-bottom:8px; 
+    padding: 2px 0;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_three input{
+    padding: 2px 0;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_three div:nth-of-type(5) label{
+    margin-right: 30px;
+}
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_three label{
+    margin-right: 15px;
+}
+
+.alarmParameters_right .alarmParameters_right_box .alarmParameters_right_box_three input{
+    width: 35%;
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
+
+/* pox */
+.alarmParameters_right .alarmParameters_right_pox{
+    width: 100%;
+    height: 95%;
+    padding: 20px;
+    border: 1px solid #868686;
+}
+ .alarmParameters_right .alarmParameters_right_pox .alarmParameters_right_pox_one{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #868686;
+    position: relative;
+    margin-bottom: 30px;
+ }
+ .alarmParameters_right .alarmParameters_right_pox .alarmParameters_right_pox_one>p{
+    position: absolute;
+    color: black;
+    background: #efebe7;
+    top: -8px;
+ }
+ .alarmParameters_right .alarmParameters_right_pox .alarmParameters_right_pox_one div{
+     width: 49%;
+     display: inline-block;
+     margin: 5px 0;
+ }
+ .alarmParameters_right .alarmParameters_right_pox .alarmParameters_right_pox_one div label{
+     margin-right: 10px;
+ }
+ .alarmParameters_right .alarmParameters_right_pox .alarmParameters_right_pox_one div:nth-of-type(1){
+     margin: 10px 0;
+     width: 100%;
+ }
+ .alarmParameters_right .alarmParameters_right_pox .alarmParameters_right_pox_one div:nth-of-type(1) select{
+     width: 75%;
+     /* padding: 2px 0; */
+ }
+ .alarmParameters_right .alarmParameters_right_pox .alarmParameters_right_pox_one div select{
+     padding: 2px 0;
+     width: 30%;
+ }
+ .alarmParameters_right .alarmParameters_right_pox .alarmParameters_right_pox_one div:nth-of-type(2) label{
+    margin-left: 30px;
+}
+
+ .alarmParameters_right .alarmParameters_right_pox .alarmParameters_right_pox_one div:nth-of-type(4) label{
+    margin-left: 57px;
+}
+.alarmParameters_right .alarmParameters_right_pox .alarmParameters_right_pox_one div:nth-of-type(7) label{
+    margin-left: 15px;
+}
+.alarmParameters_right .alarmParameters_right_pox .alarmParameters_right_pox_two{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #868686;
+    position: relative;
+    margin-bottom: 30px;
+}
+.alarmParameters_right .alarmParameters_right_pox .alarmParameters_right_pox_two>p{
+    position: absolute;
+    color: black;
+    background: #efebe7;
+    top: -8px;
+ }
+ .alarmParameters_right .alarmParameters_right_pox .alarmParameters_right_pox_two div{
+    width: 49%;
+    display: inline-block;
+    margin: 5px 0;
+}
+.alarmParameters_right .alarmParameters_right_pox .alarmParameters_right_pox_two div select{
+    width: 30%;
+    padding: 2px 0;
+}
+.alarmParameters_bottom{
+    width: 100%;
+}
+.alarmParameters_bottom .btn{
+   /* display: inline-block; */
+   width: 20%;
+   float: left;
+}
+
+.alarmParameters_bottom .btn button{
+    padding: 3px 3px 5px 32px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #D6D2CE;
+}
+.alarmParameters_bottom .subBtn{
+   margin-top: 0 !important;
+    float: right;
 }
