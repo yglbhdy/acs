@@ -61,73 +61,111 @@
                         </div>
                         <div class="table">
                             <table border="1" cellspacing="0" rules="all">
-                                <tr>
-                                    <td>aaa</td>
-                                    <td>ss</td>
-                                    <td>dd</td>
-                                    <td>fdsf</td>
-                                    <td>as</td>
-                                    <td>wrw</td>
-                                    <td>wef</td>
-                                    <td>aaa</td>
-                                    <td>ss</td>
-                                    <td>dd</td>
-                                    <td>fdsf</td>
-                                    <td>as</td>
-                                    <td>wrw</td>
-                                    <td>wef</td>
-                                    <td>dd</td>
-                                    <td>fdsf</td>
-                                    <td>as</td>
-                                    <td>wrw</td>
-                                    <td>wef</td>
-                                    <td>aaa</td>
-                                    <td>ss</td>
-                                    <td>dd</td>
-                                    <td>fdsf</td>
-                                    <td>as</td>
-                                    <td>wrw</td>
-                                    <td>wef</td>
-                                </tr>
-                                <tr>
-                                    <td>aaa</td>
-                                    <td>ss</td>
-                                    <td>dd</td>
-                                    <td>fdsf</td>
-                                    <td>as</td>
-                                    <td>wrw</td>
-                                    <td>wef</td>
-                                    <td>aaa</td>
-                                    <td>ss</td>
-                                    <td>dd</td>
-                                    <td>fdsf</td>
-                                    <td>as</td>
-                                    <td>wrw</td>
-                                    <td>wef</td>
-                                    <td>dd</td>
-                                    <td>fdsf</td>
-                                    <td>as</td>
-                                    <td>wrw</td>
-                                    <td>wef</td>
-                                    <td>aaa</td>
-                                    <td>ss</td>
-                                    <td>dd</td>
-                                    <td>fdsf</td>
-                                    <td>as</td>
-                                    <td>wrw</td>
-                                    <td>wef</td>
-                                </tr>
+
                             </table>
                         </div>
                         <div class="subBtn">
-                            <button>导出</button>
-                            <button>导出</button>
-                            <button>上一页</button>
-                            <button>下一页</button>
-                            <button>增加</button>
-                            <button>修改</button>
-                            <button>删除</button>
-                            <button>查询</button>
+                            <button class="SImport">导出</button>
+                            <button class="derive">导出</button>
+                            <button class="prev">上一页</button>
+                            <button class="next">下一页</button>
+                            <button class="add">增加</button>
+                            <button class="modify">修改</button>
+                            <button class="delete">删除</button>
+                            <button class="inquire">查询</button>
+                        </div>
+                        <div class=" mask ">
+                            <div class="mask-container ">
+                                <form class="content ">
+                                    <div class="inp-content">
+                                        <div class="inp-box ">
+                                            <p>基本信息</p>
+                                            <label for="code ">编号: </label>
+                                            <input type="text " name="code " id="code ">
+                                            <label for="personName ">姓名: </label>
+                                            <input type="text " name="personName " id="personName ">
+                                            <br>
+                                            <label for="nation ">名族: </label>
+                                            <select name="nation " id="nation ">
+                                                <option value="汉族 ">汉族: </option>
+                                            </select>
+                                            <label for="sex ">性别: </label>
+                                            <select name="sex " id="sex ">
+                                                <option value="女">女</option>
+                                                <option value="男">男</option>
+                                            </select>
+                                            <br>
+                                            <label for="IdCard">身份证: </label>
+                                            <input type="text " name="IdCard " id="IdCard">
+                                            <label for="birthday">生日: </label>
+                                            <input type="text " name="birthday" id="birthday">
+                                            <br>
+                                            <label for="personHight">身高: </label>
+                                            <input type="number" name="personHight" id="personHight" placeholder="厘米">
+                                            <label for="weight">体重: </label>
+                                            <input type="number" name="weight" id="weight" placeholder="公斤">
+                                            <br>
+                                            <label for="position">职位: </label>
+                                            <select name="position" id="position">
+                                                <option value="无职位">无职位</option>
+                                                <option value="无职位">无职位</option>
+                                                <option value="无职位">无职位</option>
+                                            </select>
+                                        </div>
+                                        <div class="inp-box">
+                                            <p>教育背景</p>
+                                            <label for="education">最高学历: </label>
+                                            <select name="education" id="education">
+                                                <option value="其他">其他</option>
+                                            </select>
+                                            <br>
+                                            <label for="graduationSchool">毕业学校: </label>
+                                            <input type="text" name="graduationSchool" id="graduationSchool">
+                                            <br>
+                                            <label for="major">所学专业: </label>
+                                            <select name="major" id="major">
+                                                <option value="无">无</option>
+                                            </select>
+                                        </div>
+                                        <div class="inp-box">
+                                            <p>联系方式</p>
+                                            <label for="phoneCall">人员电话: </label>
+                                            <input type="text" name="phoneCall" id="phoneCall">
+                                            <label for="telphone">移动电话: </label>
+                                            <input type="text" name="telphone" id="telphone">
+                                            <br>
+                                            <label for="departmentName">部门名称: </label>
+                                            <input type="text" name="departmentName" id="departmentName">
+                                            <label for="homeAddress">家庭住址: </label>
+                                            <input type="text" name="homeAddress" name="homeAddress">
+                                        </div>
+                                    </div>
+                                    <div class="img-content">
+                                        <div class="inp-box">
+                                            <p>拍摄视频</p>
+                                            <video>
+                                                <source src="" type="video/mp4">
+                                                <source src="" type="video/ogg">
+                                                <source src="" type="video/gif">
+                                            </video>
+                                            <button type="button">拍摄照片</button>
+                                            <button type="button">设置视频</button>
+                                        </div>
+                                        <div class="inp-box">
+                                            <p>拍摄视频</p>
+                                            <div class="img">
+                                                <img src="">
+                                            </div>
+                                            <button type="button">选择</button>
+                                            <button type="button">清除</button>
+                                        </div>
+                                    </div>
+                                    <div class="subBtn">
+                                        <button type="submit">确定</button>
+                                        <button type="button">退出</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -137,11 +175,11 @@
         </div>
     </section>
 
-    <script src="../js/jquery.min.js"></script>
-    <script src="../data/navList.js"></script>
-    <script src="../js/public.js"></script>
-    <script src="../data/personnelManagementData.js"></script>
-    <script src="../js/personnelManagement.js"></script>
+    <script src="../js/jquery.min.js "></script>
+    <script src="../data/navList.js "></script>
+    <script src="../js/public.js "></script>
+    <script src="../data/personnelManagementData.js "></script>
+    <script src="../js/personnelManagement.js "></script>
 </body>
 
 </html>
