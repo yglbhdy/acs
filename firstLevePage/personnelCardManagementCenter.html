@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/pulic.css" />
+    <link rel="stylesheet" href="../css/firPublic.css" />
+    <link rel="stylesheet" href="../css/personnelCardManagementCenter.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <p>智能门禁</p>
+        <div class="container">
+            <header>
+                <div></div>
+            </header>
+
+            <div class="sec">
+                <nav>
+                    <ul>
+                    </ul>
+                </nav>
+
+                <div class="sec-container">
+                    <p>卡片管理中心</p>
+                    <div class="op-face">
+                        <div class="tabs">
+                            <span class="registered">卡片注册</span>
+                            <span class="active distribution">分配卡片</span>
+                            <span class="authorization">用户卡授权</span>
+                            <span class="management">用户卡管理</span>
+                            <span class="download">资料下载管理</span>
+                        </div>
+
+                        <!-- 卡片注册 -->
+                        <div class="tabs-content registered">
+                            <div class="top-content">
+                                <p>卡片记录情况: 当前已登记批次数量为 <span>0</span> 批</p>
+                                <div class="table-container">
+                                    <table border="1" cellspacing='0' rules='all'>
+                                        <tr>
+                                            <th>卡区号</th>
+                                            <th>卡起始号</th>
+                                            <th>卡数量</th>
+                                            <th>登记时间</th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <table class="fixed-bottom" border="1" cellspacing='0' rules='all'>
+                                    <tr>
+                                        <td>最大支持20万张卡</td>
+                                        <td>已注册卡数量</td>
+                                        <td>0</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="bottom-content">
+                                <div class="left-content">
+                                    <p>卡下载不成功报告</p>
+                                    <div class="table-container">
+                                        <table border="1" cellspacing='0' rules='all'>
+                                            <tr>
+                                                <th>通讯节点名称</th>
+                                                <th>通讯节点<IP></IP></th>
+                                                <th>下载情况</th>
+                                            </tr>
+                                            <tr>
+                                                <td> </td>
+                                                <td> </td>
+                                                <td> </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="right-content">
+                                    <p>增加卡</p>
+                                    <form action="">
+                                        <div class="input-box">
+                                            <label for="cardNumber">卡区号:</label>
+                                            <input type="number" name="cardNumber" id="cardNumber">
+                                        </div>
+                                        <div class="input-box">
+                                            <label for="cardStartNumber">卡起始号:</label>
+                                            <input type="number" name="cardStartNumber" id="cardStartNumber">
+                                        </div>
+                                        <div class="input-box">
+                                            <label for="numberOfCards">卡数量:</label>
+                                            <input type="number" name="numberOfCards" id="numberOfCards">
+                                        </div>
+                                        <table class="fixed-bottom" border="1" cellspacing='0' rules='all'>
+                                            <tr>
+                                                <td>当前批次可下载最大卡数</td>
+                                                <td>0</td>
+                                                <td>张</td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="subBtn">
+                                    <button type="button" name="" id="">重新下载</button>
+                                    <button type="button" name="" id="">增加</button>
+                                    <button type="button" name="" id="">删除</button>
+                            </div>
+                        </div>
+
+                        <!-- 分配卡片 -->
+                        <div class="active tabs-content distribution">
+                            <div class="top-content">
+                                <div class="left-content">
+                                    <div class="table-container">
+                                        <table border="1" cellspacing='0' rules='all'>
+                                            <tr>
+                                                <th>用户编号</th>
+                                                <th>用户姓名</th>
+                                                <th>部门名称</th>
+                                                <th>职位</th>
+                                                <th>性别</th>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="subBtn">
+                                        <button type="button" name="" id="">查询用户资料</button>
+                                        <button type="button" name="" id="">删除</button>
+                                        <div class="input-box">
+                                            <label for="personnelStatistics">共选择了人员</label>
+                                            <input type="number" name="personnelStatistics" id="personnelStatistics">名
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-content">
+                                    <div class="table-container">
+                                        <table border="1" cellspacing='0' rules='all'>
+                                            <tr>
+                                                <th>卡区号</th>
+                                                <th>卡号</th>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="subBtn">
+                                        <button type="button" name="" id="">删除</button>
+                                        <button type="button" name="" id="">查询未用卡数据</button>
+                                        <div class="input-box">
+                                            <label for="personnelStatistics">共选择卡</label>
+                                            <input type="number" name="personnelStatistics" id="personnelStatistics">张
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-content">
+                                <div class="inp-box">
+                                    <p>卡分配数据</p>
+                                    <div>
+                                        <label for="carPwd">卡密码</label>
+                                        <input type="password" name="carPwd" id="carPwd">
+                                    </div>
+                                    
+                                    <div>
+                                        <input type="radio" name="car" id="permanent">
+                                        <label for="permanent">永久卡</label>
+                                        <input type="radio" name="car" id="temporary">
+                                        <label for="temporary">临时卡</label>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="carType">卡类型</label>
+                                        <select name="carType" id="carType">
+                                            <option value="A">A类</option>
+                                            <option value="A">A类</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="inp-box">
+                                    <p>授予权限组</p>
+                                    <label>选择分配的权限组</label>
+                                    <div>
+                                        <select name="selectPermissionGroup" id="selectPermissionGroup">
+                                            <option value="sashd">alksjdfho</option>
+                                        </select>
+                                        <button type="button" name="" id="">查看权限组</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subBtn">
+                                <button type="button" name="" id="">发用户卡</button>
+                            </div>
+                        </div>
+
+                        <!-- 用户卡授权 -->
+                        <div class="tabs-content authorization"></div>
+
+                        <!-- 用户卡管理 -->
+                        <div class="tabs-content management"></div>
+
+                        <!-- 资料下载管理 -->
+                        <div class="tabs-content download"></div>
+                    </div>
+                </div>
+            </div>
+
+            <footer></footer>
+        </div>
+    </section>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../data/navList.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../data/personnelCardManagementCenterData.js"></script>
+    <script src="../js/personnelCardManagementCenter.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+.fixed-bottom {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+}
+.tabs {
+    background-color: #D6D2CE;
+    border: 1px solid #D6D2CE;
+    border-bottom: none;
+}
+.tabs span {
+    display: inline-block;
+    padding: 0 3px;
+    cursor: pointer;
+}
+.tabs span.active {
+    background-color: #EFEBE7;
+}
+.tabs-content {
+    padding: 2px;
+    border: 1px solid #D6D2CE;
+    height: calc(100% - 21px);
+    border-top: none;
+    position: relative;
+    display: none;
+}
+.tabs-content.active {
+    display: block;
+}
+
+.top-content {
+    padding: 2px;
+    height: calc(100% - 250px);
+    border: 1px solid #D6D2CE;
+    position: relative;
+}
+.op-face .top-content > p {
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+}
+.top-content .table-container {
+    height: calc(100% - 35px);
+    overflow-y: scroll;
+}
+.top-content>.table-container td {
+    width: 25%;
+}
+.top-content .left-content .subBtn .input-box {
+    display: inline-block;
+}
+.top-content .left-content .subBtn .input-box input {
+    height: 25px;
+    width: 75px;
+}
+.top-content .left-content .table-container {
+    height: calc(100% - 50px);
+}
+.top-content .right-content .table-container {
+    height: calc(100% - 87px);
+}
+.top-content .right-content .subBtn {
+    padding-right: 0;
+}
+.top-content .right-content .subBtn .input-box {
+    border-top: 1px solid #d6d2ce;
+    margin-top: 6px;
+    padding-top: 6px;
+}
+.top-content .right-content .subBtn .input-box input {
+    width: 80px;
+    height: 25px;
+}
+
+
+.bottom-content {
+    margin-top: 2px;
+    padding: 2px;
+    height: 200px;
+    border: 1px solid #D6D2CE;
+}
+.distribution .bottom-content {
+    padding: 12px;
+}
+.bottom-content .left-content,
+.bottom-content .right-content,
+.top-content .left-content,
+.top-content .right-content {
+    float: left;
+    border: 1px solid #D6D2CE;
+    height: 100%;
+}
+.bottom-content .left-content,
+.top-content .left-content {
+    padding: 2px;
+    width: calc(100% - 302px);
+}
+.bottom-content .left-content p {
+    color: red;
+    text-align: center;
+    border-bottom: 1px solid #D6D2CE;
+}
+.bottom-content .left-content .table-container {
+    margin-top: 2px;
+    height: calc(100% - 21px);
+    overflow-y: scroll;
+}
+.bottom-content .right-content,
+.top-content .right-content {
+    margin-left: 2px;
+    width: 300px;
+    position: relative;
+}
+.bottom-content .right-content p {
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid #D6D2CE;
+}
+.bottom-content .right-content div {
+    margin: 10px;
+}
+.bottom-content .right-content div label {
+    width: 60px;
+    display: inline-block;
+    text-align: right;
+}
+.bottom-content .right-content div input {
+    height: 25px;
+    width: 210px;
+}
+.bottom-content .inp-box {
+    margin-left: 2px;
+    padding: 25px;
+    width: 20%;
+    float: right;
+    border: 1px solid #d6d2ce;
+    height: 100%;
+    position: relative;
+}
+.bottom-content .inp-box p {
+    color: #333;
+    font-size: 14px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #efebe7;
+}
+.bottom-content .inp-box div {
+    margin: 10px 0;
+}
+.bottom-content .inp-box > label {
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+.bottom-content .inp-box div input[type="password"] {
+    height: 25px;
+}
+.bottom-content .inp-box div select {
+    height: 25px;
+    width: 185px;
+    border-bottom: 1px solid #D6D2CE;
+    background-color: #fff;
+}
