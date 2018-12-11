@@ -1,0 +1,144 @@
+section .sec {
+    height: 92%;
+}
+
+.left-content, 
+.center-content, 
+.right-content,
+.left-content .left-container,
+.left-content .right-container {
+    padding: 2px;
+    border: 1px solid #D6D2CE;
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.left-content {
+    width: 400px
+}
+.left-content .left-container,
+.left-content .right-container {
+    width: calc(50% - 1px);
+}
+.left-content .left-container .top-content,
+.left-content .right-container .top-content,
+.right-content .top-content {
+    border: 1px solid #D6D2CE;
+    position: relative;
+}
+.left-content .left-container .bottom-content,
+.left-content .right-container .bottom-content,
+.right-content .center-container,
+.right-content .bottom-content {
+    margin-top: 2px;
+    border: 1px solid #D6D2CE;
+    position: relative;
+}
+.left-content .left-container .top-content {
+    height: 70px;
+    text-align: center;
+}
+.left-content .left-container .top-content label {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 0 8px;
+    margin: 7px 0;
+}
+.left-content .left-container .top-content select {
+    width: 90%;
+    border: 1px solid #d6d2ce;
+    background-color: #fff;
+    height: 25px;
+}
+.left-content .left-container .bottom-content {
+    margin-top: 10px;
+    padding-top: 10px;
+    height: calc(100% - 80px);
+}
+.left-content .left-container .bottom-content p,
+.left-content .right-container .top-content p,
+.right-content .top-content p,
+.right-content .center-container p,
+.right-content .bottom-content p {
+    color: #333;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    background-color: #efebe7;
+}
+.left-content .left-container .bottom-content input {
+    width: 63%;
+    height: 25px;
+}
+.left-content .left-container .bottom-content .table-container {
+    overflow: scroll;
+    height: calc(100% - 25px);
+}
+.left-content .left-container .bottom-content table {
+    margin-top: 10px;
+}
+
+.left-content .right-container {
+    margin-left: 2px;
+}
+.left-content .right-container .top-content {
+    margin-top: 10px;
+    padding: 10px;
+    height: 100px;
+    text-align: center;
+}
+.left-content .right-container .top-content button {
+    margin-bottom: 10px;
+    border: 1px solid #d6d2ce;
+    height: 25px;
+    width: 50%;
+    background-color: #fff;
+    display: block;
+}
+.left-content .right-container .top-content input[type="text"] {
+    height: 25px;
+    width: 55%;
+}
+.left-content .right-container .top-content div {
+    text-align-last: left;
+}
+.left-content .right-container .bottom-content {
+    height: calc(100% - 112px);
+}
+.left-content .right-container .bottom-content .table-container {
+    overflow: scroll;
+    height: 100%;
+}
+
+.center-content {
+    margin-left: 2px;
+    width: calc(100% - 629px);
+}
+
+.right-content {
+    margin-left: 2px;
+    width: 225px;
+}
+.right-content .top-content,
+.right-content .center-container,
+.right-content .bottom-content {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.right-content .top-content .table-container,
+.right-content .center-container .table-container,
+.right-content .bottom-content .table-container {
+    height: calc(100% - 10px);
+    overflow: scroll;
+}
+.right-content .top-content {
+    height: 91px;
+}
+.right-content .center-container{
+    height: 390px;
+}
+.right-content .bottom-content {
+    height: calc(100% - 511px);
+}
