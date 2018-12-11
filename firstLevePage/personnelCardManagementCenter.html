@@ -29,15 +29,15 @@
                     <p>卡片管理中心</p>
                     <div class="op-face">
                         <div class="tabs">
-                            <span class="registered">卡片注册</span>
-                            <span class="active distribution">分配卡片</span>
+                            <span class="active registered">卡片注册</span>
+                            <span class="distribution">分配卡片</span>
                             <span class="authorization">用户卡授权</span>
                             <span class="management">用户卡管理</span>
                             <span class="download">资料下载管理</span>
                         </div>
 
                         <!-- 卡片注册 -->
-                        <div class="tabs-content registered">
+                        <div class="active tabs-content registered">
                             <div class="top-content">
                                 <p>卡片记录情况: 当前已登记批次数量为 <span>0</span> 批</p>
                                 <div class="table-container">
@@ -72,7 +72,7 @@
                                         <table border="1" cellspacing='0' rules='all'>
                                             <tr>
                                                 <th>通讯节点名称</th>
-                                                <th>通讯节点<IP></IP></th>
+                                                <th>通讯节点IP</th>
                                                 <th>下载情况</th>
                                             </tr>
                                             <tr>
@@ -109,14 +109,14 @@
                                 </div>
                             </div>
                             <div class="subBtn">
-                                    <button type="button" name="" id="">重新下载</button>
-                                    <button type="button" name="" id="">增加</button>
-                                    <button type="button" name="" id="">删除</button>
+                                <button type="button" name="" id="">重新下载</button>
+                                <button type="button" name="" id="">增加</button>
+                                <button type="button" name="" id="">删除</button>
                             </div>
                         </div>
 
                         <!-- 分配卡片 -->
-                        <div class="active tabs-content distribution">
+                        <div class="tabs-content distribution">
                             <div class="top-content">
                                 <div class="left-content">
                                     <div class="table-container">
@@ -176,14 +176,14 @@
                                         <label for="carPwd">卡密码</label>
                                         <input type="password" name="carPwd" id="carPwd">
                                     </div>
-                                    
+
                                     <div>
                                         <input type="radio" name="car" id="permanent">
                                         <label for="permanent">永久卡</label>
                                         <input type="radio" name="car" id="temporary">
                                         <label for="temporary">临时卡</label>
                                     </div>
-                                    
+
                                     <div>
                                         <label for="carType">卡类型</label>
                                         <select name="carType" id="carType">
@@ -209,13 +209,203 @@
                         </div>
 
                         <!-- 用户卡授权 -->
-                        <div class="tabs-content authorization"></div>
+                        <div class="tabs-content authorization">
+                            <div class="top-content">
+                                <div class="selectBtn">
+                                    <input type="radio" name="authorized" id="unauthorized"><label for="unauthorized">未授权人员列表</label>
+                                    <input type="radio" checked name="authorized" id="authorized"><label for="authorized">已授权人员列表</label>
+                                </div>
+                                <div class="table-container">
+                                    <table class="list unauthorized" border="1" cellspacing="0" relus="all">
+                                        <tr>
+                                            <th>用户编号</th>
+                                            <th>姓名</th>
+                                            <th>性别</th>
+                                            <th>部门</th>
+                                            <th>职位</th>
+                                            <th>区号</th>
+                                            <th>卡号</th>
+                                            <th>有效期</th>
+                                            <th>权限组</th>
+                                            <th>个性化权限</th>
+                                            <th>卡类型</th>
+                                            <th>所属卡类型</th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                    <table class="active list authorized" border="1" cellspacing="0" relus="all">
+                                        <tr>
+                                            <th>用户编号</th>
+                                            <th>姓名</th>
+                                            <th>性别</th>
+                                            <th>部门</th>
+                                            <th>职位</th>
+                                            <th>区号</th>
+                                            <th>卡号</th>
+                                            <th>有效期</th>
+                                            <th>权限组</th>
+                                            <th>个性化权限</th>
+                                            <th>卡类型</th>
+                                            <th>所属卡类型</th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="bottom-content">
+                                <div class="inp-box">
+                                    <p>授权权限组</p>
+                                    <label for="rightsGroups">权限组</label>
+                                    <select name="rightsGroups" id="rightsGroups">
+                                        <option value="">alksjd</option>
+                                    </select>
+                                    <button type="button">查看权限组</button>
+                                </div>
+                            </div>
+                            <div class="subBtn">
+                                <button type="button" name="" id="">查询用户资料</button>
+                                <button type="button" name="" id="">导出</button>
+                                <button type="button" name="" id="">重新下载</button>
+                                <button type="button" name="" id="">我要查看</button>
+                                <button type="button" name="" id="">撤销所有权限</button>
+                                <button type="button" name="" id="">权限组管理</button>
+                                <button type="button" name="" id="">修改个性权限</button>
+                            </div>
+                        </div>
 
                         <!-- 用户卡管理 -->
-                        <div class="tabs-content management"></div>
+                        <div class="tabs-content management">
+                            <div class="top-content">
+                                <div class="selectBtn">
+                                    <label for="">选择授权人员的类型</label>
+                                    <select name="" id="">
+                                        <option value="ashf">skajfh</option>
+                                    </select>
+                                </div>
+                                <div class="table-container">
+                                    <table border="1" cellspacing="0" relus="all">
+                                        <tr>
+                                            <th>用户编号</th>
+                                            <th>姓名</th>
+                                            <th>性别</th>
+                                            <th>部门</th>
+                                            <th>区号</th>
+                                            <th>卡号</th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <table class="fixed-bottom" border="1" cellspacing="0" relus="all">
+                                    <tr>
+                                        <td>共有数据</td>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="subBtn">
+                                <button type="button" name="" id="">查询资料</button>
+                                <button type="button" name="" id="">导出</button>
+                                <button type="button" name="" id="">挂失</button>
+                                <button type="button" name="" id="">换卡</button>
+                                <button type="button" name="" id="">取消分配</button>
+                                <button type="button" name="" id="">修改密码</button>
+                            </div>
+                        </div>
 
                         <!-- 资料下载管理 -->
-                        <div class="tabs-content download"></div>
+                        <div class="tabs-content download">
+                            <div class="top-content">
+                                <div class="table-container">
+                                    <table border="1" cellspacing="0" relus="all">
+                                        <tr>
+                                            <th>编号</th>
+                                            <th>姓名</th>
+                                            <th>部门</th>
+                                            <th>区号</th>
+                                            <th>卡号</th>
+                                            <th>通讯节点</th>
+                                            <th>控制器</th>
+                                            <th>控制类型</th>
+                                            <th>门一权限</th>
+                                            <th>门二权限</th>
+                                            <th>门三权限</th>
+                                            <th>门四权限</th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <table class="fixed-bottom" border="1" cellspacing="0" relus="all">
+                                    <tr>
+                                        <td>共有数据</td>
+                                        <td>0</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="subBtn">
+                                <button type="button" name="" id="">下载所有用户卡数据</button>
+                                <button type="button" name="" id="">下载未成功数据</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

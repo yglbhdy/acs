@@ -44,7 +44,7 @@
     height: calc(100% - 35px);
     overflow-y: scroll;
 }
-.top-content>.table-container td {
+.registered .top-content>.table-container td {
     width: 25%;
 }
 .top-content .left-content .subBtn .input-box {
@@ -72,7 +72,69 @@
     width: 80px;
     height: 25px;
 }
-
+.top-content .table-container .list {
+    display: none;
+}
+.top-content .table-container .list.active {
+    display: table;
+}
+.top-content .selectBtn {
+    margin: 10px 0;
+}
+.top-content .selectBtn input {
+    margin-left: 25px;
+}
+.authorization .top-content {
+    height: calc(100% - 170px);
+}
+.authorization .bottom-content {
+    padding: 10px;
+    height: 118px;
+}
+.authorization .bottom-content .inp-box label {
+    display: inline;
+    margin: 0;
+}
+.authorization .bottom-content .inp-box select {
+    width: 140px;
+    height: 25px;
+    border: 1px solid #d6d2ce;
+    background-color: #fff;
+}
+.authorization .bottom-content .inp-box button {
+    border: 1px solid #d6d2ce;
+    height: 26px;
+    background-color: #fff;
+}
+.authorization .top-content .table-container {
+    height: calc(100% - 38px);
+}
+.management .top-content {
+    height: calc(100% - 53px)
+}
+.management .top-content .selectBtn {
+    padding: 0 50px 10px;
+    border-bottom: 1px solid #d6d2ce;
+}
+.management .top-content .selectBtn select {
+    width: 200px;
+    height: 25px;
+    border: 1px solid #d6d2ce;
+    background-color: #fff;
+}
+.management .top-content .table-container {
+    height: calc(100% - 92px);
+}
+.management .fixed-bottom {
+    table-layout: fixed;
+}
+.download .top-content {
+    height: calc(100% - 51px);
+}
+.download .table-container {
+    height: calc(100% - 35px);
+    overflow-y: scroll;
+}
 
 .bottom-content {
     margin-top: 2px;
@@ -132,7 +194,7 @@
 .bottom-content .inp-box {
     margin-left: 2px;
     padding: 25px;
-    width: 20%;
+    width: 310px;
     float: right;
     border: 1px solid #d6d2ce;
     height: 100%;
