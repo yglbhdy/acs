@@ -2,23 +2,23 @@
 var navList = [
     {
         name: '系统管理',
-        navArr: ['组织机构(G)', '系统参数(S)', '操作日志(L)', '事件备份(B)', '事件恢复(R)', '数据库管理(D)', '切换数据库', '修改密码(P)'],
-        navSlideImg: ['organization', 'systemParameter', 'operationMagazine', 'eventBackup', 'eventRecovery', 'databaseManagement', 'switchDatabase', 'changePassword']
+        navArr: ['组织机构', '修改密码', '系统参数', '操作日志'],
+        navSlideImg: ['organization', 'changePassword', 'systemParameter', 'operationMagazine']
     },
     {
         name: '控制器管理',
-        navArr: ['控制器(C)', '临时时间组(T)', '特殊时间组(S)', '校正时间(K)', '门参数(D)', '电梯管理(E)', '点参数(P)', '联动组配置(L)'],
-        navSlideImg: ['controller','temporaryTimeGroup','specialTimeGroup','correctionTime ','doorParameter','elevatorManagement','pointParameter','linkGroupConfiguration']
+        navArr: ['控制器', '临时时间组', '特殊时间组', '校正时间', '门参数', '点参数', '联动组配置'],
+        navSlideImg: ['controller','temporaryTimeGroup','specialTimeGroup','correctionTime ','doorParameter','pointParameter','linkGroupConfiguration']
     },
     {
         name: '权限管理',
-        navArr: ['部门管理', '人员管理', '门禁权限组', '人员卡管理中心', '操作员管理', '二级管理员权限分配'],
-        navSlideImg: ['departmentManagement','personnelManagement','accessControlGroup','personnelCardManagementCenter','operatorManagement','secondaryAdministratorAuthorityAssignment','','']
+        navArr: ['部门管理', '人员管理', '门禁权限组', '卡片中心', '卡管理中心', '权限信息查看'],
+        navSlideImg: ['departmentManagement','personnelManagement','accessControlGroup','personnelCardManagementCenter', 'cardManagementCenter','permissionInformationView']
     },
     {
         name: '实时监控',
-        navArr: ['事件监控(V)', '事件查询(Q)', '进出统计(S)', '门状态控制(D)', '点控制(P)', '区域设置(Z)', '联动组控制(L)'],
-        navSlideImg: ['eventMonitoring','eventQuery','incomingStatistics','doorStatusControl','pointControl','regionalSetting','linkageGroupControl']
+        navArr: ['事件监控', '门状态控制', '点控制', '区域设置', '联动组控制'],
+        navSlideImg: ['eventMonitoring','doorStatusControl','incomingStatistics', 'regionalSetting','linkageGroupControl']
     },
     {
         name: '防盗报警',
