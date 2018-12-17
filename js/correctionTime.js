@@ -3,7 +3,7 @@ $(document).ready(function() {
 	//markup for the clock		
 			var clock = [
 				'<ul id="clock">',
-				'<li id="date"></li>',
+				// '<li id="date"></li>',
 				'<li id="seconds"></li>',
 				'<li id="hours"></li>',
 				'<li id="minutes"></li>',

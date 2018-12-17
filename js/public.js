@@ -38,7 +38,7 @@
     function mua(data,all){
         var dataAll = '';
         for(var i = 0;i<data.length;i++){
-            dataAll +=`<option>${data[i]}</option>`;
+            dataAll +=`<option value="${data[i]}">${data[i]}</option>`;
         }
         $(all).html(dataAll);
     }
