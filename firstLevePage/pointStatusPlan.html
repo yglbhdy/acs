@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/pulic.css" />
+    <link rel="stylesheet" href="../css/firPublic.css" />
+    <link rel="stylesheet" href="../css/pointStatusPlan.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <p>智能门禁</p>
+        <div class="container">
+            <header>
+                <div></div>
+            </header>
+            <div class="sec">
+                <nav>
+                    <ul>
+                    </ul>
+                </nav>
+
+                <div class="sec-container">
+                    <p>防区参数</p>
+                    <div class="op-face">
+                        <!-- content -->
+                        <div class="alarmParameters">
+                                <!-- 左部分 -->
+                                <div class="alarmParameters_left">
+                                    <table border="1" cellspacing="0">
+                                      
+                                    </table>
+                                </div>
+                                <!-- 右部分 -->
+                                <div class="alarmParameters_right">
+                                    <table border="1" cellspacing="0">
+                                        <tr>
+                                            <th colspan="10">点状态计划组详细清单(最多支持15组点状态计划)</th>
+                                        </tr>
+                                        <tr class="pointStatusPlanningGroup">
+                                            <th colspan="2">点资料</th>
+                                            <th colspan="4">设置情况</th>
+                                            <th colspan="2">临时</th>
+                                        </tr>
+                                       
+                                    </table>
+                                </div>
+                                <!-- 下部分 -->
+                                <div class="alarmParameters_bottom">
+                                    <div class="subBtn">
+                                        <button name="" id="">查询控制器</button>
+                                        <button name="" id="" class="add_btn">增加(A)</button>
+                                        <button name="" id="">修改(M)</button>
+                                        <button name="" id="">删除(D)</button>
+                                        <button name="" id="">退出(c)</button>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        <!--  -->
+                    </div>
+                     <div class="mask">
+                        <div class="mask-container">
+                            <p>设置点状态计划组</p>
+                            <form action="" class="content">
+                                <div class="box">
+                                    <p>点设置</p>
+                                    <div>
+                                        <label for="choicePoint">选择点</label>
+                                        <select name="choicePoint" id="choicePoint" class="choicePoint">
+                                            
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="effectivePoint">点有效</label>
+                                        <select name="effectivePoint" id="effectivePoint" class="effectivePoint">
+                                            
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="stateTime">状态时间</label>
+                                        <input type="number" name="" id="" value="0">
+                                    </div>
+                                    <div>
+                                        <label for="pointState">点状态</label>
+                                        <select name="pointState" id="pointState" class="pointState">
+                                            
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="continuity">持续情况</label>
+                                        <select name="continuity" id="continuity" class="continuity">
+                                           
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="pox">
+                                    <p>设置有效的时间组</p>
+                                    <div class="normalDateGroup">
+                                        <p>正常日期组</p>
+                                            <ul>
+                                            
+                                            </ul>      
+                                    </div>
+                                    <div class="specialDateGroup">
+                                           <p>特殊日期组</p>
+                                            <ul>
+                                             
+                                            </ul>                             
+                                    </div>
+                                    <div class="temporaryDateGroup">
+                                      <p>临时日期组</p>
+                                            <ul>
+                                               
+                                          </ul>                                  
+                                    </div>
+                                </div>
+                                <div class="subBtn">
+                                    <button name="" id="">设置(S)</button>
+                                    <button name="" id="" class="signOut">退出(C)</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../data/navList.js"></script>
+    <script src="../data/pointStatusPlanList.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/pointStatusPlan.js"></script>
+</body>
+
+</html>

@@ -87,7 +87,7 @@ a.orig:visited
 {
 	position: absolute;
 	top: 365px;
-	color: #666;
+	/* color: #666; */
 	right: 140px;
 	font-weight: bold;
 	letter-spacing: 3px;

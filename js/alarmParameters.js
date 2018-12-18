@@ -84,5 +84,23 @@ $(function(){
     mua(redLightFlashesDuringDeployment,'.redLightFlashesDuringDeployment')
 
     //布防延迟时绿灯闪
-    mua(greenLightFlashesWhenClothingDelayOccurs,'.greenLightFlashesWhenClothingDelayOccurs')
+    mua(greenLightFlashesWhenClothingDelayOccurs,'.greenLightFlashesWhenClothingDelayOccurs');
+
+    //非法卡报警
+    mua(illegalCardAlarm,'.illegalCardAlarm');
+
+    //火灾报警
+    mua(fireAlarm,'.fireAlarm');
+
+    //盗窃报警
+    mua(theftAlarm,'.theftAlarm');
+
+    //医疗求助
+    mua(medicalHelpSeeking,'.medicalHelpSeeking');
+    
+    //用户报警
+    mua(userAlarm,'.userAlarm');
+    
+    //挟持报警
+    mua(holdAlarm,'.holdAlarm')
 })

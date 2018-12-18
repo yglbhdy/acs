@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.none{
+    display: none;
+}
+.clear{
+    clear: both;
+}
+.alarmParameters{
+    width: 100%;
+    height: 100%;
+}
+.alarmParameters_left{
+    display: inline-block;
+    width: 45%;
+    height: 94%;
+    vertical-align: top;
+    overflow-y: scroll;
+    border: 1px solid #868686;
+}
+.alarmParameters_left table{
+width: 100%;
+}
+.alarmParameters_left table tr{
+width: 100%
+}
+.alarmParameters_left table tr th:nth-of-type(1){
+    width: 25%;
+    text-align: left;
+}
+.alarmParameters_left table tr th:nth-of-type(2){
+    width: 60%;
+    text-align: left;
+}
+.alarmParameters_left table tr th:nth-of-type(3){
+    width: 15%;
+    text-align: right;
+}
+.alarmParameters_left table tr td:nth-of-type(1){
+    text-align: left;
+}
+.alarmParameters_left table tr td:nth-of-type(2){
+    text-align: left;
+}
+.alarmParameters_left table tr td:nth-of-type(3){
+    text-align: right;
+}
+
+
+/* right content */
+.alarmParameters_right{
+    display: inline-block;
+    width: 54%;
+    height: 94%;
+    overflow-y: scroll;
+}
+.alarmParameters_right>ul{
+    width: 100%;
+}
+.alarmParameters_right>ul li{
+    display: inline-block;
+    margin: 0 3px;
+}
+.alarmParameters_right .box{
+    width: 100%;
+    height: 95%;
+    overflow-y: scroll;
+    position: relative;
+    background: white;
+}
+.alarmParameters_right .box .box_table{
+    height: 92%;;
+}
+.alarmParameters_right .box table{
+    width: 100%;
+}
+.alarmParameters_right .box table th,td{
+    text-align: center;
+}
+.alarmParameters_right .box>p{
+    color: black;
+    background: #D6D2CE;
+    text-align: center;
+    padding: 9px 0;
+}
+
+.alarmParameters_right .pox{
+    width: 100%;
+    height: 95%;
+    overflow-y: scroll;
+    position: relative;
+    background: white;
+}
+.alarmParameters_right .pox .pox_table{
+    height: 92%;;
+}
+.alarmParameters_right .pox table{
+    width: 100%;
+}
+.alarmParameters_right .pox table th,td{
+    text-align: center;
+}
+.alarmParameters_right .pox>p{
+    color: black;
+    background: #D6D2CE;
+    text-align: center;
+    padding: 9px 0;
+}
+/* bottom content */
+.alarmParameters_bottom{
+    width: 100%;
+}
+.alarmParameters_bottom .btn{
+   /* display: inline-block; */
+   width: 20%;
+   float: left;
+}
+
+.alarmParameters_bottom .btn button{
+    padding: 3px 3px 5px 32px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #D6D2CE;
+}
+.alarmParameters_bottom .subBtn{
+   margin-top: 0 !important;
+    float: right;
+}
+.alarmParameters_bottom  .right_btn{
+    float: left;
+}
+
