@@ -42,3 +42,15 @@ var bypassDefenseArea = ['有效','无效','有效'];
 var redLightFlashesDuringDeployment = ['有效','无效','有效'];
 
 var greenLightFlashesWhenClothingDelayOccurs = ['有效','无效','有效'];
+
+var illegalCardAlarm = ['有效','无效','有效'];
+
+var fireAlarm = ['有效','无效','有效'];
+
+var theftAlarm = ['有效','无效','有效'];
+
+var medicalHelpSeeking = ['有效','无效','有效'];
+
+var userAlarm = ['有效','无效','有效'];
+
+var holdAlarm = ['有效','无效','有效'];
