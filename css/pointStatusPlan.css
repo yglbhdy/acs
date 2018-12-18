@@ -98,3 +98,70 @@ width: 100%
     float: right;
 }
 
+.mask-container{
+    width: 50%;
+}
+.mask-container .box{
+    width: 95%;
+    position: relative;
+    border: 1px solid #868686;
+    margin: 10px auto;
+    padding: 10px;
+}
+.mask-container .box>p{
+    position: absolute;
+    color: black;
+    top: -9px;
+    left: 8px;
+    background: #EFEBE7;
+}
+.mask-container .box div{
+    width: 48%;
+    display: inline-block;
+    margin: 5px 0;
+}
+.mask-container .box div input,select{
+    width: 40%;
+}
+.mask-container .box div:nth-of-type(1){
+    width: 80%;
+}
+.mask-container .box div:nth-of-type(1) select{
+    width: 80%;
+}
+
+.mask-container .pox{
+    width: 95%;
+    border: 1px solid #868686;
+    position: relative;
+    padding: 10px;
+    margin: 10px auto;
+}
+.mask-container .pox>p{
+    position: absolute;
+    background: #EFEBE7;
+    color: black;
+    top: -8px;
+    left: 9px;;
+}
+.mask-container .pox div{
+    width: 30%;
+    height: 160px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 10px;
+    margin: 10px 5px;
+    border: 1px solid #868686;
+}
+.mask-container .pox div input{
+    width: 13px;
+    height: 13px;
+}
+.mask-container .pox div>p{
+    position: absolute;
+    background: #EFEBE7;
+    color: black;
+    top: -8px;
+    left: 9px;;
+}

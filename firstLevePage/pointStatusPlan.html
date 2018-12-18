@@ -46,35 +46,14 @@
                                             <th colspan="4">设置情况</th>
                                             <th colspan="2">临时</th>
                                         </tr>
-                                        <!-- <tr>
-                                            <td>名称</td>
-                                            <td>地址</td>
-                                            <td>是否有效</td>
-                                            <td>开始时间</td>
-                                            <td>状态</td>
-                                            <td>持续时间</td>
-                                            <td>T1</td>
-                                            <td>T2</td>
-                                            <td>S1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>xx</td>
-                                            <td>xx</td>
-                                            <td>xx</td>
-                                            <td>xx</td>
-                                            <td>xx</td>
-                                            <td>xx</td>
-                                            <td>xx</td>
-                                            <td>xx</td>
-                                            <td>xx</td>
-                                        </tr> -->
+                                       
                                     </table>
                                 </div>
                                 <!-- 下部分 -->
                                 <div class="alarmParameters_bottom">
                                     <div class="subBtn">
                                         <button name="" id="">查询控制器</button>
-                                        <button name="" id="">增加(A)</button>
+                                        <button name="" id="" class="add_btn">增加(A)</button>
                                         <button name="" id="">修改(M)</button>
                                         <button name="" id="">删除(D)</button>
                                         <button name="" id="">退出(c)</button>
@@ -83,6 +62,70 @@
                                 </div>
                             </div>
                         <!--  -->
+                    </div>
+                     <div class="mask">
+                        <div class="mask-container">
+                            <p>设置点状态计划组</p>
+                            <form action="" class="content">
+                                <div class="box">
+                                    <p>点设置</p>
+                                    <div>
+                                        <label for="choicePoint">选择点</label>
+                                        <select name="choicePoint" id="choicePoint" class="choicePoint">
+                                            
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="effectivePoint">点有效</label>
+                                        <select name="effectivePoint" id="effectivePoint" class="effectivePoint">
+                                            
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="stateTime">状态时间</label>
+                                        <input type="number" name="" id="" value="0">
+                                    </div>
+                                    <div>
+                                        <label for="pointState">点状态</label>
+                                        <select name="pointState" id="pointState" class="pointState">
+                                            
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="continuity">持续情况</label>
+                                        <select name="continuity" id="continuity" class="continuity">
+                                           
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="pox">
+                                    <p>设置有效的时间组</p>
+                                    <div class="normalDateGroup">
+                                        <p>正常日期组</p>
+                                            <ul>
+                                            
+                                            </ul>      
+                                    </div>
+                                    <div class="specialDateGroup">
+                                           <p>特殊日期组</p>
+                                            <ul>
+                                             
+                                            </ul>                             
+                                    </div>
+                                    <div class="temporaryDateGroup">
+                                      <p>临时日期组</p>
+                                            <ul>
+                                               
+                                          </ul>                                  
+                                    </div>
+                                </div>
+                                <div class="subBtn">
+                                    <button name="" id="">设置(S)</button>
+                                    <button name="" id="" class="signOut">退出(C)</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
