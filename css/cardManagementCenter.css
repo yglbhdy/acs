@@ -1,6 +1,12 @@
 section .sec {
     height: 92%;
 }
+table {
+    min-width: 250px;
+}
+table td {
+    font-size: 12px;
+}
 
 .left-content, 
 .center-content, 
@@ -23,7 +29,12 @@ section .sec {
 }
 .left-content .left-container .top-content,
 .left-content .right-container .top-content,
-.right-content .top-content {
+.right-content .top-content,
+.center-content .top-content,
+.center-content .center-container,
+.center-content .bottom-content,
+.center-content .top-content .left-container,
+.center-content .top-content .right-container {
     border: 1px solid #D6D2CE;
     position: relative;
 }
@@ -61,7 +72,11 @@ section .sec {
 .left-content .right-container .top-content p,
 .right-content .top-content p,
 .right-content .center-container p,
-.right-content .bottom-content p {
+.right-content .bottom-content p,
+.center-content .top-content .left-container p,
+.center-content .top-content .right-container p,
+.center-content .center-container p,
+.center-content .bottom-content p {
     color: #333;
     position: absolute;
     top: -10px;
@@ -107,7 +122,13 @@ section .sec {
 .left-content .right-container .bottom-content {
     height: calc(100% - 112px);
 }
-.left-content .right-container .bottom-content .table-container {
+.right-content .top-content .table-container,
+.left-content .right-container .bottom-content .table-container,
+.center-content .top-content .left-container .table-container,
+.center-content .top-content .right-container .table-container,
+.center-content .center-container .table-container,
+.right-content .center-container .table-container,
+.right-content .bottom-content .table-container  {
     overflow: scroll;
     height: 100%;
 }
@@ -116,6 +137,39 @@ section .sec {
     margin-left: 2px;
     width: calc(100% - 629px);
 }
+.center-content .top-content {
+    padding: 2px;
+    height: 195px;
+}
+.center-content .top-content .left-container,
+.center-content .top-content .right-container {
+    float: left;
+    height: calc(100% - 10px);
+}
+.center-content .top-content .left-container {
+    width: calc(100% - 262px);
+}
+.center-content .top-content .right-container {
+    margin-left: 2px;
+    width: 260px;
+}
+.center-content .center-container {
+    height: 120px;
+}
+.center-content .bottom-content {
+    height: calc(100% - 335px);
+}
+.center-content .bottom-content .table-container {
+    overflow: scroll;
+    height: calc(100% - 104px)
+}
+.center-content .top-content table {
+    min-width: 300px;
+} 
+.center-content .center-container table,
+.center-content .bottom-content table {
+    min-width: 440px;
+}
 
 .right-content {
     margin-left: 2px;
@@ -123,15 +177,13 @@ section .sec {
 }
 .right-content .top-content,
 .right-content .center-container,
-.right-content .bottom-content {
+.right-content .bottom-content,
+.center-content .top-content .left-container,
+.center-content .top-content .right-container,
+.center-content .center-container,
+.center-content .bottom-content {
     margin-top: 10px;
     padding-top: 10px;
-}
-.right-content .top-content .table-container,
-.right-content .center-container .table-container,
-.right-content .bottom-content .table-container {
-    height: calc(100% - 10px);
-    overflow: scroll;
 }
 .right-content .top-content {
     height: 91px;
