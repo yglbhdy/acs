@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="../css/pulic.css" />
+        <link rel="stylesheet" href="../css/firPublic.css" />
+        <link rel="stylesheet" href="../css/permissionInformationView.css" />
+        <title>查询控制器信息</title>
+    </head>
+
+    <body>
+        <section>
+            <p>智能门禁</p>
+            <div class="container">
+                <header><div></div></header>
+
+                <div class="sec">
+                    <nav><ul></ul></nav>
+
+                    <div class="sec-container">
+                        <p>查询控制器信息</p>
+                        <div class="op-face">
+                            <div class="tabs">
+                                <span class="doorStaff">查询人员门点信息</span>
+                                <span class="active personnelPoint">查询门点人员信息</span>
+                            </div>
+                            <!-- 查询人员门点信息 -->
+                            <div class="tabs-content doorStaff">
+                                <div class="tabs-container">
+                                    <div class="left-content">
+                                        <p>人员信息</p>
+                                        <div class="table-container">
+                                            <table border="1" cellspacing="0" rules="all">
+                                                <tr>
+                                                    <th>用户编号</th>
+                                                    <th>用户姓名</th>
+                                                    <th>部门</th>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="selectBtn">
+                                            <label for="selectDepartment">选择部门</label>
+                                            <select name="selectDepartment" id="selectDepartment">
+                                                <option value="">所有部门</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="right-content">
+                                        <div class="tabs">
+                                            <span class="access active">门禁权限</span>
+                                            <span class="elevator">电梯权限</span>
+                                        </div>
+                                        <!-- 门禁权限 -->
+                                        <div class="active tabs-content access">
+                                            <div class="table-container">
+                                                <table border="1" cellspacing="0" rules="all">
+                                                <tr>
+                                                    <th>通讯节点名称</th>
+                                                    <th>控制器名称</th>
+                                                    <th>控制器地址</th>
+                                                    <th>门点名称</th>
+                                                    <th>门点地址</th>
+                                                    <th>门禁计划组</th>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                </table>
+                                            </div>
+                                            <table class="fixed-bottom" border="1" cellspacing="0" rules="all">
+                                                <tr>
+                                                    <td>共有数据</td>
+                                                    <td>0</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <!-- 电梯权限 -->
+                                        <div class="tabs-content elevator">
+                                            <div class="table-container">
+                                                <table border="1" cellspacing="0" rules="all">
+                                                <tr>
+                                                    <th>通讯节点名称</th>
+                                                    <th>控制器名称</th>
+                                                    <th>控制器地址</th>
+                                                    <th>门点名称</th>
+                                                    <th>门点地址</th>
+                                                    <th>门禁计划组</th>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                </table>
+                                            </div>
+                                            <table class="fixed-bottom" border="1" cellspacing="0" rules="all">
+                                                <tr>
+                                                    <td>共有数据</td>
+                                                    <td>0</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subBtn"><button>导出</button></div>
+                            </div>
+                            <!-- 查询门点人员信息 -->
+                            <div class="active tabs-content personnelPoint">
+                                <div class="tabs-container">
+                                    <div class="left-content">
+                                        <p>控制器信息</p>
+                                        <div class="table-container">
+                                            <!-- 一级 -->
+                                            <button class="opBtn" data-op="fir">-</button>
+                                            <span>门禁控制主机</span>
+                                            <ul class="fir">
+                                                <li>
+                                                    <!-- 二级 -->
+                                                    <button class="opBtn" data-op="sed">-</button>
+                                                    <span>1F南侧大厅</span>
+                                                    <ul class="sed">
+                                                        <!-- 三级 -->
+                                                        <li>
+                                                            <ul class="thr">
+                                                                <li><span>1086-入-电梯厅</span></li>
+                                                                <li><span>1086-出-电梯厅</span></li>
+                                                                <li><span>1088-出-电梯厅</span></li>
+                                                                <li><span>1088-入-电梯厅</span></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <!-- 二级 -->
+                                                    <button class="opBtn" data-op="sed">-</button>
+                                                    <span>1F南侧大厅</span>
+                                                    <ul class="sed">
+                                                        <!-- 三级 -->
+                                                        <li>
+                                                            <ul class="thr">
+                                                                <li><span>1086-入-电梯厅</span></li>
+                                                                <li><span>1086-出-电梯厅</span></li>
+                                                                <li><span>1088-出-电梯厅</span></li>
+                                                                <li><span>1088-入-电梯厅</span></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="right-content">
+                                        
+                                    </div>
+                                </div>
+                                <div class="subBtn"><button>导出</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer></footer>
+            </div>
+        </section>
+
+        <script src="../js/jquery.min.js"></script>
+        <script src="../data/navList.js"></script>
+        <script src="../js/public.js"></script>
+        <script src="../data/permissionInformationViewData.js"></script>
+        <script src="../js/permissionInformationView.js"></script>
+    </body>
+</html>
