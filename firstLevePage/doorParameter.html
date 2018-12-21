@@ -1,279 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/pulic.css" />
-    <link rel="stylesheet" href="../css/firPublic.css" />
-    <link rel="stylesheet" href="../css/doorParameter.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/pulic.css" />
+  <link rel="stylesheet" href="../css/firPublic.css" />
+  <link rel="stylesheet" href="../css/doorParameter.css">
+  <title>门参数设置</title>
 </head>
+
 <body>
-    
-    <section>
-        <p>智能门禁</p>
-        <div class="container">
-          <header>
-            <div></div>
-          </header>
-    
-          <div class="sec">
-            <nav>
-              <ul>
-              </ul>
-            </nav>
-    
-            <div class="sec-container">
-              <p>门参数设置</p>
-              <div class="op-face">
 
-                <!--  -->
-            <div class="doorParameter">
-              
-              <div class="doorParameter-left">
-                   <div class="doorParameter-left-kenter">-</div>
-                   <!-- mua -->
-                 <img src="" alt="">
-                 <p>门禁控制主机</p>
-                 <ul>
-            
-                 </ul>
-              </div>
+  <section>
+    <p>智能门禁</p>
+    <div class="container">
+      <header>
+        <div></div>
+      </header>
 
-              <div class="doorParameter-left-float">
-                  
-                  <table border="1" cellspacing='0'>
+      <div class="sec">
+        <nav>
+          <ul>
+          </ul>
+        </nav>
+
+        <div class="sec-container">
+          <p>门参数设置</p>
+          <div class="op-face">
+            <div class="table-container">
+              <div class="left-content">
+                <div class="top-content"></div>
+                <div class="bottom-content">
+                  <table border="1" cellspacing="0" rules="0">
                     <tr>
                       <td>当前控制器名称</td>
-                      <td>走廊+5号梯+洁净5#出口+会议室</td>
+                      <td class="controllName">无</td>
                     </tr>
                     <tr>
-                       <td>用户选择的门</td>
-                       <td>1048-走廊6</td>
-                     </tr>
+                      <td>用户选择的门</td>
+                      <td class="selDoor">无</td>
+                    </tr>
                   </table>
                 </div>
-
-              <div class="doorParameter-right">
-                <div class="doorParameter-right-tab">
-                  <ul>
-                    <li>门参数</li>
-                    <li>扩展功能</li>
-                    <li>门状态计划</li>
-                  </ul>
+              </div>
+              <div class="right-content">
+                <div class="tabs">
+                  <span class="gateParameter">门参数</span>
+                  <span class="extendedFunction">拓展功能</span>
+                  <span class="doorStatusPlan active">门状态计划</span>
                 </div>
-                <div class="doorParameter-right-tab-border">
-       <div class="doorParameter-right-one none">
-<div class="doorParameter-right-one-box">
-  <p>门参数</p>
 
-  <div class="A">
-    <div>
-    门的名称<input type="text">
-  </div>
-  <div>
-   <label for="theTypeOfTheDoor"> 门的类型 </label><select name="theTypeOfTheDoor" id="theTypeOfTheDoor"class="A_select">
-     
-    </select>
-  </div>
-  </div>
+                <!-- 门参数 -->
+                <div class="tabs-content gateParameter">
+                  <div class="inp-box">
+                    <p>门参数</p>
+                    <div>
+                      <label for="doorName">门的名称</label>
+                      <input type="text" name="doorName" id="doorName">
+                    </div>
 
-  <div class="B">
-    <div>
-    <label for="doorOpeningTimeoutAlarm">门开超时报警 </label><input type="number" value="30" name="doorOpeningTimeoutAlarm" id="doorOpeningTimeoutAlarm">秒
-  </div>
-  <div>
-    <label for="doorOpeningHoldTime">门开保持时间 </label><input type="number" value="5" name="doorOpeningHoldTime" id="doorOpeningHoldTime">秒
-  </div>
-  <div>
-   <label for="openingTheFirstCard">首卡开门</label> 
-   <select name="openingTheFirstCard" id="openingTheFirstCard" class="B_select">
-  
-    </select>
-  </div>
-  <div>
-    <label for="multiCardOpenDoor">多卡开门</label> <input type="number" value="1" name="multiCardOpenDoor" id="multiCardOpenDoor">张卡
-  </div>
-   </div>
+                    <div>
+                      <label for="doorType">门的类型</label>
+                      <select name="doorType" id="doorType">
+                        <option value="单向门">单向门</option>
+                      </select>
+                    </div>
 
-   <div class="C">
-    <label for="regionalAPB">区域 APB</label>
-    <select name="regionalAPB" id="regionalAPB" class="C_select">
-    
-     </select> <br>
-     <label for="entryArea">进入区域</label><input type="number" value="0" name="entryArea" id="entryArea"> <br />
-     <label for="launchArea">推出区域</label><input type="number" value="0" name="launchArea" id="launchArea">
-   </div>
-   
-   <div class="D">
-    <label for="multiCardCombinationDoor">多卡组合开门</label>
-     <select name="multiCardCombinationDoor" id="multiCardCombinationDoor" class="D_select">
-         
-        </select>
-        <label for="multiCardCreditCardValidTime">多卡刷卡有效时间 </label><input type="number" value="3" name="multiCardCreditCardValidTime" id="multiCardCreditCardValidTime">秒
-   </div>
-</div>
+                    <div>
+                      <div class="left">
+                        <div>
+                          <label for="doorOpenTimeoutAlarm">开门超时报警</label>
+                          <input type="number" name="doorOpenTimeoutAlarm" id="doorOpenTimeoutAlarm">
+                        </div>
 
-<div class="doorParameter-right-one-pox">
-<p>读卡器参数</p>
-<div class="cardReaderParameters-one">
-<label for="cardReaderType">读卡器类型 </label>
-<select name="cardReaderType" id="cardReaderType" class="cardReaderType">
+                        <div>
+                          <label for="openTime">开门保持时间</label>
+                          <input type="number" name="openTime" id="openTime">
+                        </div>
 
-</select>
-</div>
-<div class="cardReaderParameters-two">
-  <label for="LED Polarity">LED极性 </label>
-  <select name="LED Polarity" id="LED Polarity" class="LED_Polarity">
-    
-  </select>
-  <label for="readCardInterval">读卡间隔</label>
-  <input type="number" value="2" name="readCardInterval" id="readCardInterval"> 秒
-</div>
-<div class="cardReaderParameters-three">
-  <input type="checkbox" name="enable" id="enable"><label for="enable">启用 输入 *区号*卡号# 代替刷卡功能</label>
-</div>
-<div class="cardReaderParameters-four">
-  <label for="coercionCipher">胁迫密码 </label><input type="password" name="coercionCipher" id="coercionCipher">
-  <label for="superCipher">超级密码 </label><input type="password" name="superCipher" id="superCipher">
-</div>
-</div>
+                        <div>
+                          <label for="firstCardOpen">首卡开门</label>
+                          <select name="firstCardOpen" id="firstCardOpen">
+                            <option value="">无效</option>
+                          </select>
+                        </div>
 
+                        <div>
+                          <label for="dokaOpenDoor">多卡开门</label>
+                          <input type="number" name="dokaOpenDoor" id="dokaOpenDoor">
+                        </div>
+                      </div>
 
-<div class="doorParameter-right-one-rox">
-  <p>事件参数</p>
-  <div class="doorParameter-right-one-rox-left">
-    <div>
-    <label for="illegalCardAccess">非法卡进入</label>
-    <select name="illegalCardAccess" id="illegalCardAccess" class="illegalCardAccess">
-      
-    </select>
-  </div>
-  <div>
-      <label for="validCardAccess">有效卡进入</label>
-      <select name="validCardAccess" id="validCardAccess" class="validCardAccess">
-       
-      </select>
-    </div>
-    <div>
-        <label for="invalidPeriod">在无效时段</label>
-        <select name="invalidPeriod" id="invalidPeriod" class="invalidPeriod">
-          
-        </select>
-      </div>
-      <div>
-          <label for="invalidArea">无效的区域</label>
-          <select name="invalidArea" id="invalidArea" class="invalidArea">
-            
-          </select>
-        </div>
-  </div>
-  <div class="doorParameter-right-one-rox-right">
-      <div>
-          <label for="userPasswordError">用户密码错</label>
-          <select name="userPasswordError" id="userPasswordError" class="userPasswordError">
-            
-          </select>
-        </div>
-        <div>
-            <label for="invalidDoorPoint">无效的门点</label>
-            <select name="invalidDoorPoint" id="invalidDoorPoint" class="invalidDoorPoint">
-              
-            </select>
-          </div>
-          <div>
-              <label for="userFollower">用户跟随入</label>
-              <select name="userFollower" id="userFollower" class="userFollower">
-                
-              </select>
+                      <div class="right">
+                        <div>
+                          <label for="regionaAPB">区域APB</label>
+                          <select name="regionaAPB" id="regionaAPB">
+                            <option value="">APB无效</option>
+                          </select>
+                        </div>
+
+                        <div>
+                          <label for="enterArea">进入区域</label>
+                          <input type="number" name="enterArea" id="enterArea">
+                        </div>
+
+                        <div>
+                          <label for="exitArea">退出区域</label>
+                          <input type="number" name="exitArea" id="exitArea">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label for="cardDoorGroup">多卡开门组合</label>
+                      <select name="cardDoorGroup" id="cardDoorGroup">
+                        <option value="">无效</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="swipeEffectiveTime">多卡刷卡有效时间</label>
+                      <input type="number" name="swipeEffectiveTime" id="swipeEffectiveTime">
+                    </div>
+                  </div>
+
+                  <div class="inp-box">
+                    <p>读卡器参数</p>
+                    <div>
+                      <label for="cardReadType">读卡器类型</label>
+                      <select name="cardReaderType" id="cardReaderType">
+                        <option value="">自动检测</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="LEDPolarity">LED极性</label>
+                      <select name="LEDPolarity" id="LEDPolarity">
+                        <option value="">阴极</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="cardReadInterval">读卡间隔</label>
+                      <input type="number" name="cardReadInterval" id="cardReadInterval">
+                    </div>
+                    <div>
+                      <input type="checkbox" name="enable" id="enable">
+                      <label for="enable">启用 输入*区号*卡号# 代替刷卡功能</label>
+                    </div>
+                    <div>
+                      <label for="duressPwd">胁迫密码</label>
+                      <input type="password" name="duressPwd" id="duressPwd">
+                      <input type="checkbox" name="superPwd" id="superPwd">
+                      <label for="superPwd">超级密码</label>
+                      <input type="password" name="superPwd" id="superPwd">
+                    </div>
+                  </div>
+                  <div class="inp-box">
+                    <p>事件参数</p>
+                    <div>
+                      <label for="">非法卡进入</label>
+                      <select name="" id="">
+                        <option value="">普通消息</option>
+                      </select>
+                      <label for="">用户密码错误</label>
+                      <select name="" id="">
+                        <option value="">不产生消息</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label for="">有效卡进入</label>
+                      <select name="" id="">
+                        <option value="">普通消息</option>
+                      </select>
+                      <label for="">无效的门点</label>
+                      <select name="" id="">
+                        <option value="">不产生消息</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label for="">在无效时段</label>
+                      <select name="" id="">
+                        <option value="">不产生消息</option>
+                      </select>
+                      <label for="">用户跟随入</label>
+                      <select name="" id="">
+                        <option value="">不产生消息</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label for="">无效的区域</label>
+                      <select name="" id="">
+                        <option value="">不产生消息</option>
+                      </select>
+                      <label for="">其他错误</label>
+                      <select name="" id="">
+                        <option value="">普通消息</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 拓展功能 -->
+                <div class="tabs-content extendedFunction">
+                  <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">启用多门互锁</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">启用通道门功能</label>
+                  </div>
+                  <div>
+                    <label for="">通道门有效刷卡时间</label>
+                    <input type="number" name="" id="">秒以内
+                    <p>(注意: 上述参数值应为门参数中读卡间隔值的两倍以上)</p>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">启用进出门错误报警</label>
+                  </div>
+                  <div class="big">
+                    <input type="checkbox" name="" id="">
+                    <label for="">门事件</label>
+                    <br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">门报警时间</label>
+                    <br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">门异常打开</label>
+                    <br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">门异常关闭</label>
+                    <br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">门开超时</label>
+                    <br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">无效超级密码</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="" id="">
+                    <label for="">节假日有效</label>
+                  </div>
+                </div>
+
+                <!-- 门状态计划 -->
+                <div class="tabs-content doorStatusPlan active">
+                  <table border="1" cellspacing="0" rules="all">
+                    <thead>
+                      <tr>
+                        <td rowspan="2">序号</td>
+                        <td rowspan="2">时间</td>
+                        <td rowspan="2">新状态</td>
+                        <td colspan="2">临时</td>
+                        <td colspan="7">特殊日期组</td>
+                        <td colspan="7">正常日期组</td>
+                      </tr>
+                      <tr>
+                        <td>T1</td>
+                        <td>T2</td>
+                        <td>S1</td>
+                        <td>S2</td>
+                        <td>S3</td>
+                        <td>S4</td>
+                        <td>S5</td>
+                        <td>S6</td>
+                        <td>S7</td>
+                        <td>日</td>
+                        <td>一</td>
+                        <td>二</td>
+                        <td>三</td>
+                        <td>四</td>
+                        <td>五</td>
+                        <td>六</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>空</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
-            <div>
-                <label for="otherMistakes">其他错误 &nbsp;&nbsp; </label>
-                <select name="otherMistakes" id="otherMistakes" class="otherMistakes">
+
+            <div class="subBtn">
+              <div class="selBtn gateParameter">
+                <button type="button" name="" id="">查找</button>
+                <button type="button" name="" id="">复制</button>
+                <button type="button" name="setAccessControl" id="setAccessControl">设置门禁计划组</button>
+                <button type="button" name="" id="">确定</button>
+              </div>
+              <div class="selBtn extendedFunction">
+                <button type="button" name="" id="">查找</button>
+                <button type="button" name="" id="">复制</button>
+                <button type="button" name="setAccessControl" id="setAccessControl">设置门禁计划组</button>
+                <button type="button" name="" id="">确定</button>
+              </div>
+              <div class="selBtn doorStatusPlan active">
+                <button type="button" name="" id="">查找</button>
+                <button type="button" name="" id="">复制</button>
+                <button type="button" name="setAccessControl" id="setAccessControl">设置门禁计划组</button>
+                <button type="button" name="" id="">状态计划</button>
+              </div>
+            </div>
+          </div>
+          <div class="mask">
+            <div class="mask-container">
+              <p>设置门禁计划组</p>
+              <div class="content">
+                <div class="left-container">
                   
-                </select>
+                </div>
+                <div class="rightcontainer"></div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="doorParameter-right-two none">
-          <div>
-          <input type="checkbox" name="enableMultiDoorInterlock" id="enableMultiDoorInterlock"><label for="enableMultiDoorInterlock">启用多门互锁</label>
-        </div>
-        <div>
-          <input type="checkbox" name="enableAccessDoorFunction" id="enableAccessDoorFunction" ><label for="enableAccessDoorFunction">启用通道门功能</label>
-        </div>
-        <div>
-          <label for="effectiveCreditCardAccessTime">通道门有效刷卡时间</label><input type="number" value="2" name="effectiveCreditCardAccessTime" id="effectiveCreditCardAccessTime"> 秒以内
-          <p>(注意：上述参数值应为门参数中读卡间隔值的两倍或者以上)</p>
-        </div>
-        <div>
-          <input type="checkbox" name="enableAccessDoorErrorAlarm" id="enableAccessDoorErrorAlarm"><label for="enableAccessDoorErrorAlarm">启用进出门错误报警</label>
-          <div>
-            <input type="checkbox" name="doorEvent" id="doorEvent"><label for="doorEvent"> 门事件</label> <br />
-            <input type="checkbox" name="" id=""><label for=""> 门警报事件</label><br />
-            <input type="checkbox" name="doorAlarmEvent" id="doorAlarmEvent"><label for="doorAlarmEvent"> 门异常打开</label><br />
-            <input type="checkbox" name="abnormalClosure" id="abnormalClosure"><label for="abnormalClosure"> 异常关闭</label><br />
-            <input type="checkbox" name="theDoorOpensOutOfTime" id="theDoorOpensOutOfTime"><label for="theDoorOpensOutOfTime"> 门开超时</label><br />
-            <input type="checkbox" name="invalidSuperPassword" id="invalidSuperPassword"><label for="invalidSuperPassword"> 无效超级密码</label><br />
-          </div>
-        </div>
-        <div>
-          <input type="checkbox" name="effectiveHolidays" id="effectiveHolidays"><label for="effectiveHolidays">节假日有效</label>
-        </div>
-        </div>
-
-
-        <div class="doorParameter-right-three none">
-          <table border="1" cellspaceing="0">
-            <tr class="doorParameter-right-three-th">
-              <th rowspan="2">&nbsp;&nbsp;&nbsp;</td>
-              <th rowspan="2">序号</td>
-              <th rowspan="2">时间</td>
-              <th rowspan="2">新状态</td>
-              <th colspan="2">临时</th>
-              <th colspan="7">特殊日期组</th>              
-              <th colspan="7">正常日期组</th>              
-            </tr>
-            <tr class="tableTdOneData">
-
-            </tr>
-            <tr class="tableTdTwoData">
- 
-            </tr>
-          </table>
-
-        </div>
-
-  </div>
-  
-</div>
-<div class="doorParameter-bottom">
-  <button name="lookup" id="lookup">查找(F)</button>
-  <button name="replication" id="replication">复制(R)</button>
-  <button name="setUpAccessControlPlanGroup" id="setUpAccessControlPlanGroup">设置门禁计划组(S)</button>
-  <button name="sure" id="sure">确定(0)</button>
-  <button name="signOut" id="signOut">退出(C)</button>
-  </div>
-
-
-</div>
-
-                
-                <!--  -->
-              </div>
-            </div>
-          </div>
-    
-          <footer></footer>
-        </div>
-      </section>
-    <script src="../js/jquery.min.js"></script>
+      <footer></footer>
+    </div>
+  </section>
+  <script src="../js/jquery.min.js"></script>
   <script src="../data/navList.js"></script>
-  <script src="../data/dooParameterList.js"></script>
   <script src="../js/public.js"></script>
+  <script src="../data/doorParameterList.js"></script>
   <script src="../js/doorParameter.js"></script>
 </body>
+
 </html>

@@ -22,22 +22,26 @@
 }
 
 .tableDiv .tableDiv-content{
-    width: 84%;
+    width: calc(100% - 254px);
     display: inline-block;
     overflow-y: scroll;
-    height: 90%;
+    height: calc(100% - 29px);
+    border: 1px solid #d6d2ce;
 }
 .tableDiv .tableDiv-content table{
     width: 100%;
-    
+    min-width: 960px;
 }
 .tableDiv .tableDiv-content table tr th{
     border: 1px solid #858586;
     margin: 0;
 }
 .tableDiv .tableDiv-right{
+    padding: 2px;
+    border: 1px solid #d6d2ce;
+    height: calc(100% - 29px);
+    width: 250px;
     display: inline-block;
-    width: 15%;
     vertical-align: top;
 }
 

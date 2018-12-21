@@ -55,7 +55,7 @@
 
     // 查询人员门点信息  电梯权限
     tableData(elevator, '.right-content .elevator .table-container table');
-    $('.right-content .elevator .fixed-bottom td:nth-child(2)').text(access.length-1);
+    $('.right-content .elevator .fixed-bottom td:nth-child(2)').text(elevator.length-1);
 
     var firSpan = '';
     controlInfo.forEach(function(e, i){
@@ -101,5 +101,9 @@
         }
         
     });
+
+    // 查询门点人员信息  电梯权限
+    tableData(doorStaff, '.personnelPoint .right-content .table-container table');
+    $('.personnelPoint .right-content .fixed-bottom td:nth-child(2)').text(doorStaff.length-1);
 
 })(window, document, jQuery);

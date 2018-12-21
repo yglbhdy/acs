@@ -1,292 +1,189 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.table-container {
+    height: calc(100% - 50px);
 }
-.none{
+.left-content,
+.right-content {
+    border: 1px solid #d6d2ce;
+    padding: 2px;
+    float: left;
+    height: 100%;
+}
+.left-content {
+    width: 330px;
+}
+.right-content {
+    margin-left: 2px;
+    width: calc(100% - 332px);
+}
+.left-content .top-content,
+.left-content .bottom-content {
+    border: 1px solid #d6d2ce;
+    width: 100%;
+}
+.left-content .top-content {
+    height: calc(100% - 86px);
+    overflow: scroll;
+}
+.left-content .top-content .opBtn {
+    border: 1px solid #d6d2ce;
+    color: #333;
+    background-color: #fff;
+    height: 18px;
+    width: 18px;
+}
+.left-content .top-content ul.fir,
+.left-content .top-content ul.sed {
+    padding-left: 25px;
+    white-space : nowrap 
+}
+.left-content .top-content span {
+    padding-left: 20px;
+}
+.left-content .top-content .thr span.active {
+    background-color: #99B4D1;
+}
+
+.left-content .bottom-content {
+    margin-top: 2px;
+    overflow-x: scroll;
+}
+.left-content .bottom-content table {
+    min-width: 322px;
+}
+.left-content .bottom-content table tr:hover{
+    background-color: transparent;
+}
+
+.tabs {
+    margin-top: 2px;
+    background-color: #D6D2CE;
+    border: 1px solid #D6D2CE;
+    border-bottom: none;
+}
+.tabs span {
+    display: inline-block;
+    padding: 3px 20px;
+    cursor: pointer;
+}
+.tabs span.active {
+    background-color: #EFEBE7;
+}
+.tabs-content {
+    padding: 2px;
+    border: 1px solid #D6D2CE;
+    height: calc(100% - 30px);
+    border-top: none;
+    position: relative;
+    display: none;
+    overflow: scroll;
+}
+.tabs-content.active {
+    display: block;
+}
+.subBtn .selBtn {
     display: none;
 }
-.doorParameter{
-    width: 100%;
-    height: 100%;
+.subBtn .selBtn.active {
+    display: block;
+}
+.right-content .inp-box {
+    margin-top: 10px;
+    border: 1px solid #d6d2ce;
     position: relative;
+    padding: 10px 15px 0;
+    min-width: 792px;
 }
-.doorParameter .doorParameter-left{
-    display: inline-block;
-    width: 40%;
-    max-height: 92%;
-    overflow-y: scroll;
-   
-}
-
-.doorParameter .doorParameter-left>div{
-display: inline-block;
-border: 1px solid #868686;
-}
-.doorParameter .doorParameter-left .doorParameter-left-kenter{
-    line-height: 10px;
-    width: 15px;
-    height: 15px;
-    text-align: center;
-}
-.doorParameter .doorParameter-left-float{
+.right-content .inp-box p {
     position: absolute;
-    bottom: 0px;
-    width: 40%;
+    top: -10px;
+    background-color: #efebe7;
+    color: #333;
+    left: 5px;
 }
-.doorParameter .doorParameter-left-float table{
-    width: 100%;
+.right-content .inp-box div {
+    margin: 10px 0;
+    overflow: hidden;
 }
-.doorParameter .doorParameter-left-float table tr{
-    line-height: 22px;
-}
-.doorParameter .doorParameter-left-float table tr td{
-    text-indent: 7px;
-}
-
-.doorParameter .doorParameter-left>div:hover{
-    cursor: pointer;
-}
-.doorParameter .doorParameter-left>img{
+.right-content .inp-box label {
+    width: 110px;
+    text-align: right;
     display: inline-block;
 }
-.doorParameter .doorParameter-left>p{
-    display: inline-block;
-    color: black;
-   
+.right-content .inp-box input,
+.right-content .inp-box select {
+    height: 25px;
+    background-color: #fff;
+    width: 180px;
 }
-.doorParameter .doorParameter-left ul{
-    margin-left: 24px;
+.right-content .inp-box div.left,
+.right-content .inp-box div.right {
+    margin: 0;
+    float: left;
+    width: 380px;
 }
-.doorParameter .doorParameter-left ul li>div{
-    display: inline-block;
-    border: 1px solid #868686;
-    line-height: 12px;
-    width: 15px;
-    height: 15px;
-    text-align: center;
-
-}
-.doorParameter .doorParameter-left ul li>img{
-    display: inline-block;
-}
-.doorParameter .doorParameter-left ul li>p{
-    display: inline-block;
-    color: black;
-}
-.doorParameter .doorParameter-left ul li>div:hover{
-    cursor: pointer;
-}
-
-/*  */
-.doorParameter .doorParameter-right{
-    display: inline-block;
-    width: 58%;
-    vertical-align: top;
-    position: relative;
-}
-.doorParameter .doorParameter-right .doorParameter-right-tab ul{
-    margin-bottom: 5px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-tab-border{
-   padding: 20px 30px 99px 20px;;
-   border: 1px solid black;
-}
-.doorParameter .doorParameter-right .doorParameter-right-tab ul li{
-display: inline-block;
-border: 1px solid darkgrey;
-/* background-color: white; */
-padding: 2px 4px;
-margin: 0 -2px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one{
-    width: 90%;
-    margin: 0 auto;
+.right-content .inp-box div.right {
     padding: 5px;
-    border-radius: 10px;
-} 
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box{
-    position: relative;
-    width: 100%;
+    border: 1px solid #D6D2CE;
+}
+.right-content .inp-box input[type=checkbox] {
+    height: auto;
+    width: auto;
+    margin-left: 54px;
+}
+.right-content .inp-box input[type=checkbox] + label {
+    width: auto;
     text-align: left;
-    padding: 10px 2px;
-    border: 1px solid #C2C4C8;
-    margin-bottom: 45px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box p{
-    position: absolute;
-    top: -11px;
-    left: 4px;
-    color: black;
-    background: #EFEBE7;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box div input{
-    margin-left:5px; 
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .A input:first-child{
-    width: 30%;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .A div:first-child{
-    margin-left: 32px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .A div:nth-child(2){
-    margin-left: 32px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .A div:nth-child(2) select{
-    width: 18%;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box div>div{
-    margin:3px 0 7px 0px;; 
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .B{
-    display: inline-block;
-    width: 49%;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .B div:nth-child(3){
-    text-indent: 32px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .B div:nth-child(4){
-    text-indent: 28px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .B input{
-    width: 20%;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .C{
-    display: inline-block;
-    width: 35%;
-    vertical-align: top;
-    border: 1px solid #868686;
-    padding: 5px 10px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .D input{
-width: 8%;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .D select{
-    margin-left: 3px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .C input{
-    width: 30%;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-box .C select,input{
-    margin-bottom: 4px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-pox{
-    position: relative;
-    width: 100%;
-    text-align: left;
-    padding: 10px 2px;
-    border: 1px solid #C2C4C8;
-    margin-bottom: 45px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-pox p{
-    position: absolute;
-    top: -11px;
-    left: 4px;
-    color: black;
-    background: #EFEBE7;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-pox div{
-    margin-bottom: 5px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-pox .cardReaderParameters-one{
-    margin-left: 10px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-pox .cardReaderParameters-two{
-    margin-left: 26px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-pox .cardReaderParameters-two select{
-    margin-right: 30px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-pox .cardReaderParameters-two input{
-    width: 8%;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-pox .cardReaderParameters-three{
-    margin-left: 15px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-pox .cardReaderParameters-four{
-    margin-left: 15px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-pox .cardReaderParameters-four input{
-    width: 20%;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-rox{
-    position: relative;
-    width: 100%;
-    text-align: left;
-    padding: 10px 2px;
-    border: 1px solid #C2C4C8;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-rox p{
-    position: absolute;
-    top: -11px;
-    left: 4px;
-    color: black;
-    background: #EFEBE7;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-rox>div>div{
-    margin-bottom: 5px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-rox div select{
-width: 40%;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-rox .doorParameter-right-one-rox-left{
-    width: 45%;
-    display: inline-block;
-    /* margin-left: 15px; */
-    text-align: center;
-}
-.doorParameter .doorParameter-right .doorParameter-right-one .doorParameter-right-one-rox .doorParameter-right-one-rox-right{
-    width: 45%;
-    display: inline-block;
-    vertical-align: top;
 }
 
-
-.doorParameter .doorParameter-right .doorParameter-right-two{
-    padding: 30px 20px;
+.extendedFunction > div {
+    margin: 10px;
 }
-.doorParameter .doorParameter-right .doorParameter-right-two div{
-    margin-bottom: 44px;
-    padding: 3px 5px;
-}
-.doorParameter .doorParameter-right .doorParameter-right-two div p{
+.extendedFunction > div p {
     color: red;
 }
-.doorParameter .doorParameter-right .doorParameter-right-two div>div{
-    padding: 8px 5px;
+.extendedFunction > div.big {
+    border: 1px solid #D6D2CE;
+    padding: 5px 10px;
+    width: 300px;
 }
-.doorParameter .doorParameter-right .doorParameter-right-two div:nth-child(3) input{
-    width: 12%;
-    margin-bottom: 5px;
+.extendedFunction > div input[type=number] {
+    height: 25px;
 }
-.doorParameter .doorParameter-right .doorParameter-right-two div:nth-child(4) div{
-border: 1px solid darkgray;
-background-color: white;
-}
-.doorParameter .doorParameter-right .doorParameter-right-two div:nth-child(4) div input{
-    width: auto;
-}
-.doorParameter .doorParameter-right .doorParameter-right-two div:nth-child(5){
-    margin-bottom: 20px;
-}
-.doorParameter .doorParameter-bottom{
-    text-align: right;
-    margin-right: 18px;
-    width: 100%;
-    position: absolute;
-    bottom: 0
-}
-.doorParameter .doorParameter-bottom button{
-    padding: 3px 5px;
-    
+.extendedFunction > div.big input {
+    margin: 5px 0;
 }
 
-
-.doorParameter .doorParameter-right .doorParameter-right-three{
-    width: 100%;
-}
-.doorParameter .doorParameter-right .doorParameter-right-three table{
+.doorStatusPlan table {
     text-align: center;
-    border-collapse: collapse;
+    min-width: 647px;
+}
+.doorStatusPlan table tr:hover {
+    background-color: transparent;
+}
+.doorStatusPlan table tbody tr td:nth-child(5),
+.doorStatusPlan table tbody tr td:nth-child(4) {
+    background-color: #A6CAF0;
+}
+.doorStatusPlan table tbody tr td:nth-child(6),
+.doorStatusPlan table tbody tr td:nth-child(7),
+.doorStatusPlan table tbody tr td:nth-child(8),
+.doorStatusPlan table tbody tr td:nth-child(9),
+.doorStatusPlan table tbody tr td:nth-child(10),
+.doorStatusPlan table tbody tr td:nth-child(11),
+.doorStatusPlan table tbody tr td:nth-child(12) {
+    background-color: #00FFFF;
+}
+.doorStatusPlan table tbody tr td:nth-child(13),
+.doorStatusPlan table tbody tr td:nth-child(14),
+.doorStatusPlan table tbody tr td:nth-child(15),
+.doorStatusPlan table tbody tr td:nth-child(16),
+.doorStatusPlan table tbody tr td:nth-child(17),
+.doorStatusPlan table tbody tr td:nth-child(18),
+.doorStatusPlan table tbody tr td:nth-child(19) {
+    background-color: #FFFFE1;
+}
+
+.mask .mask-container {
     width: 100%;
+    height: 100%;
 }

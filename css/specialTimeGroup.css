@@ -1,0 +1,54 @@
+.sec-container .op-face .year {
+    padding: 5px;
+    color: #333;
+    border: 1px solid  #D6D2CE;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+.tabs {
+    margin-top: 2px;
+    background-color: #D6D2CE;
+    border: 1px solid #D6D2CE;
+    border-bottom: none;
+}
+.tabs span {
+    display: inline-block;
+    padding: 3px 20px;
+    cursor: pointer;
+}
+.tabs span.active {
+    background-color: #EFEBE7;
+}
+.tabs-content {
+    padding: 2px;
+    border: 1px solid #D6D2CE;
+    height: calc(100% - 110px);
+    border-top: none;
+    position: relative;
+    display: none;
+    overflow: scroll;
+}
+.tabs-content.active {
+    display: block;
+}
+table {
+    margin: 2px;
+    float: left;
+    width: calc(25% - 4px);
+    height: 235px;
+}
+table tr:hover {
+    background-color: transparent;
+}
+table td {
+    background-color: transparent;
+    transition: .35s;
+    text-align: center;
+}
+table td.sel:hover {
+    background-color: #d9ecff;
+}
+table td.sel.active {
+    background-color: #d9ecff;
+}

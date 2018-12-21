@@ -1,22 +1,22 @@
 .exhibite {
-    height: 100%;
+    height: calc(100% - 50px);
 }
 .exhibite .showR {
     width: 85%;
-    height: calc(100% - 35px);
+    height: 100%;
     float: left;
 }
 .exhibite .showL {
     margin-left: 0.5%;
     width: 14.5%;
-    height: calc(100% - 35px);
+    height: 100%;
     float: left;
     border: 1px solid #D6D2CE;
 }
 .exhibite .showR .table {
     padding: 2px;
     border: 1px solid #D6D2CE;
-    height: 70%;
+    height: calc(100% - 136px);
     overflow-y: scroll;
 }
 .exhibite .showR table {
@@ -42,6 +42,7 @@
     border: 1px solid #D6D2CE;
     margin: 2px 0;
     padding: 2px;
+    height: 26px;
 }
 .exhibite .showR .overview .over-inp {
     float: right;
@@ -49,4 +50,32 @@
 .exhibite .showR .enterView {
     border: 1px solid #D6D2CE;
     overflow-y: scroll;
+    height: 110px;
+}
+
+.exhibite .showL .inp-box {
+    margin: 10px 2px;
+    padding: 10px;
+    border: 1px solid #D6D2CE;
+    position: relative;
+}
+.exhibite .showL .inp-box p {
+    color: #333;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    background-color: #efebe7;
+}
+.exhibite .showL .inp-box > div {
+    margin: 0 3px 10px;
+}
+.exhibite .showL .timeInp {
+    width: 140px;
+    height: 25px;
+}
+.exhibite .showL .inp-box select {
+    width: 180px;
+    border: 1px solid #D6D2CE;
+    background-color: #fff;
+    height: 25px;
 }

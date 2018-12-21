@@ -2,11 +2,9 @@
 
     $(function(){
         $(win).resize(function(){
-            $('section').height($(win).height());
-            $('section .sec .sec-container').outerWidth($('section .sec').width() - $('section .sec nav').outerWidth());
+            $('section').height($(win).height())
         })
         $('section').height($(win).height());
-        $('section .sec .sec-container').outerWidth($('section .sec').width() - $('section .sec nav').outerWidth());
 
         var firTmp = '';
         for(var i=0;i<navList.length;i++){

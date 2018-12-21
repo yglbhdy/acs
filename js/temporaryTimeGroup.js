@@ -1,18 +1,16 @@
-$(function(){
-var temporaryTimeGroup_tab = $('.temporaryTimeGroup>ul>li');
-console.log(temporaryTimeGroup_tab.length)
-var temporaryTimeGroup_div = $('.temporaryTimeGroup .inner>div');
-console.log(temporaryTimeGroup_div.length)
+$(function () {
 
-$.each(temporaryTimeGroup_tab, function(indexInArray, valueOfElement) { 
+  var temporaryTimeGroup_tab = $('.temporaryTimeGroup>ul>li');
+  var temporaryTimeGroup_div = $('.temporaryTimeGroup .inner>div');
+
+  $.each(temporaryTimeGroup_tab, function (indexInArray, valueOfElement) {
     temporaryTimeGroup_div.eq(0).removeClass('none');
-    $(this).click(function(){
+    $(this).click(function () {
+      temporaryTimeGroup_tab.removeClass('active');
+      $(this).addClass('active');
       temporaryTimeGroup_div.eq(indexInArray).removeClass('none').siblings().addClass('none');
-    })
+    });
 
-});
-
-
-
+  });
 
 })

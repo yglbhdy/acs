@@ -28,7 +28,7 @@ section .sec .sec-container {
     float: left;
 }
 section .sec nav {
-    width: 15%;
+    width: 250px;
     min-width: 200px;
     overflow-y: scroll;
 }
@@ -60,7 +60,7 @@ section nav .sec-slide a {
 
 section .sec .sec-container {
     padding: 5px;
-    width: 85%;
+    width: calc(100% - 252px);
     background-color: #000;
 }
 

@@ -32,3 +32,9 @@ var controlInfo = [
         ]
     }
 ];
+
+// 查询门点人员信息  
+var doorStaff = [
+    ["用户编号", "用户姓名", "性别", "部门", "区号", "卡号", "十六进制"],
+    ['ahdfiuo', 'asido', 'asdiou', 'ahdfiuo', 'asido', 'asdiou', 'asidjoa']
+];
