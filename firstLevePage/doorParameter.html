@@ -35,7 +35,7 @@
                 <div class="bottom-content">
                   <table border="1" cellspacing="0" rules="0">
                     <tr>
-                      <td>当前控制器名称</td>
+                      <td width="105px">当前控制器名称</td>
                       <td class="controllName">无</td>
                     </tr>
                     <tr>
@@ -47,13 +47,13 @@
               </div>
               <div class="right-content">
                 <div class="tabs">
-                  <span class="gateParameter">门参数</span>
+                  <span class="gateParameter active">门参数</span>
                   <span class="extendedFunction">拓展功能</span>
-                  <span class="doorStatusPlan active">门状态计划</span>
+                  <span class="doorStatusPlan">门状态计划</span>
                 </div>
 
                 <!-- 门参数 -->
-                <div class="tabs-content gateParameter">
+                <div class="tabs-content gateParameter active">
                   <div class="inp-box">
                     <p>门参数</p>
                     <div>
@@ -247,7 +247,7 @@
                 </div>
 
                 <!-- 门状态计划 -->
-                <div class="tabs-content doorStatusPlan active">
+                <div class="tabs-content doorStatusPlan">
                   <table border="1" cellspacing="0" rules="all">
                     <thead>
                       <tr>
@@ -306,7 +306,7 @@
             </div>
 
             <div class="subBtn">
-              <div class="selBtn gateParameter">
+              <div class="selBtn gateParameter active">
                 <button type="button" name="" id="">查找</button>
                 <button type="button" name="" id="">复制</button>
                 <button type="button" name="setAccessControl" id="setAccessControl">设置门禁计划组</button>
@@ -318,23 +318,202 @@
                 <button type="button" name="setAccessControl" id="setAccessControl">设置门禁计划组</button>
                 <button type="button" name="" id="">确定</button>
               </div>
-              <div class="selBtn doorStatusPlan active">
+              <div class="selBtn doorStatusPlan">
                 <button type="button" name="" id="">查找</button>
                 <button type="button" name="" id="">复制</button>
                 <button type="button" name="setAccessControl" id="setAccessControl">设置门禁计划组</button>
-                <button type="button" name="" id="">状态计划</button>
+                <button type="button" name="" id="doorPlan">状态计划</button>
               </div>
             </div>
           </div>
-          <div class="mask">
+          <div class="mask access">
             <div class="mask-container">
               <p>设置门禁计划组</p>
               <div class="content">
-                <div class="left-container">
-                  
+                <div class="table-content">
+                  <div class="left-container">
+                    <div class="table-container">
+                      <button class="fir">-</button>
+                      <span>1F南侧大厅 在线 1086-出-电梯厅</span>
+                      <ul>
+                          <li><span>24小时通行组</span></li>
+                          <li><span>[1-2-1]门禁计划组</span></li>
+                          <li><span>[1-2-2]门禁计划组</span></li>
+                      </ul>
+                    </div>
+                    <table class="fixed-bottom" border="1" cellspacing="0" rules="all">
+                      <tr>
+                        <td width="105px">当前门禁计划</td>
+                        <td>无</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="right-container">
+                    <table border="1" cellspacing="0" rules="all">
+                        <thead>
+                          <tr>
+                            <td rowspan="2">序号</td>
+                            <td rowspan="2">时间</td>
+                            <td rowspan="2">新状态</td>
+                            <td colspan="2">临时</td>
+                            <td colspan="7">特殊日期组</td>
+                            <td colspan="7">正常日期组</td>
+                          </tr>
+                          <tr>
+                            <td>T1</td>
+                            <td>T2</td>
+                            <td>S1</td>
+                            <td>S2</td>
+                            <td>S3</td>
+                            <td>S4</td>
+                            <td>S5</td>
+                            <td>S6</td>
+                            <td>S7</td>
+                            <td>日</td>
+                            <td>一</td>
+                            <td>二</td>
+                            <td>三</td>
+                            <td>四</td>
+                            <td>五</td>
+                            <td>六</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>空</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </table>
+                  </div>
                 </div>
-                <div class="rightcontainer"></div>
+                
+                <div class="subBtn">
+                  <button name="" id="">改计划组名称</button>
+                  <button name="" id="">设置门禁计划</button>
+                  <button name="exit" id="accExit">退出</button>
+                </div>
               </div>
+            </div>
+          </div>
+          <div class="mask doorPlan">
+            <div class="mask-container">
+              <p>设置门状态计划</p>
+              <form action="" class="content">
+                <div class="table-container">
+                  <div class="inp-box">
+                    <p>门控制</p>
+                    <div>
+                      <label for="">状态起始时间</label>
+                      <input type="number" name="" id="" value="0" min="0" max="23">时
+                      <input type="number" name="" id="" value="0" min="0" max="59">分
+                    </div>
+                    <div>
+                      <label for="">状态改变为</label>
+                      <select name="" id="">
+                        <option value="">安全</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="inp-box">
+                    <p>设置有效的时间组</p>
+                    <div class="inp-box">
+                      <p>正常日期组</p>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">星期日</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">星期一</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">星期二</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">星期三</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">星期四</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">星期五</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">星期六</label>
+                      </div>
+                    </div>
+                    <div class="inp-box">
+                      <p>特殊日期组</p>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">S1</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">S2</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">S3</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">S4</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">S5</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">S6</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">S7</label>
+                      </div>
+                    </div>
+                    <div class="inp-box">
+                      <p>临时日期组</p>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">T1</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">T2</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="subBtn">
+                    <button name="" id="">设置</button>
+                  <button name="" id="doorExit">退出</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

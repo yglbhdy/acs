@@ -12,28 +12,21 @@
 }
 .doorStatusControl{
     width: 100%;
-    height: 100%;
+    height: calc(100% - 48px);
 }
 /* 左部分 */
-.doorStatusControl .doorStatusControl_left{
-    width: 70%;
-    height: 95%;
+.doorStatusControl .doorStatusControl_left {
+    margin-top: 10px;
+    padding: 10px 2px;
+    border: 1px solid #d6d2ce;
+    width: calc(100% - 477px);
+    height: calc(100% - 10px);
     display: inline-block;
-    padding: 0 20px;
-}
-.doorStatusControl .doorStatusControl_left .doorStatusControl_left_top{
-    width: 100%;
-    margin-bottom: 1px solid #868686;
-    text-align: left;
-   
-}
-.doorStatusControl .doorStatusControl_left .doorStatusControl_left_top p{
-    margin-bottom: 8px;
-    color: black;
+    position: relative;
 }
 .doorStatusControl .doorStatusControl_left .doorStatusControl_left_content{
     width: 100%;
-    height: 90%;
+    height: calc(100% + 8px);
     overflow-y: scroll;
 }
 .doorStatusControl .doorStatusControl_left .doorStatusControl_left_content>div{
@@ -81,20 +74,21 @@
 
 /* 右边的div*/
 .doorStatusControl .doorStatusControl_right{
-    width: 29%;
+    margin: 10px 0 0 2px;
+    padding: 10px 2px;
+    border: 1px solid #d6d2ce;
+    width: 470px;
     display: inline-block;
     vertical-align: top;
     position: relative;
-    padding: 15px;
-    margin-top: 10px;
-    border: 1px solid #868686;
-    border-radius: 5px;
     text-align: left;
+    height: calc(100% - 10px);
 }
-.doorStatusControl .doorStatusControl_right>p{
+.doorStatusControl .doorStatusControl_right>p,
+.doorStatusControl .doorStatusControl_left > p{
     position: absolute;
-    top: -8px;
-    left: 8px;
+    top: -10px;
+    left: 5px;
     color: black;
     background: #efebe7;
 }
@@ -103,16 +97,9 @@
     padding:5px 0;
 }
 .doorStatusControl .doorStatusControl_right label{
-    margin-right: 15px;
-}
-.doorStatusControl .doorStatusControl_right label:nth-of-type(4){
-    margin-right: 0px;
-}
-.doorStatusControl .doorStatusControl_right label:nth-of-type(5){
-    margin-right: 30px;
-}
-.doorStatusControl .doorStatusControl_right label:nth-of-type(6){
-    margin-right: 28px;
+    width: 70px;
+    text-align: right;
+    display: inline-block;
 }
 .doorStatusControl .doorStatusControl_right select{
     width: 60%;

@@ -1,145 +1,181 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.none{
+
+select,
+input {
+    width: 200px;
+    height: 25px;
+    border: 1px solid #D6D2CE;
+    background-color: #fff;
+}
+
+.none {
     display: none;
 }
-.aaaa{
+
+.aaaa {
     cursor: pointer;
 }
-.pointParameter{
-    width: 100;
+
+.pointParameter {
+    height: calc(100% - 48px);
+    overflow: hidden;
+}
+
+.pointParameter .pointParameter_left {
+    padding: 2px;
     height: 100%;
+    width: 330px;
+    border: 1px solid #D6D2CE;
+    float: left;
 }
-.pointParameter .pointParameter_left{
-    height: 95%;
-    width: 40%;
-    display: inline-block;
-}
-.pointParameter .pointParameter_left .pointParameter_left_content{
-    height:90%;
+
+.pointParameter .pointParameter_left .pointParameter_left_content {
+    height: calc(100% - 62px);
     overflow-y: scroll;
 }
-.pointParameter .pointParameter_left .pointParameter_left_content>div{
+
+.pointParameter .pointParameter_left .pointParameter_left_content>div {
     width: 15px;
     height: 15px;
     line-height: 12px;
     text-align: center;
-    border: 1px solid #868686;
+    border: 1px solid #D6D2CE;
     display: inline-block;
     cursor: pointer;
 }
-.pointParameter .pointParameter_left .pointParameter_left_content p{
-    display: inline-block;
-    color: black;
-}
-.pointParameter .pointParameter_left .pointParameter_left_content ul li>div{
-    width: 15px;
-    height: 15px;
-    line-height: 12px;
-    text-align: center;
-    border: 1px solid #868686;
-    display: inline-block;
-}
-.pointParameter .pointParameter_left .pointParameter_left_content ul{
-    margin-left: 15px;
-}
-.pointParameter .pointParameter_left .pointParameter_left_content ul li>p{
+
+.pointParameter .pointParameter_left .pointParameter_left_content p {
     display: inline-block;
     color: black;
 }
 
-.pointParameter .pointParameter_right{
-    width: 55%;
+.pointParameter .pointParameter_left .pointParameter_left_content ul li>div {
+    width: 15px;
+    height: 15px;
+    line-height: 12px;
+    text-align: center;
+    border: 1px solid #D6D2CE;
     display: inline-block;
-    vertical-align: top;
-    padding:20px 20px 135px 20px;
-    border: 1px solid #868686;
 }
-.pointParameter .pointParameter_right .parameterConfiguration{
-    border: 1px solid #868686;
+
+.pointParameter .pointParameter_left .pointParameter_left_content ul li {
+    padding-left: 20px;
+}
+
+.pointParameter .pointParameter_left .pointParameter_left_content ul li li span.active {
+    background-color: #99B4D1;
+}
+
+.pointParameter .pointParameter_left .pointParameter_left_content ul li>p {
+    display: inline-block;
+    color: black;
+}
+
+.pointParameter .pointParameter_right {
+    padding: 10px 5px;
+    width: calc(100% - 332px);
+    margin-left: 2px;
+    border: 1px solid #D6D2CE;
+    float: left;
+    height: 100%;
+}
+
+.pointParameter .pointParameter_right .parameterConfiguration {
+    border: 1px solid #D6D2CE;
     border-radius: 5px;
     position: relative;
     padding: 10px;
-    margin-bottom:30px; 
+    margin-bottom: 30px;
 }
-.pointParameter .pointParameter_right .parameterConfiguration>p{
-    position:absolute;
+
+.pointParameter .pointParameter_right .parameterConfiguration>p {
+    position: absolute;
     top: -10px;
     left: 6px;
     background: #efebe7;
     color: black;
 }
-.pointParameter .pointParameter_right .parameterConfiguration div{
+
+.pointParameter .pointParameter_right .parameterConfiguration div {
     margin-bottom: 10px;
 }
-.pointParameter .pointParameter_right .parameterConfiguration .inputPointNormality select{
-margin-right: 30px;
+
+.pointParameter .pointParameter_right .parameterConfiguration .inputPointNormality select {
+    margin-right: 30px;
 }
 
-.pointParameter .pointParameter_right .inputPointLinkageConfiguration{
+.pointParameter .pointParameter_right .inputPointLinkageConfiguration {
     margin: 20px 0;
-    border: 1px solid #868686;
+    border: 1px solid #D6D2CE;
     padding: 20px;
     border-radius: 5px;
     position: relative;
 }
-.pointParameter .pointParameter_right .inputPointLinkageConfiguration>p{
+
+.pointParameter .pointParameter_right .inputPointLinkageConfiguration>p {
     position: absolute;
     top: -10px;
     left: 6px;
     color: black;
     background: #efebe7;
 }
-.pointParameter .pointParameter_right .inputPointLinkageConfiguration>div>label{
-    margin-right:10px;
-  
+
+.pointParameter .pointParameter_right .inputPointLinkageConfiguration>div>label {
+    margin-right: 10px;
+
 }
-.pointParameter .pointParameter_right .inputPointLinkageConfiguration>div>select{
-    width: 60%;
+
+.pointParameter .pointParameter_right .inputPointLinkageConfiguration>div>select {
+    width: 200px;
     margin-bottom: 10px;
     padding: 2px 0
 }
-.pointParameter .pointParameter_right .inputPointLinkageConfiguration p{
+
+.pointParameter .pointParameter_right .inputPointLinkageConfiguration p {
     color: black;
 }
 
-.pointParameter .pointParameter_right .inputPointLinkageConfiguration .inlineDynamicPointAssignment{
+.pointParameter .pointParameter_right .inputPointLinkageConfiguration .inlineDynamicPointAssignment {
     margin: 20px 0;
-    border: 1px solid #868686;
+    border: 1px solid #D6D2CE;
     padding: 20px;
     border-radius: 5px;
     position: relative;
 }
-.pointParameter .pointParameter_right .inputPointLinkageConfiguration .inlineDynamicPointAssignment>p{
+
+.pointParameter .pointParameter_right .inputPointLinkageConfiguration .inlineDynamicPointAssignment>p {
     position: absolute;
     top: -10px;
     left: 6px;
     color: black;
     background: #efebe7;
 }
-.pointParameter .pointParameter_right .inputPointLinkageConfiguration .inlineDynamicPointAssignment select{
+
+.pointParameter .pointParameter_right .inputPointLinkageConfiguration .inlineDynamicPointAssignment select {
     display: block;
     margin-bottom: 10px;
-    width: 100%;
+    width: 200px;
     padding: 2px 0;
 }
-.pointParameter .pointParameter_right .inputPointLinkageConfiguration .inlineDynamicPointAssignment>div{
+
+.pointParameter .pointParameter_right .inputPointLinkageConfiguration .inlineDynamicPointAssignment>div {
     display: inline-block;
-    /* width: 45%; */
 }
-.pointParameter .pointParameter_right .inputPointLinkageConfiguration .inlineDynamicPointAssignment .linkageObject{
-    width: 70%;
+
+.pointParameter .pointParameter_right .inputPointLinkageConfiguration .inlineDynamicPointAssignment .linkageObject,
+.pointParameter .pointParameter_right .inputPointLinkageConfiguration .inlineDynamicPointAssignment .actionMode {
+    width: 300px;
 }
-.pointParameter .pointParameter_right .inputPointLinkageConfiguration .inlineDynamicPointAssignment .actionMode{
-    width: 28%;
-}
-.pointParameter .pointParameter_right .inputPointLinkageConfiguration .inlineDynamicPointAssignment>div>p{
+
+.pointParameter .pointParameter_right .inputPointLinkageConfiguration .inlineDynamicPointAssignment>div>p {
     margin-bottom: 3px;
 }
-.pointParameter .pointParameter_bottom{
+
+.pointParameter .pointParameter_bottom {
     text-align: right;
     margin-top: -5px;
 

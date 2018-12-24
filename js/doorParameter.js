@@ -87,8 +87,44 @@
         $('.left-content .bottom-content table .selDoor').text(faThis);
     });
 
+    // 设置门禁计划组 界面
     $('.subBtn #setAccessControl').click(function () {
-        $('.mask').fadeIn();
+        $('.mask.access').fadeIn();
+    });
+    $('.mask .subBtn #accExit').click(function () {
+        $('.mask.access').fadeOut();
+    });
+    
+    var access = '';
+    setAccess.forEach(function(e, i){
+        access += `<li><span>${e}</span></li>`;
+    });
+    $('.mask .table-content .left-container ul').html(access);
+
+    // 设置门禁计划组 左面列表点击事件
+    $('.mask .fir').click(function () {
+        if($(this).text() == '-'){
+            $('.mask .table-content .left-container ul').css('display', 'none');
+            $(this).text('+');
+        }else {
+            $('.mask .table-content .left-container ul').css('display', 'block');
+            $(this).text('-');
+        }
+    }); 
+
+    // 设置门禁计划组 左下表格展示
+    $('.mask .table-content .left-container ul li span').click(function(){
+        $('.mask .table-content .left-container ul li span').removeClass('active');
+        $(this).addClass('active');
+        $('.left-container .fixed-bottom td:nth-child(2)').text($(this).text());
+    });
+
+    // 门状态计划界面
+    $('.subBtn #doorPlan').click(function(){
+        $('.mask.doorPlan').fadeIn();
+    });
+    $('.mask .subBtn #doorExit').click(function () {
+        $('.mask.doorPlan').fadeOut();
     });
 
 })(jQuery);

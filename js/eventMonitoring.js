@@ -1,14 +1,19 @@
 $(function () {
-    var tab_btn = $('.eventSwitchingPanel .eventSwitchingPanel_tab ul li');
-    var tab_content = $('.eventMonitoring_tab>div');
-    $.each(tab_btn, function (index, value) {
-        tab_content.eq(0).removeClass('none').siblings().addClass('none')
-        $(this).click(function () {
-            tab_content.eq(index).removeClass('none').siblings().addClass('none');
-            tab_btn.eq(index).css('border','none').siblings().css('border','1px solid #868686')
-        })
-    })
+    $('.tabs span').click(function () {
+        var className = $(this).attr('class');
+        $('.tabs span').removeClass('active');
+        $(this).addClass('active');
 
+        $('.tabs-content').each(function (index, elem) {
+            var cClassName = $(elem).attr('class');
+
+
+            if (cClassName.indexOf(className) != (-1)) {
+                $('.tabs-content').removeClass('active');
+                $(elem).addClass('active');
+            }
+        });
+    });
 
     //有效刷卡事件页面table数据遍历
     var effectiveCreditCardIncidentData = '';
@@ -16,15 +21,15 @@ $(function () {
         var effectiveCreditCardIncidentList = '';
         e.forEach(function (element, index) {
             if (i == 0) {
-                effectiveCreditCardIncidentList += `<th>${element}</th>`
+                effectiveCreditCardIncidentList += `<th>${element}</th>`;
             } else {
-                effectiveCreditCardIncidentList += `<td>${element}</td>`
+                effectiveCreditCardIncidentList += `<td>${element}</td>`;
             }
         })
-        effectiveCreditCardIncidentData += `<tr>${effectiveCreditCardIncidentList}</tr>`
+        effectiveCreditCardIncidentData += `<tr>${effectiveCreditCardIncidentList}</tr>`;
 
     })
-    $('.effectiveCreditCardIncident_table table').html(effectiveCreditCardIncidentData)
+    $('.effectiveCreditCardIncident .table-container table').html(effectiveCreditCardIncidentData);
 
 
     //无效刷卡事件页面table数据遍历
@@ -33,15 +38,15 @@ $(function () {
         var invalidCreditCardIncidentList = '';
         e.forEach(function (element, index) {
             if (i == 0) {
-                invalidCreditCardIncidentList += `<th>${element}</th>`
+                invalidCreditCardIncidentList += `<th>${element}</th>`;
             } else {
-                invalidCreditCardIncidentList += `<td>${element}</td>`
+                invalidCreditCardIncidentList += `<td>${element}</td>`;
             }
         })
-        invalidCreditCardIncidentData += `<tr>${invalidCreditCardIncidentList}</tr>`
+        invalidCreditCardIncidentData += `<tr>${invalidCreditCardIncidentList}</tr>`;
 
     })
-    $('.invalidCreditCardIncident_table table').html(invalidCreditCardIncidentData)
+    $('.invalidCreditCardIncident .table-container table').html(invalidCreditCardIncidentData);
 })
 
 
@@ -52,14 +57,14 @@ doorStatusChange.forEach(function (e, i) {
     var doorStatusChangeList = '';
     e.forEach(function (element, index) {
         if (i == 0) {
-            doorStatusChangeList += `<th>${element}</th>`
+            doorStatusChangeList += `<th>${element}</th>`;
         } else {
-            doorStatusChangeList += `<td>${element}</td>`
+            doorStatusChangeList += `<td>${element}</td>`;
         }
     })
-    doorStatusChangeData += `<tr>${doorStatusChangeList}</tr>`
+    doorStatusChangeData += `<tr>${doorStatusChangeList}</tr>`;
 
-    $('.doorStatusChange_table table').html(doorStatusChangeData)
+    $('.doorStatusChange .table-container table').html(doorStatusChangeData);
 
 
 
@@ -70,37 +75,37 @@ doorStatusChange.forEach(function (e, i) {
         var alarmEventList = '';
         e.forEach(function (element, index) {
             if (i == 0) {
-                alarmEventList += `<th>${element}</th>`
+                alarmEventList += `<th>${element}</th>`;
             } else {
-                alarmEventList += `<td>${element}</td>`
+                alarmEventList += `<td>${element}</td>`;
             }
         })
-        alarmEventData += `<tr>${alarmEventList}</tr>`
+        alarmEventData += `<tr>${alarmEventList}</tr>`;
     })
-    $('.alarmEvent_table table').html(alarmEventData)
+    $('.alarmEvent .table-container table').html(alarmEventData);
 
 
     //实时进出人员p标签的遍历
-    for (var i = 0; i < realTimeEntryAndExitPersonnelP[0].length;i++) {
+    for (var i = 0; i < realTimeEntryAndExitPersonnelP[0].length; i++) {
         // console.log(realTimeEntryAndExitPersonnelP[0].length)
-       var  realTimeEntryAndExitPersonnelPDate = `<p>${realTimeEntryAndExitPersonnelP[0][i]}</p>`;
-    $('.realTimeEntryAndExitPersonnel_content_img .text').eq(i).html(realTimeEntryAndExitPersonnelPDate) 
-}
+        var realTimeEntryAndExitPersonnelPDate = `<p>${realTimeEntryAndExitPersonnelP[0][i]}</p>`;
+        $('.realTimeEntryAndExitPersonnel_content_img .text').eq(i).html(realTimeEntryAndExitPersonnelPDate);
+    }
 
-//选择语音类型
-var selectVoiceTypeData = '';
-for(var i = 0;i<selectVoiceType.length;i++){
-selectVoiceTypeData +=`<option value="${selectVoiceType[i]}">${selectVoiceType[i]}</option>`
-}
-$('.selectVoiceType').html(selectVoiceTypeData);
+    //选择语音类型
+    var selectVoiceTypeData = '';
+    for (var i = 0; i < selectVoiceType.length; i++) {
+        selectVoiceTypeData += `<option value="${selectVoiceType[i]}">${selectVoiceType[i]}</option>`;
+    }
+    $('.selectVoiceType').html(selectVoiceTypeData);
 
 
-//事件显示模式
+    //事件显示模式
 
-var eventDisplayModeData = '';
-for(var i = 0;i<eventDisplayMode.length;i++){
-    
-    eventDisplayModeData +=`<option value="${eventDisplayMode[i]}">${eventDisplayMode[i]}</option>`
-}
-$('.eventDisplayMode').html(eventDisplayModeData);
+    var eventDisplayModeData = '';
+    for (var i = 0; i < eventDisplayMode.length; i++) {
+
+        eventDisplayModeData += `<option value="${eventDisplayMode[i]}">${eventDisplayMode[i]}</option>`;
+    }
+    $('.eventDisplayMode').html(eventDisplayModeData);
 })

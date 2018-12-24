@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../css/pulic.css" />
   <link rel="stylesheet" href="../css/firPublic.css" />
   <link rel="stylesheet" href="../css/pointParameter.css">
-  <title>Document</title>
+  <title>智能门禁 - 输入输出点配置</title>
 </head>
 
 <body>
@@ -40,14 +40,14 @@
                   </ul>
                 </div>
                 <div class="pointParameter_left_table">
-                  <table>
+                  <table border="1" cellspacing="0" rules="all">
                     <tr>
-                      <td>当前控制器名称</td>
-                      <td>1F南侧大厅<span> </span> </td>
+                      <td width="105px">当前控制器名称</td>
+                      <td class="ctrName"></td>
                     </tr>
                     <tr>
                       <td>当前选择点名称</td>
-                      <td>【1-1】号门门磁</td>
+                      <td class="poName"></td>
                     </tr>
                   </table>
                 </div>
@@ -62,17 +62,17 @@
                   <div class="inputPointNormality">
                     <label for="inputPointNormality">输入点常态</label>
                     <select name="inputPointNormality" id="inputPointNormality" class="inputPointNormality_one">
-                    
+
                     </select>
                     <label for="isTheInputPointValid">输入点是否有效</label>
                     <select name="isTheInputPointValid" id="isTheInputPointValid" class="inputPointNormality_two">
-                   
+
                     </select>
                   </div>
                   <div>
                     <label for="messageType">消息类型</label>
                     <select name="messageType" id="messageType" class="messageType">
-                     
+
                     </select>
                   </div>
                   <div>
@@ -92,12 +92,12 @@
                   <div>
                     <label for="linkageTriggerCondition">联动触发条件</label>
                     <select name="linkageTriggerCondition" id="linkageTriggerCondition" class="linkageTriggerCondition">
-                   
+
                     </select>
                     <br>
                     <label for="networkExternalLinkageGroup">网络外联动组</label>
                     <select name="networkExternalLinkageGroup" id="networkExternalLinkageGroup" class="networkExternalLinkageGroup">
-                    
+
                     </select>
                   </div>
                   <div class="inlineDynamicPointAssignment">
@@ -105,47 +105,43 @@
                     <div class="linkageObject">
                       <p>联动对象</p>
                       <select name="linkageObject" id="linkageObject" class="linkageObject_one">
-                        
+
                       </select>
                       <select name="linkageObject" id="linkageObject" class="linkageObject_two">
-                       
+
                       </select>
                       <select name="linkageObject" id="linkageObject" class="linkageObject_three">
-                       
+
                       </select>
                       <select name="linkageObject" id="linkageObject" class="linkageObject_four">
-                        
+
                       </select>
                     </div>
                     <div class="actionMode">
                       <p>动作模式</p>
                       <select name="actionMode_one" id="actionMode_one" class="actionMode_one">
-                    
+
                       </select>
                       <select name="actionMode_two" id="actionMode_two" class="actionMode_two">
-                 
+
                       </select>
                       <select name="actionMode_three" id="actionMode_three" class="actionMode_three">
-                      
+
                       </select>
                       <select name="actionMode_four" id="actionMode_dour" class="actionMode_four">
-                       
-                        </select>
+
+                      </select>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="pointParameter_bottom">
-                  <div class="subBtn">
-                  <button type="button" name="" id="">查找(F)</button>
-                  <button type="button" name="" id="" >复制(C)</button>
-                  <button type="button" name="" id="" >设置(O)</button>
-                  <button type="button" name="" id="">退出(C)</button>
-                  </div>
-                </div>
-
+              <!--  -->
             </div>
-            <!--  -->
+            <div class="subBtn">
+              <button type="button" name="" id="">查找</button>
+              <button type="button" name="" id="">复制</button>
+              <button type="button" name="" id="">设置</button>
+            </div>
           </div>
         </div>
       </div>

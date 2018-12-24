@@ -39,7 +39,8 @@
 .left-content .top-content span {
     padding-left: 20px;
 }
-.left-content .top-content .thr span.active {
+.left-content .top-content .thr span.active,
+.mask .table-content .left-container ul li span.active {
     background-color: #99B4D1;
 }
 
@@ -153,15 +154,19 @@
     margin: 5px 0;
 }
 
-.doorStatusPlan table {
+.doorStatusPlan table,
+.mask .right-container table {
     text-align: center;
     min-width: 647px;
 }
-.doorStatusPlan table tr:hover {
+.doorStatusPlan table tr:hover,
+.mask .right-container table tr:hover {
     background-color: transparent;
 }
 .doorStatusPlan table tbody tr td:nth-child(5),
-.doorStatusPlan table tbody tr td:nth-child(4) {
+.doorStatusPlan table tbody tr td:nth-child(4),
+.mask .right-container table tbody tr td:nth-child(5),
+.mask .right-container table tbody tr td:nth-child(4) {
     background-color: #A6CAF0;
 }
 .doorStatusPlan table tbody tr td:nth-child(6),
@@ -170,7 +175,14 @@
 .doorStatusPlan table tbody tr td:nth-child(9),
 .doorStatusPlan table tbody tr td:nth-child(10),
 .doorStatusPlan table tbody tr td:nth-child(11),
-.doorStatusPlan table tbody tr td:nth-child(12) {
+.doorStatusPlan table tbody tr td:nth-child(12),
+.mask .right-container table tbody tr td:nth-child(6),
+.mask .right-container table tbody tr td:nth-child(7),
+.mask .right-container table tbody tr td:nth-child(8),
+.mask .right-container table tbody tr td:nth-child(9),
+.mask .right-container table tbody tr td:nth-child(10),
+.mask .right-container table tbody tr td:nth-child(11),
+.mask .right-container table tbody tr td:nth-child(12) {
     background-color: #00FFFF;
 }
 .doorStatusPlan table tbody tr td:nth-child(13),
@@ -179,11 +191,93 @@
 .doorStatusPlan table tbody tr td:nth-child(16),
 .doorStatusPlan table tbody tr td:nth-child(17),
 .doorStatusPlan table tbody tr td:nth-child(18),
-.doorStatusPlan table tbody tr td:nth-child(19) {
+.doorStatusPlan table tbody tr td:nth-child(19),
+.mask .right-container table tbody tr td:nth-child(13),
+.mask .right-container table tbody tr td:nth-child(14),
+.mask .right-container table tbody tr td:nth-child(15),
+.mask .right-container table tbody tr td:nth-child(16),
+.mask .right-container table tbody tr td:nth-child(17),
+.mask .right-container table tbody tr td:nth-child(18),
+.mask .right-container table tbody tr td:nth-child(19) {
     background-color: #FFFFE1;
 }
 
-.mask .mask-container {
+.mask.access .mask-container {
     width: 100%;
     height: 100%;
+}
+.mask.access .table-content,
+.mask.doorPlan .table-content {
+    height: calc(100% - 48px);
+}
+.mask.access .table-content .left-container,
+.mask.access .table-content .right-container {
+    height: 100%;
+    float: left;
+    border: 1px solid #D6D2CE;
+}
+.mask.access .table-content .left-container {
+    width: 330px;
+}
+.mask.access .table-content .right-container {
+    margin-left: 2px;
+    width: calc(100% - 332px);
+    overflow: scroll;
+}
+.mask.access .table-content .left-container .fir {
+    height: 18px;
+    width: 18px;
+    border: 1px solid #D6D2CE;
+    background-color: #fff;
+}
+.mask.access .table-content .left-container li {
+    margin: 5px 0;
+    padding-left: 40px;
+}
+.mask.access .table-content .left-container .table-container {
+    padding: 4px;
+    height: calc(100% - 32px);
+    overflow: scroll;
+}
+
+.mask.doorPlan .mask-container {
+    width: 425px;
+    height: 425px;
+}
+.mask.doorPlan .table-container {
+    height: calc(100% - 67px);
+}
+.mask.doorPlan .mask-container .inp-box {
+    padding: 10px 5px;
+    border: 1px solid #D6D2CE;
+    border-radius: 5px;
+    position: relative;
+}
+.mask.doorPlan .mask-container .inp-box:nth-child(2) {
+    padding: 15px 5px;
+}
+.mask.doorPlan .mask-container .inp-box p {
+    color: #333;
+    background-color: #efebe7;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+}
+.mask.doorPlan .mask-container .inp-box .inp-box {
+    padding: 10px 5px;
+    margin: 0 2px;
+    width: calc(33% - 6px);
+    display: inline-block;
+    vertical-align: top;
+}
+.mask.doorPlan .mask-container .inp-box div {
+    margin: 3px 0;
+}
+.mask.doorPlan .mask-container .inp-box .inp-box input[type=checkbox] {
+    height: auto;
+    width: auto;
+}
+.mask.doorPlan .mask-container .inp-box div input[type=number] {
+    width: 90px;
+    height: 25px;
 }

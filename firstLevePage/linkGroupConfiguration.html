@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,103 +8,81 @@
     <link rel="stylesheet" href="../css/pulic.css" />
     <link rel="stylesheet" href="../css/firPublic.css" />
     <link rel="stylesheet" href="../css/linkGroupConfiguration.css">
-    <title>Document</title>
+    <title>智能门禁 - 设置外联动</title>
 </head>
+
 <body>
-    
+
     <section>
         <p>智能门禁</p>
         <div class="container">
-          <header>
-            <div></div>
-          </header>
-    
-          <div class="sec">
-            <nav>
-              <ul>
-              </ul>
-            </nav>
-    
-            <div class="sec-container">
-              <p>设置外联动</p>
-              <div class="op-face">
-                  <!-- content -->
-                  <div class="definedLinkageGroup_all">
-                      <div class="definedLinkageGroup">已定义联动组</div>
-                      <div class="definedLinkageGroup_content">
-                          <ul>
-                              <!-- <li>外联动组0</li>
-                              <li>外联动组1</li> -->
-                          </ul>
-                      </div>
-                      <div class="definedLinkageGroup_bottom">
-                          <table border="1" cellspacing="0" relus="all">
-                              <tr>
-                                  <th>当前联动组</th>
-                                  <th>外联动组1</th>
-                              </tr>
-                          </table>
-                      </div>
-                  </div>
+            <header>
+                <div></div>
+            </header>
 
-                  <div class="controllerRelevantPointInformation_all">
-                      <div class="controllerRelevantPointInformation">控制器相关点信息</div>
-                      <div class="controllerRelevantPointInformation_content">
-                          <ul>
-                            
-                                   
-                          </ul>
-                      </div>
-                      <div class="controllerRelevantPointInformation_Btn">
-                          <div class="subBtn">
-                          <form action="">
-                              <button name="" id="">增加联动点(N)</button>
-                              <button name="" id="">删除联动点(D)</button>
-                              <label for="">联动模式</label>
-                              <select name="" id="" class="linkageMode">
-                                
-                              </select>
-                          </form>
-                          </div>
-                      </div>
-                      <div class="linkagePointsHaveBeenDefined">
-                          <p>已定义联动点</p>
-                          <div class="linkagePointsHaveBeenDefined_content">
-                              <div>-</div>
-                              <img src="" alt="">
-                              <p>门禁控制主机</p>
-                              <ul class="accessControlHost">
-                                  <!-- <li>
-                                      <div>-</div>
-                                      <img src="" alt="">
-                                      <p>1F南侧大厅</p>
-                                      <ul>
-                                          <li class="accessControlHost_child">
-                                              <input type="checkbox">
-                                              <img src="" alt="">
-                                              <p>[1-1]号门门磁</p>
-                                          </li>
-                                          <li>
-                                                <span>联动模式</span>
-                                                <b>默认打开</b>
-                                          </li>
-                                      </ul>
-                                  </li>
-                              </ul> -->
-                          </div>
-                      </div>
-                  </div>
-                  <div class="Btn_all">
-                      <div class="subBtn">
-                      <button name="" id="">增加联动组(A)</button>
-                      <button name="" id="">修改组名(M)</button>
-                      <button name="" id="">删除联动组(D)</button>
-                      <button name="" id="">保存(O)</button>
-                      <button name="" id="">退出(C)</button>
+            <div class="sec">
+                <nav>
+                    <ul>
+                    </ul>
+                </nav>
+
+                <div class="sec-container">
+                    <p>设置外联动</p>
+                    <div class="op-face">
+                        <div class="top">
+                            <div class="defined">
+                                <p>已定义联动组</p>
+                                <div class="definedLinkageGroup_content">
+                                    <ul>
+                                    </ul>
+                                </div>
+                                <table border="1" cellspacing="0" relus="all">
+                                    <tr>
+                                        <td width="105px">当前联动组</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="controller">
+                                <div class="controller_content">
+                                    <p>控制器相关点信息</p>
+                                    <ul>
+
+
+                                    </ul>
+                                </div>
+                                <div class="controllerRelevantPointInformation_Btn">
+                                    <div class="subBtn">
+                                        <form action="">
+                                            <button name="" id="">增加联动点(N)</button>
+                                            <button name="" id="">删除联动点(D)</button>
+                                            <label for="linkageMode">联动模式</label>
+                                            <select name="linkageMode" id="linkageMode" class="linkageMode">
+
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="linkagePointsHaveBeenDefined">
+                                    <p>已定义联动点</p>
+                                    <div class="linkagePointsHaveBeenDefined_content">
+                                        <div>-</div>
+                                        <img src="" alt="">
+                                        <span>门禁控制主机</span>
+                                        <ul class="accessControlHost">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subBtn">
+                            <button name="" id="">增加联动组</button>
+                            <button name="" id="">修改组名</button>
+                            <button name="" id="">删除联动组</button>
+                            <button name="" id="">保存</button>
+                        </div>
                     </div>
-                  </div>
-                  <!--  -->
-                  </div>
                 </div>
             </div>
         </div>
@@ -111,9 +90,10 @@
 
 
     <script src="../js/jquery.min.js"></script>
-  <script src="../data/navList.js"></script>
-  <script src="../js/public.js"></script>
-  <script src="../data/linkGroupConfigurationList.js"></script>
-  <script src="../js/linkGroupConfiguration.js"></script>
+    <script src="../data/navList.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../data/linkGroupConfigurationList.js"></script>
+    <script src="../js/linkGroupConfiguration.js"></script>
 </body>
+
 </html>
