@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/pulic.css" />
     <link rel="stylesheet" href="../css/firPublic.css" />
     <link rel="stylesheet" href="../css/zoneParameters.css" />
-    <title>Document</title>
+    <title>智能门禁 - 防区输入点参数设置</title>
 </head>
 
 <body>
@@ -25,53 +25,47 @@
                 </nav>
 
                 <div class="sec-container">
-                    <p>防区参数</p>
+                    <p>防区输入点参数设置</p>
                     <div class="op-face">
                         <!-- content -->
                         <div class="alarmParameters">
-                                <!-- 左部分 -->
-                                <div class="alarmParameters_left">
-                                    <table border="1" cellspacing="0">
-                                      
-                                    </table>
-                                </div>
-                                <!-- 右部分 -->
-                                <div class="alarmParameters_right">
-                                    <table border="1" cellspacing="0">
-                                        <thead>
-                                            <tr>
-                                                <th colspan="8">控制器防区输入点资料</th>
-                                            </tr>
-                                            <tr>
-                                                <td  rowspan="1" colspan="3">点资料</td>
-                                                <td rowspan="1" colspan="5">参数设置</td>
-                                            </tr>
-                                           
-                                        </thead>
-                                        <tbody>
-                                
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!-- 下部分 -->
-                                <div class="alarmParameters_bottom">
-                                    <div class="btn">
-                                        <button name="" id="">查询控制器</button>
-                                    </div>
-                                    <div class="subBtn">
-                                        <button name="" id=""  class="i-setUp">设置(S)</button>
-                                        <button name="" id="">退出(c)</button>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
+                            <!-- 左部分 -->
+                            <div class="alarmParameters_left">
+                                <table border="1" cellspacing="0">
+
+                                </table>
                             </div>
+                            <!-- 右部分 -->
+                            <div class="alarmParameters_right">
+                                <table border="1" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="8">控制器防区输入点资料</th>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="1" colspan="3">点资料</td>
+                                            <td rowspan="1" colspan="5">参数设置</td>
+                                        </tr>
+
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- 下部分 -->
+                        </div>
+                        <div class="subBtn">
+                            <button name="" id="">查询控制器</button>
+                            <button name="" id="" class="i-setUp">设置</button>
+                        </div>
                         <!--  -->
                     </div>
                     <!-- 模态框 -->
-                    <div class="mask" >
+                    <div class="mask">
                         <div class="mask-container">
                             <p>设置防区点参数</p>
-                            <form action="">
+                            <form class="content" action="">
                                 <div class="box">
                                     <p>点基本信息</p>
                                     <div>
@@ -91,36 +85,37 @@
                                         <input type="text" value="" value="" name="defenseAddress" id="defenseAddress">
                                     </div>
                                 </div>
-                                <div class="pox">
+                                <div class="box">
                                     <p>输入点防区设置</p>
                                     <div>
                                         <label for="defensePointAvailability">防区点有效</label>
                                         <select name="defensePointAvailability" id="defensePointAvailability" class="defensePointAvailability">
-                                            
+
                                         </select>
                                     </div>
                                     <div>
                                         <label for="internalAndExternalDefenseArea">内外防区</label>
-                                        <select name="internalAndExternalDefenseArea" id="internalAndExternalDefenseArea" class="internalAndExternalDefenseArea">
-                                           
+                                        <select name="internalAndExternalDefenseArea" id="internalAndExternalDefenseArea"
+                                            class="internalAndExternalDefenseArea">
+
                                         </select>
                                     </div>
                                     <div>
                                         <label for="defenseAlarm">防区报警</label>
                                         <select name="defenseAlarm" id="defenseAlarm" class="defenseAlarm">
-                                            
+
                                         </select>
                                     </div>
                                     <div>
                                         <label for="zoneType">防区类型</label>
                                         <select name="zoneType" id="zoneType" class="zoneType">
-                                           
+
                                         </select>
                                     </div>
                                     <div>
                                         <label for="alarmType">报警类型</label>
                                         <select name="alarmType" id="alarmType" class="alarmType">
-                                            
+
                                         </select>
                                     </div>
                                 </div>

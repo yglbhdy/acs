@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/pulic.css" />
     <link rel="stylesheet" href="../css/firPublic.css" />
     <link rel="stylesheet" href="../css/alarmParameters.css" />
-    <title>Document</title>
+    <title>智能门禁 - 控制器报警参数设置</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
                 </nav>
 
                 <div class="sec-container">
-                    <p>定义控制器</p>
+                    <p>控制器报警参数设置</p>
                     <div class="op-face">
                         <!-- content -->
                         <div class="alarmParameters">
@@ -37,13 +37,13 @@
                             </div>
                             <!-- 右部分 -->
                             <div class="alarmParameters_right">
-                                <ul>
-                                    <li>布撤防设置</li>
-                                    <li>状态许可证设置</li>
-                                </ul>
+                                <div class="tabs">
+                                    <span class="disarming active">布撤防设置</span>
+                                    <span class="status">状态许可证设置</span>
+                                </div>
                                 <!-- box -->
-                                <div class="alarmParameters_right_box">
-                                    <div class="alarmParameters_right_box_one">
+                                <div class="disarming tabs-content active">
+                                    <div class="inp-box">
                                         <p>允许的布防类型</p>
                                         <form action="">
                                             <label for="rapidDeployment">快速布防</label>
@@ -52,7 +52,7 @@
                                             </select>
                                         </form>
                                     </div>
-                                    <div class="alarmParameters_right_box_two">
+                                    <div class="inp-box">
                                         <p>允许的撤防类型</p>
                                         <form action="">
                                             <label for="effectiveCardOpeningDoor">有效卡开门</label>
@@ -61,7 +61,7 @@
                                             </select>
                                         </form>
                                     </div>
-                                    <div class="alarmParameters_right_box_three">
+                                    <div class="inp-box">
                                         <p>报警参数设置</p>
                                         <form action="">
                                             <div>
@@ -101,8 +101,8 @@
                                     </div>
                                 </div>
                                 <!-- pox -->
-                                <div class="alarmParameters_right_pox none">
-                                    <div class="alarmParameters_right_pox_one">
+                                <div class="status tabs-content">
+                                    <div class="inp-box">
                                         <p>报警状态标志</p>
                                         <form action="">
                                             <div>
@@ -153,7 +153,7 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="alarmParameters_right_pox_two">
+                                    <div class="inp-box">
                                         <p>紧急报警许可</p>
                                         <form action="">
                                             <div>
@@ -197,8 +197,7 @@
                         </div>
                         <div class="subBtn">
                             <button name="" id="">查询控制器</button>
-                            <button name="" id="">设置(S)</button>
-                            <button name="" id="">退出(c)</button>
+                            <button name="" id="">设置</button>
                         </div>
                         <!--  -->
                     </div>

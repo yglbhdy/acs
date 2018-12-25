@@ -20,7 +20,7 @@ var table = [
 
 
 var pointStatusPlanningGroup = [
-    ['名称','地址','是否有效','开始时间','状态','持续时间','T1','T2','T2'],
+    ['名称','地址','是否有效','开始时间','状态','持续时间','T1','T2','s1'],
     ['xx','xx','xx','xx','xx','xx','xx','xx','xx'],
     ['xx','xx','xx','xx','xx','xx','xx','xx','xx'],
     ['xx','xx','xx','xx','xx','xx','xx','xx','xx'],

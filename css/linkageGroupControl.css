@@ -1,68 +1,84 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.none{
+
+.none {
     display: none;
 }
-section .sec-container .op-face{
+
+section .sec-container .op-face {
     padding: 3px 0;
 }
-.linkageGroupControl{
+
+.linkageGroupControl {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 50px);
+    padding: 2px;
+    box-sizing: border-box;
 }
+
 /* 左部分 */
-.linkageGroupControl_left{
+.linkageGroupControl_left,
+.linkageGroupControl_right {
+    padding: 10px 2px;
     display: inline-block;
-    width: 35%;
-    height: 94.8%;
+    height: calc(100% - 7px);
     vertical-align: top;
-    border-right: 1px solid #868686;
+    width: 330px;
+    border: 1px solid #D6D2CE;
+    position: relative;
+    margin-top: 10px;
 }
-.linkageGroupControl_left>p{
-    text-indent: 15px;
+
+.linkageGroupControl_left>p,
+.linkageGroupControl_right>p {
     color: black !important;
-    line-height: 25px;
+    position: absolute;
+    background-color: #efebe7;
+    top: -10px;
+    left: 5px;
 }
-.linkageGroupControl_left .content{
+
+.linkageGroupControl_left .content {
     width: 100%;
-    height: 91%;
-    border-top: 1px solid #868686;
-    
+    height: calc(100% - 23px);
+    overflow: scroll;
+
 }
-.linkageGroupControl_left .content ul{
+
+.linkageGroupControl_left .content ul {
     margin-left: 15px;
 }
-.linkageGroupControl_left .content ul li{
+
+.linkageGroupControl_left .content ul li {
     margin: 5px 0;
 }
-.linkageGroupControl_left>.table{
-padding: 0;
-overflow: hidden;
-margin-top: 12px;
+
+.linkageGroupControl_left .content ul li span.active {
+    background-color: #99B4D1;
+}
+
+.linkageGroupControl_left>.table {
+    width: 100%;
+    overflow-y: auto;
+    border: none;
+    padding: 0;
 }
 
 /* 右部分 */
-.linkageGroupControl_right{
-    display: inline-block;
-    width: 63%;
-    height: 94.8%;
+.linkageGroupControl_right {
+    margin-left: 2px;
+    width: calc(100% - 336px);
 }
-.linkageGroupControl_right>p{
-    text-indent: 15px;
-    line-height: 25px;
-    color: black !important;
-}
-.linkageGroupControl_right .content{
-    width: 102.5%;
-    height: 96.8%;
-    border: 1px solid #868686;
+
+.linkageGroupControl_right .content {
+    height: calc(100% + 8px);
 }
 
 /* 下方 */
-.linkageGroupControl_bottom{
+.linkageGroupControl_bottom {
     width: 100%;
-    border: 1px  solid #868686;
+    border: 1px solid #D6D2CE;
 }

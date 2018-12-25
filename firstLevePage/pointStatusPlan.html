@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/pulic.css" />
     <link rel="stylesheet" href="../css/firPublic.css" />
     <link rel="stylesheet" href="../css/pointStatusPlan.css" />
-    <title>Document</title>
+    <title>智能门禁 - 点状态计划组</title>
 </head>
 
 <body>
@@ -25,45 +25,41 @@
                 </nav>
 
                 <div class="sec-container">
-                    <p>防区参数</p>
+                    <p>点状态计划组</p>
                     <div class="op-face">
                         <!-- content -->
                         <div class="alarmParameters">
-                                <!-- 左部分 -->
-                                <div class="alarmParameters_left">
-                                    <table border="1" cellspacing="0">
-                                      
-                                    </table>
-                                </div>
-                                <!-- 右部分 -->
-                                <div class="alarmParameters_right">
-                                    <table border="1" cellspacing="0">
-                                        <tr>
-                                            <th colspan="10">点状态计划组详细清单(最多支持15组点状态计划)</th>
-                                        </tr>
-                                        <tr class="pointStatusPlanningGroup">
-                                            <th colspan="2">点资料</th>
-                                            <th colspan="4">设置情况</th>
-                                            <th colspan="2">临时</th>
-                                        </tr>
-                                       
-                                    </table>
-                                </div>
-                                <!-- 下部分 -->
-                                <div class="alarmParameters_bottom">
-                                    <div class="subBtn">
-                                        <button name="" id="">查询控制器</button>
-                                        <button name="" id="" class="add_btn">增加(A)</button>
-                                        <button name="" id="">修改(M)</button>
-                                        <button name="" id="">删除(D)</button>
-                                        <button name="" id="">退出(c)</button>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
+                            <!-- 左部分 -->
+                            <div class="alarmParameters_left">
+                                <table border="1" cellspacing="0" rules="all">
+
+                                </table>
                             </div>
+                            <!-- 右部分 -->
+                            <div class="alarmParameters_right">
+                                <table border="1" cellspacing="0" rules="all">
+                                    <tr>
+                                        <th colspan="10">点状态计划组详细清单(最多支持15组点状态计划)</th>
+                                    </tr>
+                                    <tr class="pointStatusPlanningGroup">
+                                        <th colspan="2">点资料</th>
+                                        <th colspan="4">设置情况</th>
+                                        <th colspan="2">临时</th>
+                                        <th></th>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                        <div class="subBtn">
+                            <button name="" id="">查询控制器</button>
+                            <button name="" id="" class="add_btn">增加</button>
+                            <button name="" id="">修改</button>
+                            <button name="" id="">删除</button>
+                        </div>
                         <!--  -->
                     </div>
-                     <div class="mask">
+                    <div class="mask">
                         <div class="mask-container">
                             <p>设置点状态计划组</p>
                             <form action="" class="content">
@@ -72,57 +68,55 @@
                                     <div>
                                         <label for="choicePoint">选择点</label>
                                         <select name="choicePoint" id="choicePoint" class="choicePoint">
-                                            
+
                                         </select>
                                     </div>
                                     <div>
                                         <label for="effectivePoint">点有效</label>
                                         <select name="effectivePoint" id="effectivePoint" class="effectivePoint">
-                                            
+
                                         </select>
-                                    </div>
-                                    <div>
+
                                         <label for="stateTime">状态时间</label>
-                                        <input type="number" name="" id="" value="0">
+                                        <input type="number" name="stateTime" id="stateTime" value="0">
                                     </div>
                                     <div>
                                         <label for="pointState">点状态</label>
                                         <select name="pointState" id="pointState" class="pointState">
-                                            
+
                                         </select>
-                                    </div>
-                                    <div>
+
                                         <label for="continuity">持续情况</label>
                                         <select name="continuity" id="continuity" class="continuity">
-                                           
+
                                         </select>
                                     </div>
                                 </div>
 
-                                <div class="pox">
+                                <div class="box">
                                     <p>设置有效的时间组</p>
-                                    <div class="normalDateGroup">
+                                    <div class="nob normalDateGroup">
                                         <p>正常日期组</p>
-                                            <ul>
-                                            
-                                            </ul>      
+                                        <ul>
+
+                                        </ul>
                                     </div>
-                                    <div class="specialDateGroup">
-                                           <p>特殊日期组</p>
-                                            <ul>
-                                             
-                                            </ul>                             
+                                    <div class="nob specialDateGroup">
+                                        <p>特殊日期组</p>
+                                        <ul>
+
+                                        </ul>
                                     </div>
-                                    <div class="temporaryDateGroup">
-                                      <p>临时日期组</p>
-                                            <ul>
-                                               
-                                          </ul>                                  
+                                    <div class="nob temporaryDateGroup">
+                                        <p>临时日期组</p>
+                                        <ul>
+
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="subBtn">
-                                    <button name="" id="">设置(S)</button>
-                                    <button name="" id="" class="signOut">退出(C)</button>
+                                    <button type="button" name="" id="">设置</button>
+                                    <button type="button" name="" id="" class="signOut">退出</button>
                                 </div>
                             </form>
                         </div>
